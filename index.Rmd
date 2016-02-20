@@ -10,22 +10,32 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
+<style>
+em {
+  font-style: italic
+}
+</style>
+<style>
+strong {
+  font-weight: bold;
+}
+</style>
 
 ## Roadmap
 
- * Biostatistics - 20 minutes
-  + Accuracy versus Precision - 2 minutes
-  + Statistical Inference - 3 minutes
-  + Distributions - 5 minutes
-  + Hypothesis Testing - 10 minutes
- * Epidemiology - 40 minutes
-  + Types of Prevention - 2 minutes
-  + Types of Outbreaks - 2 minutes
-  + Measures of Morbidity and Mortality - 5 minutes
-  + Validity and Reliability of Clinical Tests - 6 minutes
-  + Measures of Risk - 10
-  + Epidemiological Biases - 5 minutes
-  + Types of Studies - 10 minutes
+ - Biostatistics - 20 minutes
+  - Accuracy versus Precision - 2 minutes
+  - Statistical Inference - 3 minutes
+  - Distributions - 5 minutes
+  - Hypothesis Testing - 10 minutes
+ - Epidemiology - 40 minutes
+  - Types of Prevention - 2 minutes
+  - Types of Outbreaks - 2 minutes
+  - Measures of Morbidity and Mortality - 5 minutes
+  - Validity and Reliability of Clinical Tests - 6 minutes
+  - Measures of Risk - 10
+  - Epidemiological Biases - 5 minutes
+  - Types of Studies - 10 minutes
 
 --- &vcenter
 
@@ -35,13 +45,13 @@ knit        : slidify::knit2slides
 
 ## Accuracy is closeness and Precision is repeatability
 
- * Generalizability
+ - Generalizability
   - How applicable is result to general population
   
- * P-value
+ - P-value
   - Probability of finding a value this extreme by random chance
   
- * Confidence Interval
+ - Confidence Interval
   - Interval over which real population number is found with a specified probability
 
 --- &vcenter
@@ -192,12 +202,46 @@ ggplot(data.frame(data = r.skew), aes(data)) +
 ```
 
 ***=right
- - Which of the following corresponds to the measures of central tendency on the graph?
-  - 1: mean, 2: median,  3: mode
-  - 2: mean, 1: median,  3: mode
-  - 2: mean, 3: median,  1: mode
-  - 3: mean, 2: median,  1: mode
-  - 3: mean, 1: median,  2: mode
+- Which of the following corresponds to the measures of central tendency on the graph?  
+ - A. 1: mean, 2: median,  3: mode  
+ - B. 2: mean, 1: median,  3: mode  
+ - C. 2: mean, 3: median,  1: mode  
+ - D. 3: mean, 2: median,  1: mode  
+ - E. 3: mean, 1: median,  2: mode  
+
+--- &twocolumn
+
+## Question
+
+***=left
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+Mode <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+r.skew <- rchisq(100000, df = 5)
+ggplot(data.frame(data = r.skew), aes(data)) +
+  geom_histogram(binwidth = 0.4, fill = 'lightgray') + 
+  geom_vline(xintercept = mean(r.skew), linetype = 'dotted', lwd = 1) +
+  geom_vline(xintercept = median(r.skew), linetype = "dashed", lwd = 1) +
+  geom_vline(xintercept = Mode(round(r.skew, digits = 2)), linetype = "solid", lwd = 1) +
+  xlim(0, 30) + 
+  ylim(0, 6500) +
+  ggtitle("Right Skewed") + 
+  labs(x="", y="") +
+  annotate("text", x = 8, y = 4000, label = "1. Solid\n2. Dashed\n3. Dotted", size = 6, hjust = 0)
+
+```
+
+***=right
+- Which of the following corresponds to the measures of central tendency on the graph?  
+ - A. 1: mean, 2: median,  3: mode  
+ - B. 2: mean, 1: median,  3: mode  
+ - C. 2: mean, 3: median,  1: mode  
+ - **_D. 3: mean, 2: median,  1: mode_**  
+ - E. 3: mean, 1: median,  2: mode  
 
 --- &vcenter
 
@@ -208,8 +252,3 @@ ggplot(data.frame(data = r.skew), aes(data)) +
 <div class="centered"><font size="7">Epidemiology</font size></div>
 
 ---
-
-
-
-
-

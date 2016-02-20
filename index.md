@@ -10,22 +10,32 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
+<style>
+em {
+  font-style: italic
+}
+</style>
+<style>
+strong {
+  font-weight: bold;
+}
+</style>
 
 ## Roadmap
 
- * Biostatistics - 20 minutes
-  + Accuracy versus Precision - 2 minutes
-  + Statistical Inference - 3 minutes
-  + Distributions - 5 minutes
-  + Hypothesis Testing - 10 minutes
- * Epidemiology - 40 minutes
-  + Types of Prevention - 2 minutes
-  + Types of Outbreaks - 2 minutes
-  + Measures of Morbidity and Mortality - 5 minutes
-  + Validity and Reliability of Clinical Tests - 6 minutes
-  + Measures of Risk - 10
-  + Epidemiological Biases - 5 minutes
-  + Types of Studies - 10 minutes
+ - Biostatistics - 20 minutes
+  - Accuracy versus Precision - 2 minutes
+  - Statistical Inference - 3 minutes
+  - Distributions - 5 minutes
+  - Hypothesis Testing - 10 minutes
+ - Epidemiology - 40 minutes
+  - Types of Prevention - 2 minutes
+  - Types of Outbreaks - 2 minutes
+  - Measures of Morbidity and Mortality - 5 minutes
+  - Validity and Reliability of Clinical Tests - 6 minutes
+  - Measures of Risk - 10
+  - Epidemiological Biases - 5 minutes
+  - Types of Studies - 10 minutes
 
 --- &vcenter
 
@@ -35,13 +45,13 @@ knit        : slidify::knit2slides
 
 ## Accuracy is closeness and Precision is repeatability
 
- * Generalizability
+ - Generalizability
   - How applicable is result to general population
   
- * P-value
+ - P-value
   - Probability of finding a value this extreme by random chance
   
- * Confidence Interval
+ - Confidence Interval
   - Interval over which real population number is found with a specified probability
 
 --- &vcenter
@@ -92,12 +102,27 @@ knit        : slidify::knit2slides
 ![plot of chunk unnamed-chunk-7](assets/fig/unnamed-chunk-7-1.png)
 
 ***=right
- - Which of the following corresponds to the measures of central tendency on the graph?
-  - 1: mean, 2: median,  3: mode
-  - 2: mean, 1: median,  3: mode
-  - 2: mean, 3: median,  1: mode
-  - 3: mean, 2: median,  1: mode
-  - 3: mean, 1: median,  2: mode
+- Which of the following corresponds to the measures of central tendency on the graph?  
+ - A. 1: mean, 2: median,  3: mode  
+ - B. 2: mean, 1: median,  3: mode  
+ - C. 2: mean, 3: median,  1: mode  
+ - D. 3: mean, 2: median,  1: mode  
+ - E. 3: mean, 1: median,  2: mode  
+
+--- &twocolumn
+
+## Question
+
+***=left
+![plot of chunk unnamed-chunk-8](assets/fig/unnamed-chunk-8-1.png)
+
+***=right
+- Which of the following corresponds to the measures of central tendency on the graph?  
+ - A. 1: mean, 2: median,  3: mode  
+ - B. 2: mean, 1: median,  3: mode  
+ - C. 2: mean, 3: median,  1: mode  
+ - **_D. 3: mean, 2: median,  1: mode_**  
+ - E. 3: mean, 1: median,  2: mode  
 
 --- &vcenter
 
@@ -108,8 +133,3 @@ knit        : slidify::knit2slides
 <div class="centered"><font size="7">Epidemiology</font size></div>
 
 ---
-
-
-
-
-

@@ -84,6 +84,21 @@ knit        : slidify::knit2slides
 ***=right
 ![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6-1.png)
 
+--- &twocolumn
+
+## Question
+
+***=left
+![plot of chunk unnamed-chunk-7](assets/fig/unnamed-chunk-7-1.png)
+
+***=right
+ - Which of the following corresponds to the measures of central tendency on the graph?
+  - 1: mean, 2: median,  3: mode
+  - 2: mean, 1: median,  3: mode
+  - 2: mean, 3: median,  1: mode
+  - 3: mean, 2: median,  1: mode
+  - 3: mean, 1: median,  2: mode
+
 --- &vcenter
 
 <div class="centered"><font size="7">Understanding hypothesis testing</font size></div>

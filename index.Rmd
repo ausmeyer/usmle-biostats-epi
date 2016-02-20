@@ -133,13 +133,15 @@ Mode <- function(x) {
 r.skew <- rchisq(100000, df = 5)
 ggplot(data.frame(data = r.skew), aes(data)) +
   geom_histogram(binwidth = 0.4, fill = 'lightgray') + 
-  geom_vline(xintercept = mean(r.skew), color = 'darkred', lwd = 1.25) +
-  geom_vline(xintercept = median(r.skew), color = 'darkblue', lwd = 1.25) +
-  geom_vline(xintercept = Mode(round(r.skew, digits = 2)), color = 'darkgreen', lwd = 1.25) +
+  geom_vline(xintercept = mean(r.skew), linetype = 'dotted', lwd = 1) +
+  geom_vline(xintercept = median(r.skew), linetype = "dashed", lwd = 1) +
+  geom_vline(xintercept = Mode(round(r.skew, digits = 2)), linetype = "solid", lwd = 1) +
   xlim(0, 30) + 
   ylim(0, 6500) +
   ggtitle("Right Skewed") + 
-  labs(x="", y="")
+  labs(x="", y="") +
+  annotate("text", x = 8, y = 6000, label = "Mean, Median, and Mode are not\nequal in skewed distributions.", size = 6, hjust = 0) +
+  annotate("text", x = 8, y = 4000, label = "Each of the lines represents a\nmeasure of central tendency.\nKnow their orientation in positive\nand negative skewed distributions.", size = 6, hjust = 0)
 ```
 
 
@@ -154,14 +156,48 @@ Mode <- function(x) {
 l.skew <- 30 - rchisq(100000, df = 5)
 ggplot(data.frame(data = l.skew), aes(data)) + 
   geom_histogram(binwidth = 0.4, fill = 'lightgray') + 
-  geom_vline(xintercept = mean(l.skew), color = 'darkred', lwd = 1.25) +
-  geom_vline(xintercept = median(l.skew), color = 'darkblue', lwd = 1.25) +
-  geom_vline(xintercept = Mode(round(l.skew, digits = 2)), color = 'darkgreen', lwd = 1.25) +
+  geom_vline(xintercept = mean(l.skew), linetype = 'dotted', lwd = 1) +
+  geom_vline(xintercept = median(l.skew), linetype = "dashed", lwd = 1) +
+  geom_vline(xintercept = Mode(round(l.skew, digits = 2)), linetype = "solid", lwd = 1) +
   xlim(0, 30) + 
   ylim(0, 6500) +
   ggtitle("Left Skewed") + 
   labs(x="", y="")
 ```
+
+--- &twocolumn
+
+## Question
+
+***=left
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+Mode <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+r.skew <- rchisq(100000, df = 5)
+ggplot(data.frame(data = r.skew), aes(data)) +
+  geom_histogram(binwidth = 0.4, fill = 'lightgray') + 
+  geom_vline(xintercept = mean(r.skew), linetype = 'dotted', lwd = 1) +
+  geom_vline(xintercept = median(r.skew), linetype = "dashed", lwd = 1) +
+  geom_vline(xintercept = Mode(round(r.skew, digits = 2)), linetype = "solid", lwd = 1) +
+  xlim(0, 30) + 
+  ylim(0, 6500) +
+  ggtitle("Right Skewed") + 
+  labs(x="", y="") +
+  annotate("text", x = 8, y = 4000, label = "1. Solid\n2. Dashed\n3. Dotted", size = 6, hjust = 0)
+
+```
+
+***=right
+ - Which of the following corresponds to the measures of central tendency on the graph?
+  - 1: mean, 2: median,  3: mode
+  - 2: mean, 1: median,  3: mode
+  - 2: mean, 3: median,  1: mode
+  - 3: mean, 2: median,  1: mode
+  - 3: mean, 1: median,  2: mode
 
 --- &vcenter
 

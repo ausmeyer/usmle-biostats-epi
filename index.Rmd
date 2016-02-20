@@ -11,12 +11,26 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Roadmap: where we are going
+## Roadmap
 
+ - Biostatistics - 20 minutes
+  - Accuracy versus Precision - 2 minutes
+  - Statistical Inference - 3 minutes
+  - Distributions - 5 minutes
+  - Hypothesis Testing - 10 minutes
+ - Epidemiology - 40 minutes
+  - Types of Prevention - 2 minutes
+  - Types of Outbreaks - 2 minutes
+  - Measures of Morbidity and Mortality - 5 minutes
+  - Validity and Reliability of Clinical Tests - 6 minutes
+  - Measures of Risk - 10
+  - Epidemiological Biases - 5 minutes
+  - Types of Studies - 10 minutes
 
 --- .class #id 
 
-## Slide 2
+Biostatistics
+
 
 
 

@@ -45,18 +45,18 @@ strong {
 
 ## Accuracy is closeness and Precision is repeatability
 
- - Generalizability
-  - How applicable is result to general population
-  
- - P-value
-  - Probability of finding a value this extreme by random chance
-  
- - Confidence Interval
-  - Interval over which real population number is found with a specified probability
+<div class="centered"><img src='{{page.url.assets}}/img/precision_accuracy.png' width='80%' /></div>
 
 --- &vcenter
 
 ## Use these terms to describe levels of belief
+
+ > - Generalizability
+  - How applicable is result to general population
+ > - P-value
+  - Probability of finding a value this extreme by random chance
+ > - Confidence Interval
+  - Interval over which real population number is found with a specified probability
 
 --- &vcenter
 

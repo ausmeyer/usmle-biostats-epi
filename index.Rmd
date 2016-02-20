@@ -43,19 +43,44 @@ knit        : slidify::knit2slides
 
 <div class="centered"><font size="7">Ways to describe distributions of data</font size></div>
 
----
+--- &twocolumn
 
-## A statistical distribution has invariant properties
+## Statistical distributions have invariant properties
 
-```{r}
+***=left
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
 norm <- rnorm(10000)
-hist(norm)
+ggplot(data.frame(data = norm), aes(data)) + 
+  geom_histogram(binwidth = 0.1) + 
+  xlim(-10, 10) + 
+  ylim(0, 450) +
+  ggtitle("Normal Distribution") + 
+  labs(x="", y="") +
+  annotate("text", x = -10, y = 450, label = "Mean = Median = Mode", size=5, hjust = 0) +
+  annotate("text", x = -10, y = 430, label = "95% CI is Mean +- 1.96 SD", size=5, hjust = 0)
+```
+
+
+***=right
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+studentt <- rt(10000, df=2)
+ggplot(data.frame(data = studentt), aes(data)) + 
+  geom_histogram(binwidth = 0.1)  + 
+  xlim(-10, 10) + 
+  ylim(0, 450) +
+  ggtitle("Student t Distribution") + 
+  labs(x="", y="") +
+  annotate("text", x = -10, y = 450, label = "Mean = Median = Mode", size=5, hjust = 0) +
+  annotate("text", x = -10, y = 430, label = "95% CI depends on degrees of freedom", size=5, hjust = 0)
 ```
 
 ---
 
 ## Real distributions can have one or multiple peaks
-
 
 ---
 

@@ -43,22 +43,20 @@ knit        : slidify::knit2slides
 
 <div class="centered"><font size="7">Ways to describe distributions of data</font size></div>
 
----
+--- &twocolumn
 
 ## A statistical distribution has invariant properties
 
-
-```r
-norm <- rnorm(10000)
-hist(norm)
-```
-
+***=left
 ![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png)
+
+
+***=right
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
 
 ---
 
 ## Real distributions can have one or multiple peaks
-
 
 ---
 

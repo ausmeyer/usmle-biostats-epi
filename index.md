@@ -29,7 +29,7 @@ knit        : slidify::knit2slides
 
 --- &vcenter
 
-<div class="centered"><font size="6">Biostatistics</font size></div>
+<div class="centered"><font size="7">Biostatistics</font size></div>
 
 ---
 

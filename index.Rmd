@@ -126,11 +126,18 @@ ggplot(data.frame(data = c(norm1, norm2)), aes(data)) +
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 library(ggplot2)
 library(cowplot)
-r.skew <- rchisq(10000, df = 25)
+Mode <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+r.skew <- rchisq(100000, df = 5)
 ggplot(data.frame(data = r.skew), aes(data)) +
-  geom_histogram(binwidth = 1) + 
-  xlim(0, 60) + 
-  ylim(0, 750) +
+  geom_histogram(binwidth = 0.4, fill = 'lightgray') + 
+  geom_vline(xintercept = mean(r.skew), color = 'darkred', lwd = 1.5) +
+  geom_vline(xintercept = median(r.skew), color = 'darkblue', lwd = 1.5) +
+  geom_vline(xintercept = Mode(round(r.skew, digits = 2)), color = 'darkgreen', lwd = 1.5) +
+  xlim(0, 30) + 
+  ylim(0, 6500) +
   ggtitle("Right Skewed") + 
   labs(x="", y="")
 ```
@@ -140,11 +147,18 @@ ggplot(data.frame(data = r.skew), aes(data)) +
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 library(ggplot2)
 library(cowplot)
-l.skew <- 60 - rchisq(10000, df = 25)
+Mode <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+l.skew <- 30 - rchisq(100000, df = 5)
 ggplot(data.frame(data = l.skew), aes(data)) + 
-  geom_histogram(binwidth = 1) + 
-  xlim(0, 60) + 
-  ylim(0, 750) +
+  geom_histogram(binwidth = 0.4, fill = 'lightgray') + 
+  geom_vline(xintercept = mean(l.skew), color = 'darkred', lwd = 1.5) +
+  geom_vline(xintercept = median(l.skew), color = 'darkblue', lwd = 1.5) +
+  geom_vline(xintercept = Mode(round(l.skew, digits = 2)), color = 'darkgreen', lwd = 1.5) +
+  xlim(0, 30) + 
+  ylim(0, 6500) +
   ggtitle("Left Skewed") + 
   labs(x="", y="")
 ```

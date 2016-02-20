@@ -31,11 +31,20 @@ knit        : slidify::knit2slides
 
 <div class="centered"><font size="7">Biostatistics</font size></div>
 
----
+--- &vcenter
 
 ## Accuracy is closeness and Precision is repeatability
 
----
+ * Generalizability
+  - How applicable is result to general population
+  
+ * P-value
+  - Probability of finding a value this extreme by random chance
+  
+ * Confidence Interval
+  - Interval over which real population number is found with a specified probability
+
+--- &vcenter
 
 ## Use these terms to describe levels of belief
 
@@ -51,7 +60,7 @@ knit        : slidify::knit2slides
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 library(ggplot2)
 library(cowplot)
-norm <- rnorm(10000)
+norm <- rnorm(10000, sd = 1)
 ggplot(data.frame(data = norm), aes(data)) + 
   geom_histogram(binwidth = 0.1) + 
   xlim(-10, 10) + 
@@ -61,7 +70,6 @@ ggplot(data.frame(data = norm), aes(data)) +
   annotate("text", x = -10, y = 450, label = "Mean = Median = Mode", size=5, hjust = 0) +
   annotate("text", x = -10, y = 430, label = "95% CI is Mean +- 1.96 SD", size=5, hjust = 0)
 ```
-
 
 ***=right
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
@@ -78,13 +86,68 @@ ggplot(data.frame(data = studentt), aes(data)) +
   annotate("text", x = -10, y = 430, label = "95% CI depends on degrees of freedom", size=5, hjust = 0)
 ```
 
----
+--- &twocolumn
 
 ## Real distributions can have one or multiple peaks
 
----
+***=left
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+norm <- rnorm(10000, mean = 5, sd = 1)
+ggplot(data.frame(data = norm), aes(data)) + 
+  geom_histogram(binwidth = 0.1) + 
+  xlim(0, 10) + 
+  ylim(0, 500) +
+  ggtitle("Unimodal Distribution") + 
+  labs(x="", y="")
+```
+
+
+***=right
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+norm1 <- rnorm(5000, mean = 3, sd = 0.8)
+norm2 <- rnorm(5000, mean = 6, sd = 0.8)
+ggplot(data.frame(data = c(norm1, norm2)), aes(data)) + 
+  geom_histogram(binwidth = 0.1) + 
+  xlim(0, 10) + 
+  ylim(0, 500) +
+  ggtitle("Bimodal Distribution") + 
+  labs(x="", y="")
+```
+
+--- &twocolumn
 
 ## Skew describes the direction of the tail
+
+***=left
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+r.skew <- rchisq(10000, df = 25)
+ggplot(data.frame(data = r.skew), aes(data)) +
+  geom_histogram(binwidth = 1) + 
+  xlim(0, 60) + 
+  ylim(0, 750) +
+  ggtitle("Right Skewed") + 
+  labs(x="", y="")
+```
+
+
+***=right
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+l.skew <- 60 - rchisq(10000, df = 25)
+ggplot(data.frame(data = l.skew), aes(data)) + 
+  geom_histogram(binwidth = 1) + 
+  xlim(0, 60) + 
+  ylim(0, 750) +
+  ggtitle("Left Skewed") + 
+  labs(x="", y="")
+```
 
 --- &vcenter
 

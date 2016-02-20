@@ -31,11 +31,20 @@ knit        : slidify::knit2slides
 
 <div class="centered"><font size="7">Biostatistics</font size></div>
 
----
+--- &vcenter
 
 ## Accuracy is closeness and Precision is repeatability
 
----
+ * Generalizability
+  - How applicable is result to general population
+  
+ * P-value
+  - Probability of finding a value this extreme by random chance
+  
+ * Confidence Interval
+  - Interval over which real population number is found with a specified probability
+
+--- &vcenter
 
 ## Use these terms to describe levels of belief
 
@@ -45,22 +54,35 @@ knit        : slidify::knit2slides
 
 --- &twocolumn
 
-## A statistical distribution has invariant properties
+## Statistical distributions have invariant properties
 
 ***=left
 ![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png)
 
-
 ***=right
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
 
----
+--- &twocolumn
 
 ## Real distributions can have one or multiple peaks
 
----
+***=left
+![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3-1.png)
+
+
+***=right
+![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4-1.png)
+
+--- &twocolumn
 
 ## Skew describes the direction of the tail
+
+***=left
+![plot of chunk unnamed-chunk-5](assets/fig/unnamed-chunk-5-1.png)
+
+
+***=right
+![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6-1.png)
 
 --- &vcenter
 

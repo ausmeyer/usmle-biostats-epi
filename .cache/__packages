@@ -1,3 +1,8 @@
 base
 ggplot2
 cowplot
+rpart
+mlbench
+lattice
+caret
+adabag

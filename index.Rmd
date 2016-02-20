@@ -1,6 +1,6 @@
 ---
 title       : Biostats and Epidemiology
-subtitle    : USMLE Step 1
+subtitle    : Review for USMLE Step 1
 author      : Austin Meyer
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -13,24 +13,25 @@ knit        : slidify::knit2slides
 
 ## Roadmap
 
- - Biostatistics - 20 minutes
-  - Accuracy versus Precision - 2 minutes
-  - Statistical Inference - 3 minutes
-  - Distributions - 5 minutes
-  - Hypothesis Testing - 10 minutes
- - Epidemiology - 40 minutes
-  - Types of Prevention - 2 minutes
-  - Types of Outbreaks - 2 minutes
-  - Measures of Morbidity and Mortality - 5 minutes
-  - Validity and Reliability of Clinical Tests - 6 minutes
-  - Measures of Risk - 10
-  - Epidemiological Biases - 5 minutes
-  - Types of Studies - 10 minutes
+ * Biostatistics - 20 minutes
+  + Accuracy versus Precision - 2 minutes
+  + Statistical Inference - 3 minutes
+  + Distributions - 5 minutes
+  + Hypothesis Testing - 10 minutes
+ * Epidemiology - 40 minutes
+  + Types of Prevention - 2 minutes
+  + Types of Outbreaks - 2 minutes
+  + Measures of Morbidity and Mortality - 5 minutes
+  + Validity and Reliability of Clinical Tests - 6 minutes
+  + Measures of Risk - 10
+  + Epidemiological Biases - 5 minutes
+  + Types of Studies - 10 minutes
 
---- .class #id 
+--- &vcenter
 
-Biostatistics
+<div class="centered"><font size="7">Biostatistics</font size></div>
 
+---
 
 
 

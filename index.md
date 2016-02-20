@@ -33,6 +33,48 @@ knit        : slidify::knit2slides
 
 ---
 
+## Accuracy is closeness and Precision is repeatability
+
+---
+
+## Use these terms to describe levels of belief
+
+--- &vcenter
+
+<div class="centered"><font size="7">Ways to describe distributions of data</font size></div>
+
+---
+
+## A statistical distribution has invariant properties
+
+
+```r
+norm <- rnorm(10000)
+hist(norm)
+```
+
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png)
+
+---
+
+## Real distributions can have one or multiple peaks
+
+
+---
+
+## Skew describes the direction of the tail
+
+--- &vcenter
+
+<div class="centered"><font size="7">Understanding hypothesis testing</font size></div>
+
+--- &vcenter
+
+<div class="centered"><font size="7">Epidemiology</font size></div>
+
+---
+
+
 
 
 

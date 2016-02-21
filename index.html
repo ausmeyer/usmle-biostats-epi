@@ -166,7 +166,7 @@ body {
 
 <slide class="" id="slide-7" style="background:;">
   <hgroup>
-    <h2>Question</h2>
+    <h2>Question #1</h2>
   </hgroup>
   <article data-timings="">
     
@@ -245,27 +245,39 @@ body {
 
 <slide class="" id="slide-10" style="background:;">
   <hgroup>
-    <h2>Question</h2>
+    <h2>Question #2</h2>
   </hgroup>
   <article data-timings="">
     
-<div style='float:left;width:48%;'>
+<div class='row-fluid'>
+  <div class='span6'>
     <p><img src="assets/fig/unnamed-chunk-7-1.png" alt="plot of chunk unnamed-chunk-7"></p>
 
+  </div>
+  <div class='span6'>
+    <div class="quiz quiz-single well new">
+      <p>Which of the following corresponds to the measures of central tendency on the graph?<br>
+1. 1:mean, 2:median,  3:mode<br>
+2. 2:mean, 1:median,  3:mode<br>
+3. 2:mean, 3:median,  1:mode<br>
+4. 3:mean, 2:median,  1:mode<br>
+5. 3:mean, 1:median,  2:mode  </p>
+
+      <button class="quiz-submit btn btn-primary">Submit</button>
+      <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+      <button class="quiz-show-answer btn btn-success">Show Answer</button>
+      <button class="quiz-clear btn btn-danger">Clear</button>
+      
+      <div class="quiz-hint">
+  <p>Mode is most common, median is middle, mean is average value.</p>
+
 </div>
-<div style='float:right;width:50%;'>
-    <ul>
-<li>Which of the following corresponds to the measures of central tendency on the graph?<br>
+<div class="quiz-explanation">
+  <p>Always remember that the y-axis on these plots are counts or frequency. Therefore, which line is closest to the peak on the y-axis is the mode. The median is <strong>always</strong> in the middle. The mean is the most susceptible to outliers so in a skewed distribution it will <strong>always</strong> be farthest out on the tail.</p>
 
-<ul>
-<li>A. 1: mean, 2: median,  3: mode<br></li>
-<li>B. 2: mean, 1: median,  3: mode<br></li>
-<li>C. 2: mean, 3: median,  1: mode<br></li>
-<li>D. 3: mean, 2: median,  1: mode<br></li>
-<li>E. 3: mean, 1: median,  2: mode<br></li>
-</ul></li>
-</ul>
-
+</div>
+    </div>
+  </div>
 </div>
   </article>
   <!-- Presenter Notes -->
@@ -687,7 +699,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Question'>
+        data-slide=7 title='Question #1'>
          7
       </a>
     </li>
@@ -705,7 +717,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='Question'>
+        data-slide=10 title='Question #2'>
          10
       </a>
     </li>

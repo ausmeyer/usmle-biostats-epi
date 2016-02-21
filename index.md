@@ -79,7 +79,7 @@ body {
 
 ---  &radio
 
-## Question
+## Question #1
 
 Investigators are studying prostate specific antigen (PSA) as a predictor of prostate cancer. To make the statistics easier, they are going to assume that PSA is a normally distributed population variable. Which of the following is correct under their assumption?
 
@@ -90,11 +90,9 @@ Investigators are studying prostate specific antigen (PSA) as a predictor of pro
 5. Mean is equal to standard deviation
 
 ***.hint
-
 The normal distribution is unimodal and symmetric.
 
 ***.explanation
-
 The important invariant properties (for you) of normal distributions are the following:
 
 1. Mean = Median = Mode
@@ -125,20 +123,25 @@ The important invariant properties (for you) of normal distributions are the fol
 ***=right
 ![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6-1.png)
 
---- &twocolumn
+--- &radio2
 
-## Question
+## Question #2
 
-***=left
+Which of the following corresponds to the measures of central tendency on the graph?  
+1. 1:mean, 2:median,  3:mode  
+2. 2:mean, 1:median,  3:mode  
+3. 2:mean, 3:median,  1:mode  
+4. 3:mean, 2:median,  1:mode  
+5. 3:mean, 1:median,  2:mode  
+ 
+***=image
 ![plot of chunk unnamed-chunk-7](assets/fig/unnamed-chunk-7-1.png)
 
-***=right
-- Which of the following corresponds to the measures of central tendency on the graph?  
- - A. 1: mean, 2: median,  3: mode  
- - B. 2: mean, 1: median,  3: mode  
- - C. 2: mean, 3: median,  1: mode  
- - D. 3: mean, 2: median,  1: mode  
- - E. 3: mean, 1: median,  2: mode  
+***.hint
+Mode is most common, median is middle, mean is average value.
+
+***.explanation
+Always remember that the y-axis on these plots are counts or frequency. Therefore, which line is closest to the peak on the y-axis is the mode. The median is **always** in the middle. The mean is the most susceptible to outliers so in a skewed distribution it will **always** be farthest out on the tail.
 
 --- &twocolumn
 

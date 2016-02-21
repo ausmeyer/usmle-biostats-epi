@@ -105,7 +105,7 @@ ggplot(data.frame(data = studentt), aes(data)) +
 
 ---  &radio
 
-## Question
+## Question #1
 
 Investigators are studying prostate specific antigen (PSA) as a predictor of prostate cancer. To make the statistics easier, they are going to assume that PSA is a normally distributed population variable. Which of the following is correct under their assumption?
 
@@ -116,11 +116,9 @@ Investigators are studying prostate specific antigen (PSA) as a predictor of pro
 5. Mean is equal to standard deviation
 
 ***.hint
-
 The normal distribution is unimodal and symmetric.
 
 ***.explanation
-
 The important invariant properties (for you) of normal distributions are the following:
 
 1. Mean = Median = Mode
@@ -208,11 +206,18 @@ ggplot(data.frame(data = l.skew), aes(data)) +
   labs(x="", y="")
 ```
 
---- &twocolumn
+--- &radio2
 
-## Question
+## Question #2
 
-***=left
+Which of the following corresponds to the measures of central tendency on the graph?  
+1. 1:mean, 2:median,  3:mode  
+2. 2:mean, 1:median,  3:mode  
+3. 2:mean, 3:median,  1:mode  
+4. 3:mean, 2:median,  1:mode  
+5. 3:mean, 1:median,  2:mode  
+ 
+***=image
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 library(ggplot2)
 library(cowplot)
@@ -234,47 +239,11 @@ ggplot(data.frame(data = r.skew), aes(data)) +
 
 ```
 
-***=right
-- Which of the following corresponds to the measures of central tendency on the graph?  
- - A. 1: mean, 2: median,  3: mode  
- - B. 2: mean, 1: median,  3: mode  
- - C. 2: mean, 3: median,  1: mode  
- - D. 3: mean, 2: median,  1: mode  
- - E. 3: mean, 1: median,  2: mode  
+***.hint
+Mode is most common, median is middle, mean is average value.
 
---- &twocolumn
-
-## Question
-
-***=left
-```{r, message=FALSE, warning=FALSE, echo=FALSE}
-library(ggplot2)
-library(cowplot)
-Mode <- function(x) {
-  ux <- unique(x)
-  ux[which.max(tabulate(match(x, ux)))]
-}
-r.skew <- rchisq(100000, df = 5)
-ggplot(data.frame(data = r.skew), aes(data)) +
-  geom_histogram(binwidth = 0.4, fill = 'lightgray') + 
-  geom_vline(xintercept = mean(r.skew), linetype = 'dotted', lwd = 1) +
-  geom_vline(xintercept = median(r.skew), linetype = "dashed", lwd = 1) +
-  geom_vline(xintercept = Mode(round(r.skew, digits = 2)), linetype = "solid", lwd = 1) +
-  xlim(0, 30) + 
-  ylim(0, 6500) +
-  ggtitle("Right Skewed") + 
-  labs(x="", y="") +
-  annotate("text", x = 8, y = 4000, label = "1. Solid\n2. Dashed\n3. Dotted", size = 6, hjust = 0)
-
-```
-
-***=right
-- Which of the following corresponds to the measures of central tendency on the graph?  
- - A. 1: mean, 2: median,  3: mode  
- - B. 2: mean, 1: median,  3: mode  
- - C. 2: mean, 3: median,  1: mode  
- - __D. 3: mean, 2: median,  1: mode__ 
- - E. 3: mean, 1: median,  2: mode  
+***.explanation
+Always remember that the y-axis on these plots are counts or frequency. Therefore, which line is closest to the peak on the y-axis is the mode. The median is **always** in the middle. The mean is the most susceptible to outliers so in a skewed distribution it will **always** be farthest out on the tail.
 
 --- &vcenter
 

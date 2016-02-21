@@ -123,7 +123,7 @@ strong {
  - A. 1: mean, 2: median,  3: mode  
  - B. 2: mean, 1: median,  3: mode  
  - C. 2: mean, 3: median,  1: mode  
- - **_D. 3: mean, 2: median,  1: mode_**  
+ - __D. 3: mean, 2: median,  1: mode__ 
  - E. 3: mean, 1: median,  2: mode  
 
 --- &vcenter

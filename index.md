@@ -6,7 +6,7 @@ job         :
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
@@ -53,8 +53,10 @@ strong {
 
  > - Generalizability
   - How applicable is result to general population
+ <br><br><br>
  > - P-value
   - Probability of finding a value this extreme by random chance
+ <br><br><br>
  > - Confidence Interval
   - Interval over which real population number is found with a specified probability
 
@@ -127,6 +129,51 @@ strong {
 --- &vcenter
 
 <div class="centered"><font size="7">Understanding hypothesis testing</font size></div>
+
+--- &vcenter
+
+## The null hypothesis (\(H_0\)) is always the default
+
+ > - Assuming there are two or more groups being compared...
+ <br><br><br>
+ > - \(H_0\): There is no difference in the means of the groups.
+ <br><br><br>
+ > - For Step 1, probably safe to assume null is always rejected with \(p < 0.05\).
+ <br><br><br>
+ > - \(H_A\): The difference between the means of the groups is real.
+
+--- &vcenter
+
+## T-test compares measurements from two groups
+
+![plot of chunk unnamed-chunk-9](assets/fig/unnamed-chunk-9-1.png)
+ > \(H_0\): There is no difference between the control and disease groups 
+
+--- &vcenter
+
+<div class="centered"><font size="7">Will this be significant?</font size></div>
+
+---
+
+## T-test compares measurements from two groups
+
+ - \(H_0\): There is no difference between the control and disease groups 
+ 
+ - Run the t-test
+  
+  ```r
+  norm1 <- rnorm(5000, mean = 4.75, sd = 1.2)
+  norm2 <- rnorm(5000, mean = 5.25, sd = 1.2)
+  (t.test(norm1, norm2))$p.value
+  ```
+  
+  ```
+  ## [1] 1.506568e-103
+  ```
+  
+  > - Have we rejected the null hypothesis?
+  
+  > - Yes. We accept \(H_A\), there is a difference between control and disease.
 
 --- &vcenter
 

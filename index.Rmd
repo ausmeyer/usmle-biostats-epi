@@ -6,7 +6,7 @@ job         :
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : [mathjax, quiz]            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
@@ -115,11 +115,15 @@ Investigators are studying prostate specific antigen (PSA) as a predictor of pro
 4. _Median is equal to mean_
 5. Mean is equal to standard deviation
 
-*** .explanation
+***.hint
+
+The normal distribution is unimodal and symmetric.
+
+***.explanation
 
 The important invariant properties (for you) of normal distributions are the following:
 
-1. \(Mean = Median = Mode\)
+1. Mean = Median = Mode
 2. Unimodal
 3. Symmetric
 4. Area under curve is 1

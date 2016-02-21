@@ -145,7 +145,6 @@ strong {
 --- &vcenter
 
 ## T-test compares measurements from two groups
-
 ![plot of chunk unnamed-chunk-9](assets/fig/unnamed-chunk-9-1.png)
  > \(H_0\): There is no difference between the control and disease groups 
 
@@ -171,9 +170,47 @@ strong {
   ## [1] 1.506568e-103
   ```
   
-  > - Have we rejected the null hypothesis?
+ > - Have we rejected the null hypothesis?
   
-  > - Yes, we have accepted \(H_A\). There is a difference between control and disease.
+ > - Yes, we have accepted \(H_A\). There is a difference between control and disease.
+
+---
+
+## Chi-squared test uses categorical (count) data
+ > - Two common tests
+    > - Test of independence
+    > - Goodness-of-fit
+
+ > - Test of independence
+    > - \(H_0\): There is no association between the variables under study
+    > - \(H_A\): There is an association between the variables under study
+
+ > - Goodness-of-fit
+    > - \(H_0\): The number of cases occuring are equal to that expected by chance
+    > - \(H_A\): The number of cases occuring are unequal to that expected by chance
+
+--- &vcenter
+
+## Always expect a contingency table for chi-squared
+
+|             | Healthy | Disease | Total |
+|-------------|---------|---------|-------|
+| Exposed     |    40   |    60   |  100  |   
+| Not Exposed |   500   |   400   |  900  |   
+| Total       |   540   |   460   | 1000  |   
+Table: A 2x2 contingency table
+
+--- &vcenter
+
+## Always expect a contingency table for chi-squared
+
+|                 | Never Sick | Sometimes Sick | Mostly Sick | Total |
+|-----------------|------------|----------------|-------------|-------|
+| High Exposure   |            |                |             |       |
+| Medium Exposure |            |                |             |       |
+| Low Exposure    |            |                |             |       |  
+| Total           |            |                |             |       |
+Table: A 3x3 contingency table
 
 --- &vcenter
 

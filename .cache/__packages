@@ -6,3 +6,5 @@ mlbench
 lattice
 caret
 adabag
+xtable
+knitr

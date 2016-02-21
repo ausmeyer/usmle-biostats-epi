@@ -330,7 +330,124 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-16">
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Chi-squared test uses categorical (count) data</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><p>Two common tests</p>
+
+<ul class = "build incremental">
+<li>Test of independence</li>
+<li>Goodness-of-fit</li>
+</ul></li>
+<li><p>Test of independence</p>
+
+<ul class = "build incremental">
+<li>\(H_0\): There is no association between the variables under study</li>
+<li>\(H_A\): There is an association between the variables under study</li>
+</ul></li>
+<li><p>Goodness-of-fit</p>
+
+<ul class = "build incremental">
+<li>\(H_0\): The number of cases occuring are equal to that expected by chance</li>
+<li>\(H_A\): The number of cases occuring are unequal to that expected by chance</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17">
+<hgroup>
+  <h2>Always expect a contingency table for chi-squared</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<table><thead>
+<tr>
+<th></th>
+<th>Healthy</th>
+<th>Disease</th>
+<th>Total</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Exposed</td>
+<td>40</td>
+<td>60</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Not Exposed</td>
+<td>500</td>
+<td>400</td>
+<td>900</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>540</td>
+<td>460</td>
+<td>1000</td>
+</tr>
+</tbody></table>
+
+<p>Table: A 2x2 contingency table</p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-18">
+<hgroup>
+  <h2>Always expect a contingency table for chi-squared</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<table><thead>
+<tr>
+<th></th>
+<th>Never Sick</th>
+<th>Sometimes Sick</th>
+<th>Mostly Sick</th>
+<th>Total</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>High Exposure</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Medium Exposure</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Low Exposure</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p>Table: A 3x3 contingency table</p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-19">
 <hgroup>
   
 </hgroup>
@@ -340,7 +457,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-17" style="background:;">
+<slide class="" id="slide-20" style="background:;">
   <article data-timings="">
     
   </article>
@@ -443,14 +560,32 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=16 title='NA'>
+        data-slide=16 title='Chi-squared test uses categorical (count) data'>
          16
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=17 title='NA'>
+        data-slide=17 title='Always expect a contingency table for chi-squared'>
          17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Always expect a contingency table for chi-squared'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='NA'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='NA'>
+         20
       </a>
     </li>
   </ul>

@@ -173,7 +173,7 @@ strong {
   
   > - Have we rejected the null hypothesis?
   
-  > - Yes. We accept \(H_A\), there is a difference between control and disease.
+  > - Yes, we have accepted \(H_A\). There is a difference between control and disease.
 
 --- &vcenter
 

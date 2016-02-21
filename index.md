@@ -127,12 +127,14 @@ The important invariant properties (for you) of normal distributions are the fol
 
 ## Question #2
 
-Which of the following corresponds to the measures of central tendency on the graph?  
-1. 1:mean, 2:median,  3:mode  
-2. 2:mean, 1:median,  3:mode  
-3. 2:mean, 3:median,  1:mode  
-4. 3:mean, 2:median,  1:mode  
-5. 3:mean, 1:median,  2:mode  
+Which of the following corresponds to the measures of central tendency on the graph from **left to right**? 
+
+1. mean, median, mode
+2. mode, mean, median
+3. median, mode, mean
+4. _mode, median, mean_
+5. mean, mode, median
+
  
 ***=image
 ![plot of chunk unnamed-chunk-7](assets/fig/unnamed-chunk-7-1.png)

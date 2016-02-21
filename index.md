@@ -6,7 +6,7 @@ job         :
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax, quiz]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
@@ -76,6 +76,28 @@ body {
 
 ***=right
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
+
+---  &radio
+
+## Question
+
+Investigators are studying prostate specific antigen (PSA) as a predictor of prostate cancer. To make the statistics easier, they are going to assume that PSA is a normally distributed population variable. Which of the following is correct under their assumption?
+
+1. Mode is greater than median
+2. Median is greater than mode
+3. 95% CI depends on degrees of freedom
+4. _Median is equal to mean_
+5. Mean is equal to standard deviation
+
+*** .explanation
+
+The important invariant properties (for you) of normal distributions are the following:
+
+1. \(Mean = Median = Mode\)
+2. Unimodal
+3. Symmetric
+4. Area under curve is 1
+5. Constant relationship between standard deviation and percentiles
 
 --- &twocolumn
 

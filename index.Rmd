@@ -6,7 +6,7 @@ job         :
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax, quiz]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
@@ -83,7 +83,9 @@ ggplot(data.frame(data = norm), aes(data)) +
   ggtitle("Normal Distribution") + 
   labs(x="", y="") +
   annotate("text", x = -10, y = 950, label = "Mean = Median = Mode", size=6, hjust = 0) +
-  annotate("text", x = -10, y = 900, label = "95% CI = Mean +- 1.96 SD", size=6, hjust = 0)
+  annotate("text", x = -10, y = 900, label = "68.3% CI ~ Mean +- 1 SD", size=6, hjust = 0) +
+  annotate("text", x = -10, y = 850, label = "95.5% CI ~ Mean +- 2 SD", size=6, hjust = 0) +
+  annotate("text", x = -10, y = 800, label = "99.7% CI ~ Mean +- 3 SD", size=6, hjust = 0)
 ```
 
 ***=right
@@ -100,6 +102,28 @@ ggplot(data.frame(data = studentt), aes(data)) +
   annotate("text", x = -10, y = 950, label = "Mean = Median = Mode", size=6, hjust = 0) +
   annotate("text", x = -10, y = 900, label = "95% CI depends on degrees of freedom", size=6, hjust = 0)
 ```
+
+---  &radio
+
+## Question
+
+Investigators are studying prostate specific antigen (PSA) as a predictor of prostate cancer. To make the statistics easier, they are going to assume that PSA is a normally distributed population variable. Which of the following is correct under their assumption?
+
+1. Mode is greater than median
+2. Median is greater than mode
+3. 95% CI depends on degrees of freedom
+4. _Median is equal to mean_
+5. Mean is equal to standard deviation
+
+*** .explanation
+
+The important invariant properties (for you) of normal distributions are the following:
+
+1. \(Mean = Median = Mode\)
+2. Unimodal
+3. Symmetric
+4. Area under curve is 1
+5. Constant relationship between standard deviation and percentiles
 
 --- &twocolumn
 

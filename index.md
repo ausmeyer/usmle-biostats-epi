@@ -143,21 +143,6 @@ Mode is most common, median is middle, mean is average value.
 ***.explanation
 Always remember that the y-axis on these plots are counts or frequency. Therefore, which line is closest to the peak on the y-axis is the mode. The median is **always** in the middle. The mean is the most susceptible to outliers so in a skewed distribution it will **always** be farthest out on the tail.
 
---- &twocolumn
-
-## Question
-
-***=left
-![plot of chunk unnamed-chunk-8](assets/fig/unnamed-chunk-8-1.png)
-
-***=right
-- Which of the following corresponds to the measures of central tendency on the graph?  
- - A. 1: mean, 2: median,  3: mode  
- - B. 2: mean, 1: median,  3: mode  
- - C. 2: mean, 3: median,  1: mode  
- - __D. 3: mean, 2: median,  1: mode__ 
- - E. 3: mean, 1: median,  2: mode  
-
 --- &vcenter
 
 <div class="centered"><font size="7">Understanding hypothesis testing</font size></div>
@@ -177,7 +162,7 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
 --- &vcenter
 
 ## T-test compares measurements from two groups
-![plot of chunk unnamed-chunk-9](assets/fig/unnamed-chunk-9-1.png)
+![plot of chunk unnamed-chunk-8](assets/fig/unnamed-chunk-8-1.png)
  > \(H_0\): There is no difference between the control and disease groups 
 
 --- &vcenter
@@ -199,7 +184,7 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
   ```
   
   ```
-  ## [1] 1.506568e-103
+  ## [1] 9.689151e-95
   ```
   
  > - Have we rejected the null hypothesis?
@@ -262,7 +247,7 @@ Table 3: A 7x5 contingency table
 ## Pearson correlation compares two variables
 The correlation can be positive or negative
 
-![plot of chunk unnamed-chunk-11](assets/fig/unnamed-chunk-11-1.png)
+![plot of chunk unnamed-chunk-10](assets/fig/unnamed-chunk-10-1.png)
 
 --- &twocolumn
 
@@ -279,7 +264,7 @@ The correlation can be positive or negative
   - For Step 1, most likely significant at \(p < 0.05\)
 
 ***=right
-![plot of chunk unnamed-chunk-12](assets/fig/unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-11](assets/fig/unnamed-chunk-11-1.png)
 
 --- &vcenter
 

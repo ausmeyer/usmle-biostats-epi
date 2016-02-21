@@ -19,6 +19,9 @@ em {
 strong {
   font-weight: bold;
 }
+body {
+  background-color: #000;
+}
 </style>
 
 ## Roadmap
@@ -193,24 +196,37 @@ strong {
 
 ## Always expect a contingency table for chi-squared
 
-|             | Healthy | Disease | Total |
-|-------------|---------|---------|-------|
-| Exposed     |    40   |    60   |  100  |   
-| Not Exposed |   500   |   400   |  900  |   
-| Total       |   540   |   460   | 1000  |   
-Table: A 2x2 contingency table
+|             | Healthy  | Disease  | Total  |
+|-------------|---------:|---------:|-------:|
+| Exposed     |     40   |     60   |   100  |   
+| Not Exposed |    500   |    400   |   900  |   
+| Total       |    540   |    460   |  1000  |   
+Table 1: A 2x2 contingency table
+
+
+|                 | Never Sick  |  Sometimes Sick | Mostly Sick  | Total  |
+|-----------------|------------:|----------------:|-------------:|-------:|
+| High Exposure   |             |                 |              |        |
+| Medium Exposure |             |                 |              |        |
+| Low Exposure    |             |                 |              |        |  
+| Total           |             |                 |              |        |
+Table 2: A 3x3 contingency table
 
 --- &vcenter
 
-## Always expect a contingency table for chi-squared
+## The contingency table can be of any size
 
-|                 | Never Sick | Sometimes Sick | Mostly Sick | Total |
-|-----------------|------------|----------------|-------------|-------|
-| High Exposure   |            |                |             |       |
-| Medium Exposure |            |                |             |       |
-| Low Exposure    |            |                |             |       |  
-| Total           |            |                |             |       |
-Table: A 3x3 contingency table
+|                            | Never Sick  |  Infrequently Sick |  Sometimes Sick |  Mostly Sick |  Always Sick |  Total |
+|----------------------------|------------:|-------------------:|----------------:|-------------:|-------------:|-------:|
+| Ridiculously High Exposure |             |                    |                 |              |              |        |
+| Very High Exposure         |             |                    |                 |              |              |        |
+| High Exposure              |             |                    |                 |              |              |        |
+| Medium Exposure            |             |                    |                 |              |              |        |
+| Low Exposure               |             |                    |                 |              |              |        | 
+| Very Low Exposure          |             |                    |                 |              |              |        |
+| Ridiculously Low Exposure  |             |                    |                 |              |              |        |
+| Total                      |             |                    |                 |              |              |        |
+Table 3: A 7x5 contingency table
 
 --- &vcenter
 

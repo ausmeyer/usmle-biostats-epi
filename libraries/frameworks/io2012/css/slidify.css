@@ -352,7 +352,7 @@ pre code {
 }
 
 .title-slide {
-  background-color: #CBE7A5; /* #EDE0CF; ; #CA9F9D*/
+  background-color: /*#CBE7A5; #EDE0CF;*/ #EEEEEE;
   /* background-image:url(http://goo.gl/EpXln); */
 }
 

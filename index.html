@@ -53,6 +53,9 @@ em {
 strong {
   font-weight: bold;
 }
+body {
+  background-color: #000;
+}
 </style>
 
 <h2>Roadmap</h2>
@@ -368,81 +371,168 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <table><thead>
 <tr>
 <th></th>
-<th>Healthy</th>
-<th>Disease</th>
-<th>Total</th>
+<th align="right">Healthy</th>
+<th align="right">Disease</th>
+<th align="right">Total</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>Exposed</td>
-<td>40</td>
-<td>60</td>
-<td>100</td>
+<td align="right">40</td>
+<td align="right">60</td>
+<td align="right">100</td>
 </tr>
 <tr>
 <td>Not Exposed</td>
-<td>500</td>
-<td>400</td>
-<td>900</td>
+<td align="right">500</td>
+<td align="right">400</td>
+<td align="right">900</td>
 </tr>
 <tr>
 <td>Total</td>
-<td>540</td>
-<td>460</td>
-<td>1000</td>
+<td align="right">540</td>
+<td align="right">460</td>
+<td align="right">1000</td>
 </tr>
 </tbody></table>
 
-<p>Table: A 2x2 contingency table</p>
+<p>Table 1: A 2x2 contingency table</p>
+
+<table><thead>
+<tr>
+<th></th>
+<th align="right">Never Sick</th>
+<th align="right">Sometimes Sick</th>
+<th align="right">Mostly Sick</th>
+<th align="right">Total</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>High Exposure</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Medium Exposure</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Low Exposure</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Total</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+
+<p>Table 2: A 3x3 contingency table</p>
 
 </article>
 <!-- Presenter Notes -->
 </slide>
 <slide class="" id="slide-18">
 <hgroup>
-  <h2>Always expect a contingency table for chi-squared</h2>
+  <h2>The contingency table can be of any size</h2>
 </hgroup>
 <article class = 'flexbox vcenter'>
 <table><thead>
 <tr>
 <th></th>
-<th>Never Sick</th>
-<th>Sometimes Sick</th>
-<th>Mostly Sick</th>
-<th>Total</th>
+<th align="right">Never Sick</th>
+<th align="right">Infrequently Sick</th>
+<th align="right">Sometimes Sick</th>
+<th align="right">Mostly Sick</th>
+<th align="right">Always Sick</th>
+<th align="right">Total</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>Ridiculously High Exposure</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Very High Exposure</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
 <td>High Exposure</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
 </tr>
 <tr>
 <td>Medium Exposure</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
 </tr>
 <tr>
 <td>Low Exposure</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Very Low Exposure</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Ridiculously Low Exposure</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
 </tr>
 <tr>
 <td>Total</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
 </tr>
 </tbody></table>
 
-<p>Table: A 3x3 contingency table</p>
+<p>Table 3: A 7x5 contingency table</p>
 
 </article>
 <!-- Presenter Notes -->
@@ -572,7 +662,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=18 title='Always expect a contingency table for chi-squared'>
+        data-slide=18 title='The contingency table can be of any size'>
          18
       </a>
     </li>

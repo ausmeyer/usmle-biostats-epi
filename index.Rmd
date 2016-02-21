@@ -82,10 +82,10 @@ ggplot(data.frame(data = norm), aes(data)) +
   ylim(0, 950) +
   ggtitle("Normal Distribution") + 
   labs(x="", y="") +
-  annotate("text", x = -10, y = 950, label = "Mean = Median = Mode", size=6, hjust = 0) +
-  annotate("text", x = -10, y = 900, label = "68.3% CI ~ Mean +- 1 SD", size=6, hjust = 0) +
-  annotate("text", x = -10, y = 850, label = "95.5% CI ~ Mean +- 2 SD", size=6, hjust = 0) +
-  annotate("text", x = -10, y = 800, label = "99.7% CI ~ Mean +- 3 SD", size=6, hjust = 0)
+  annotate("text", x = -10, y = 950, label = "Mean = Median = Mode", size=5, hjust = 0) +
+  annotate("text", x = -10, y = 900, label = "68.3% CI ~ Mean +- 1 SD", size=5, hjust = 0) +
+  annotate("text", x = -10, y = 850, label = "95.5% CI ~ Mean +- 2 SD", size=5, hjust = 0) +
+  annotate("text", x = -10, y = 800, label = "99.7% CI ~ Mean +- 3 SD", size=5, hjust = 0)
 ```
 
 ***=right
@@ -99,8 +99,8 @@ ggplot(data.frame(data = studentt), aes(data)) +
   ylim(0, 950) +
   ggtitle("Student t Distribution") + 
   labs(x="", y="") +
-  annotate("text", x = -10, y = 950, label = "Mean = Median = Mode", size=6, hjust = 0) +
-  annotate("text", x = -10, y = 900, label = "95% CI depends on degrees of freedom", size=6, hjust = 0)
+  annotate("text", x = -10, y = 950, label = "Mean = Median = Mode", size=5, hjust = 0) +
+  annotate("text", x = -10, y = 900, label = "95% CI depends on degrees of freedom", size=5, hjust = 0)
 ```
 
 ---  &radio

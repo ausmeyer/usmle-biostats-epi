@@ -230,6 +230,30 @@ Table 3: A 7x5 contingency table
 
 --- &vcenter
 
+## Pearson correlation compares two variables
+The correlation can be positive or negative
+
+![plot of chunk unnamed-chunk-11](assets/fig/unnamed-chunk-11-1.png)
+
+--- &twocolumn
+
+## For correlation, r is the critical statistic
+***=left
+ > - Must be quantitative data
+  - **Not count data**
+ <br><br>
+ > - \(r =\) correlation between variables
+ <br><br>
+ > - \(r^2 = \) amount of variance in y that is explained by x
+ <br><br>
+ > - p-value is still used for significance
+  - For Step 1, most likely significant at \(p < 0.05\)
+
+***=right
+![plot of chunk unnamed-chunk-12](assets/fig/unnamed-chunk-12-1.png)
+
+--- &vcenter
+
 <div class="centered"><font size="7">Epidemiology</font size></div>
 
 ---

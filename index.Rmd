@@ -355,6 +355,52 @@ Table 3: A 7x5 contingency table
 
 --- &vcenter
 
+## Pearson correlation compares two variables
+The correlation can be positive or negative
+
+```{r, fig.width = 12, fig.height = 6, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+pos <- ggplot(mtcars, aes(x=wt, y=hp)) + 
+  geom_point() + 
+  ggtitle("Positive Correlation") + 
+  labs(x="Weight", y="Horse Power")
+neg <- ggplot(mtcars, aes(x=wt, y=mpg)) + 
+  geom_point() + 
+  ggtitle("Negative Correlation") + 
+  labs(x="Weight", y="Fuel Efficiency (mpg)")
+
+plot_grid(pos, neg)
+```
+
+--- &twocolumn
+
+## For correlation, r is the critical statistic
+***=left
+ > - Must be quantitative data
+  - **Not count data**
+ <br><br>
+ > - \(r =\) correlation between variables
+ <br><br>
+ > - \(r^2 = \) amount of variance in y that is explained by x
+ <br><br>
+ > - p-value is still used for significance
+  - For Step 1, most likely significant at \(p < 0.05\)
+
+***=right
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+pos <- ggplot(mtcars, aes(x=wt, y=hp)) + 
+  geom_point() + 
+  geom_smooth(method='lm',formula=y~x) +
+  ggtitle("Positive Correlation") + 
+  labs(x="Weight", y="Horse Power")
+show(pos)
+```
+
+--- &vcenter
+
 <div class="centered"><font size="7">Epidemiology</font size></div>
 
 ---

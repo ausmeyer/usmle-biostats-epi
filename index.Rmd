@@ -10,6 +10,7 @@ widgets     : [mathjax, quiz, bootstrap, interactive]
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
+
 <style>
 em {
   font-style: italic
@@ -283,7 +284,7 @@ ggplot(data.frame(data = c(norm1, norm2), Groups = c(rep('Control', length(norm1
 
 <div class="centered"><font size="7">Will this be significant?</font size></div>
 
----
+--- &vcenter
 
 ## T-test compares measurements from two groups
 
@@ -300,9 +301,10 @@ ggplot(data.frame(data = c(norm1, norm2), Groups = c(rep('Control', length(norm1
   
  > - Yes, we have accepted \(H_A\). There is a difference between control and disease.
 
----
+--- &vcenter
 
 ## Chi-squared test uses categorical (count) data
+
  > - Two common tests
     > - Test of independence
     > - Goodness-of-fit
@@ -375,13 +377,14 @@ plot_grid(pos, neg)
 
 ## For correlation, r is the critical statistic
 ***=left
+<br>
  > - Must be quantitative data
   - **Not count data**
- <br><br>
+<br><br>
  > - \(r =\) correlation between variables
- <br><br>
+<br><br>
  > - \(r^2 = \) amount of variance in y that is explained by x
- <br><br>
+<br><br>
  > - p-value is still used for significance
   - For Step 1, most likely significant at \(p < 0.05\)
 
@@ -399,18 +402,22 @@ show(pos)
 
 --- &twocolumn
 
-## There are two errors of hypothesis testing
+## Hypothesis testing has four possible outcomes
 
 ***=left
-<br><br><br>
-> - Type 1 - Incorrect rejection of a true null hypothesis
-  - False Positive
-<br><br><br>
-> - Type 2 - Failure to reject a false null hypothesis
-  - False Negative
+<div class="centered"><img src='{{page.url.assets}}/img/truth_table.png' /></div>
 
 ***=right
-<div class="centered"><img src='{{page.url.assets}}/img/truth_table.png' /></div>
+<br>
+> - Correct - Reject a false \(H_0\)
+  - Probability of success is called "power"
+> - Correct - Fail to reject a true \(H_0\)
+  - Probability determined by \(\alpha\) as \(1-\alpha\)
+<br><br><br>
+> - Type 1 - Incorrect rejection of a true \(H_0\)
+  - False Positive
+> - Type 2 - Failure to reject a false \(H_0\)
+  - False Negative
 
 --- &vcenter
 

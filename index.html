@@ -339,12 +339,12 @@ body {
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-15" style="background:;">
-  <hgroup>
-    <h2>T-test compares measurements from two groups</h2>
-  </hgroup>
-  <article data-timings="">
-    <ul>
+<slide class="" id="slide-15">
+<hgroup>
+  <h2>T-test compares measurements from two groups</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<ul>
 <li><p>\(H_0\): There is no difference between the control and disease groups </p></li>
 <li><p>Run the t-test</p>
 
@@ -353,7 +353,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 (t.test(norm1, norm2))$p.value
 </code></pre>
 
-<pre><code>## [1] 9.689151e-95
+<pre><code>## [1] 6.652389e-85
 </code></pre>
 
 <ul class = "build incremental">
@@ -362,16 +362,15 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </ul></li>
 </ul>
 
-  </article>
-  <!-- Presenter Notes -->
+</article>
+<!-- Presenter Notes -->
 </slide>
-
-<slide class="" id="slide-16" style="background:;">
-  <hgroup>
-    <h2>Chi-squared test uses categorical (count) data</h2>
-  </hgroup>
-  <article data-timings="">
-    <ul class = "build incremental">
+<slide class="" id="slide-16">
+<hgroup>
+  <h2>Chi-squared test uses categorical (count) data</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<ul class = "build incremental">
 <li><p>Two common tests</p>
 
 <ul class = "build incremental">
@@ -392,10 +391,9 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </ul></li>
 </ul>
 
-  </article>
-  <!-- Presenter Notes -->
+</article>
+<!-- Presenter Notes -->
 </slide>
-
 <slide class="" id="slide-17">
 <hgroup>
   <h2>Always expect a contingency table for chi-squared</h2>
@@ -589,7 +587,9 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <article data-timings="">
     
 <div style='float:left;width:48%;'>
-    <ul class = "build incremental">
+    <p><br></p>
+
+<ul class = "build incremental">
 <li>Must be quantitative data
 
 <ul>
@@ -618,30 +618,40 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 
 <slide class="" id="slide-21" style="background:;">
   <hgroup>
-    <h2>There are two errors of hypothesis testing</h2>
+    <h2>Hypothesis testing has four possible outcomes</h2>
   </hgroup>
   <article data-timings="">
     
 <div style='float:left;width:48%;'>
-    <p><br><br><br></p>
+    <div class="centered"><img src='assets/img/truth_table.png' /></div>
+
+</div>
+<div style='float:right;width:48%;'>
+    <p><br></p>
 
 <ul class = "build incremental">
-<li>Type 1 - Incorrect rejection of a true null hypothesis
+<li>Correct - Reject a false \(H_0\)
 
 <ul>
-<li>False Positive
+<li>Probability of success is called &quot;power&quot;</li>
+</ul></li>
+<li>Correct - Fail to reject a true \(H_0\)
+
+<ul>
+<li>Probability determined by \(\alpha\) as \(1-\alpha\)
 <br><br><br></li>
 </ul></li>
-<li>Type 2 - Failure to reject a false null hypothesis
+<li>Type 1 - Incorrect rejection of a true \(H_0\)
+
+<ul>
+<li>False Positive</li>
+</ul></li>
+<li>Type 2 - Failure to reject a false \(H_0\)
 
 <ul>
 <li>False Negative</li>
 </ul></li>
 </ul>
-
-</div>
-<div style='float:right;width:48%;'>
-    <div class="centered"><img src='assets/img/truth_table.png' /></div>
 
 </div>
   </article>
@@ -791,7 +801,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=21 title='There are two errors of hypothesis testing'>
+        data-slide=21 title='Hypothesis testing has four possible outcomes'>
          21
       </a>
     </li>

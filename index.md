@@ -290,6 +290,25 @@ The correlation can be positive or negative
 > - Type 2 - Failure to reject a false \(H_0\)
   - False Negative
 
+---  &radio
+
+## Question #3
+
+Investigators are studying the association between mesothelioma and asbestos exposure. Due to the relative rarity of the disease, they design a very large case-control study. In the end, they find an \(OR = 20 (19.54;20.52, p < 0.001)\). After assuming that the OR is a good approximation of risk, the authors conclude that the risk of mesothelioma is 20 times higher in those exposed to asbestos compared to control. Why is their assumption reasonable?
+
+1. The incidence of mesothelioma in the population is low
+2. The sample size of this study is very large
+3. The result is highly significant
+4. The OR is always a good approximation of outcome risk
+5. The 95% CI is very narrow around the OR of 20
+
+***.hint
+Think about the denominators for odds and risks.
+
+***.explanation
+Give an explanation
+
+
 --- &vcenter
 
 <div class="centered"><font size="7">Epidemiology</font size></div>

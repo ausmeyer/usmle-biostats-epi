@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
 <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="libraries/widgets/interactive/css/aceeditor.css"></link>
 <link rel=stylesheet href="./assets/css/ribbons.css"></link>
 
   
@@ -441,31 +442,31 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </thead><tbody>
 <tr>
 <td>High Exposure</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td align="right">180</td>
+<td align="right">210</td>
 </tr>
 <tr>
 <td>Medium Exposure</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">20</td>
+<td align="right">100</td>
+<td align="right">20</td>
+<td align="right">140</td>
 </tr>
 <tr>
 <td>Low Exposure</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">100</td>
+<td align="right">40</td>
+<td align="right">10</td>
+<td align="right">150</td>
 </tr>
 <tr>
 <td>Total</td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
-<td align="right"></td>
+<td align="right">130</td>
+<td align="right">160</td>
+<td align="right">210</td>
+<td align="right">500</td>
 </tr>
 </tbody></table>
 
@@ -615,7 +616,39 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-21">
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>There are two errors of hypothesis testing</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;'>
+    <p><br><br><br></p>
+
+<ul class = "build incremental">
+<li>Type 1 - Incorrect rejection of a true null hypothesis
+
+<ul>
+<li>False Positive
+<br><br><br></li>
+</ul></li>
+<li>Type 2 - Failure to reject a false null hypothesis
+
+<ul>
+<li>False Negative</li>
+</ul></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+    <div class="centered"><img src='assets/img/truth_table.png' /></div>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22">
 <hgroup>
   
 </hgroup>
@@ -625,7 +658,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-22" style="background:;">
+<slide class="" id="slide-23" style="background:;">
   <article data-timings="">
     
   </article>
@@ -758,7 +791,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=21 title='NA'>
+        data-slide=21 title='There are two errors of hypothesis testing'>
          21
       </a>
     </li>
@@ -766,6 +799,12 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
       <a href="#" target="_self" rel='tooltip' 
         data-slide=22 title='NA'>
          22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='NA'>
+         23
       </a>
     </li>
   </ul>
@@ -782,6 +821,9 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <script src="libraries/widgets/quiz/js/quiz-app.js"></script>
 <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
 <script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="libraries/widgets/interactive/js/opencpu-0.5.js"></script>
+<script src="libraries/widgets/interactive/js/interactive.js"></script>
 
   <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
   <script type="text/x-mathjax-config">

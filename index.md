@@ -6,7 +6,7 @@ job         :
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax, quiz, bootstrap, interactive] 
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
@@ -222,10 +222,10 @@ Table 1: A 2x2 contingency table
 
 |                 | Never Sick  |  Sometimes Sick | Mostly Sick  | Total  |
 |-----------------|------------:|----------------:|-------------:|-------:|
-| High Exposure   |             |                 |              |        |
-| Medium Exposure |             |                 |              |        |
-| Low Exposure    |             |                 |              |        |  
-| Total           |             |                 |              |        |
+| High Exposure   |      10     |     20          |   180        |  210   |
+| Medium Exposure |      20     |    100          |    20        |  140   |
+| Low Exposure    |     100     |     40          |    10        |  150   |  
+| Total           |     130     |    160          |   210        |  500   |
 Table 2: A 3x3 contingency table
 
 --- &vcenter
@@ -267,6 +267,21 @@ The correlation can be positive or negative
 
 ***=right
 ![plot of chunk unnamed-chunk-11](assets/fig/unnamed-chunk-11-1.png)
+
+--- &twocolumn
+
+## There are two errors of hypothesis testing
+
+***=left
+<br><br><br>
+> - Type 1 - Incorrect rejection of a true null hypothesis
+  - False Positive
+<br><br><br>
+> - Type 2 - Failure to reject a false null hypothesis
+  - False Negative
+
+***=right
+<div class="centered"><img src='{{page.url.assets}}/img/truth_table.png' /></div>
 
 --- &vcenter
 

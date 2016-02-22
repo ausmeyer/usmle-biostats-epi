@@ -290,6 +290,10 @@ The correlation can be positive or negative
 > - Type 2 - Failure to reject a false \(H_0\)
   - False Negative
 
+--- &vcenter
+
+<div class="centered"><font size="7">Epidemiology</font size></div>
+
 ---  &radio
 
 ## Question #3
@@ -307,10 +311,3 @@ Think about the denominators for odds and risks.
 
 ***.explanation
 Give an explanation
-
-
---- &vcenter
-
-<div class="centered"><font size="7">Epidemiology</font size></div>
-
----

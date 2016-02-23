@@ -165,21 +165,30 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
  <br><br><br>
  > - \(H_A\): The difference between the means of the groups is real.
 
---- &vcenter
+--- &twocolumn
 
-## T-test compares measurements from two groups
+## T-test compares means of one or two groups
+
+***=left
 ![plot of chunk unnamed-chunk-8](assets/fig/unnamed-chunk-8-1.png)
- > \(H_0\): There is no difference between the control and disease groups 
+
+***=right 
+<br>
+ > - One sample: \(H_0\) = There is no difference between group mean and zero
+<br><br>
+ > - Two sample: \(H_0\) = There is no difference between the disease and control groups
+<br><br>
+ > - Paired: \(H_0\) = The difference of a measured variable between two time points on the same individuals is zero
 
 --- &vcenter
 
-<div class="centered"><font size="7">Will this be significant?</font size></div>
+<div class="centered"><font size="7">Will the plot be significant?</font size></div>
 
 --- &vcenter
 
-## T-test compares measurements from two groups
+## T-test compares means of one or two groups
 
- - \(H_0\): There is no difference between the control and disease groups 
+ - Two sample: \(H_0\) = There is no difference between the disease and control groups
  
  - Run the t-test
   
@@ -192,7 +201,7 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
   ```
   ## [1] 6.652389e-85
   ```
-  
+<br>
  > - Have we rejected the null hypothesis?
   
  > - Yes, we have accepted \(H_A\). There is a difference between control and disease.
@@ -274,6 +283,24 @@ The correlation can be positive or negative
 ***=right
 ![plot of chunk unnamed-chunk-11](assets/fig/unnamed-chunk-11-1.png)
 
+---  &radio
+
+## Question #3
+
+Investigators are developed a new serum biomarker as a predictor for prostate cancer. To test it, they plan a cross-sectional study compromised of two groups. In one group, the researchers will include measurements of men with biopsy confirmed prostate cancer. In the other group, researchers will measure the level of their biomarker in men that have never previously been diagnosed with prostate cancer nor had a positive PSA test. The investigators will assume their biomarker is normally distributed. What is the best test to investigate whether the biomarker can distinguish the two groups?
+
+1. Two sample Mann-Whitney U-test
+2. Pearson correlation
+3. _Two sample T-test_
+4. Chi-squared test
+5. Analysis of variance
+
+***.hint
+The number of groups and distribution is all that matters
+
+***.explanation
+The two sample T-test is the appropriate test in this case. The two sample Mann-Whitney U-test could work as well, but is slightly less efficient for normally distributed data than the T-test. The Pearson correlation requires two measured variables on the same sample. A chi-squared test requires categorical (i.e. count) data. An analysis of variance is typically used to measure the difference in means of three or more groups.
+
 --- &twocolumn
 
 ## Hypothesis testing has four possible outcomes
@@ -303,7 +330,7 @@ The correlation can be positive or negative
 
 ---  &radio
 
-## Question #3
+## Question #4
 
 Investigators are studying the association between mesothelioma and asbestos exposure. Due to the relative rarity of the disease, they design a very large case-control study. In the end, they find an \(OR = 20 (19.54;20.52, p < 0.001)\). After assuming that the OR is a good approximation of risk, the authors conclude that the risk of mesothelioma is 20 times higher in those exposed to asbestos compared to control. Why is their assumption reasonable?
 

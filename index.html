@@ -318,37 +318,49 @@ body {
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-13">
-<hgroup>
-  <h2>T-test compares measurements from two groups</h2>
-</hgroup>
-<article class = 'flexbox vcenter'>
-<p><img src="assets/fig/unnamed-chunk-8-1.png" alt="plot of chunk unnamed-chunk-8"></p>
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>T-test compares means of one or two groups</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;'>
+    <p><img src="assets/fig/unnamed-chunk-8-1.png" alt="plot of chunk unnamed-chunk-8"></p>
 
-<blockquote>
-<p>\(H_0\): There is no difference between the control and disease groups </p>
-</blockquote>
+</div>
+<div style='float:right;width:48%;'>
+    <p><br></p>
 
-</article>
-<!-- Presenter Notes -->
+<ul class = "build incremental">
+<li>One sample: \(H_0\) = There is no difference between group mean and zero
+<br><br></li>
+<li>Two sample: \(H_0\) = There is no difference between the disease and control groups
+<br><br></li>
+<li>Paired: \(H_0\) = The difference of a measured variable between two time points on the same individuals is zero</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
 </slide>
+
 <slide class="" id="slide-14">
 <hgroup>
   
 </hgroup>
 <article class = 'flexbox vcenter'>
-<div class="centered"><font size="7">Will this be significant?</font size></div>
+<div class="centered"><font size="7">Will the plot be significant?</font size></div>
 
 </article>
 <!-- Presenter Notes -->
 </slide>
 <slide class="" id="slide-15">
 <hgroup>
-  <h2>T-test compares measurements from two groups</h2>
+  <h2>T-test compares means of one or two groups</h2>
 </hgroup>
 <article class = 'flexbox vcenter'>
 <ul>
-<li><p>\(H_0\): There is no difference between the control and disease groups </p></li>
+<li><p>Two sample: \(H_0\) = There is no difference between the disease and control groups</p></li>
 <li><p>Run the t-test</p>
 
 <pre><code class="r">norm1 &lt;- rnorm(5000, mean = 4.75, sd = 1.2)
@@ -358,6 +370,8 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 
 <pre><code>## [1] 6.652389e-85
 </code></pre>
+
+<p><br></p>
 
 <ul class = "build incremental">
 <li><p>Have we rejected the null hypothesis?</p></li>
@@ -621,6 +635,41 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 
 <slide class="" id="slide-21" style="background:;">
   <hgroup>
+    <h2>Question #3</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div class="quiz quiz-single well ">
+  <p>Investigators are developed a new serum biomarker as a predictor for prostate cancer. To test it, they plan a cross-sectional study compromised of two groups. In one group, the researchers will include measurements of men with biopsy confirmed prostate cancer. In the other group, researchers will measure the level of their biomarker in men that have never previously been diagnosed with prostate cancer nor had a positive PSA test. The investigators will assume their biomarker is normally distributed. What is the best test to investigate whether the biomarker can distinguish the two groups?</p>
+
+<ol>
+<li>Two sample Mann-Whitney U-test</li>
+<li>Pearson correlation</li>
+<li><em>Two sample T-test</em></li>
+<li>Chi-squared test</li>
+<li>Analysis of variance</li>
+</ol>
+
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear btn btn-danger">Clear</button>
+  
+  <div class="quiz-hint">
+  <p>The number of groups and distribution is all that matters</p>
+
+</div>
+<div class="quiz-explanation">
+  <p>The two sample T-test is the appropriate test in this case. The two sample Mann-Whitney U-test could work as well, but is slightly less efficient for normally distributed data than the T-test. The Pearson correlation requires two measured variables on the same sample. A chi-squared test requires categorical (i.e. count) data. An analysis of variance is typically used to measure the difference in means of three or more groups.</p>
+
+</div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
     <h2>Hypothesis testing has four possible outcomes</h2>
   </hgroup>
   <article data-timings="">
@@ -661,7 +710,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-22">
+<slide class="" id="slide-23">
 <hgroup>
   
 </hgroup>
@@ -671,7 +720,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-23">
+<slide class="" id="slide-24">
 <hgroup>
   
 </hgroup>
@@ -681,9 +730,9 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-24" style="background:;">
+<slide class="" id="slide-25" style="background:;">
   <hgroup>
-    <h2>Question #3</h2>
+    <h2>Question #4</h2>
   </hgroup>
   <article data-timings="">
     
@@ -794,7 +843,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='T-test compares measurements from two groups'>
+        data-slide=13 title='T-test compares means of one or two groups'>
          13
       </a>
     </li>
@@ -806,7 +855,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=15 title='T-test compares measurements from two groups'>
+        data-slide=15 title='T-test compares means of one or two groups'>
          15
       </a>
     </li>
@@ -842,13 +891,13 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=21 title='Hypothesis testing has four possible outcomes'>
+        data-slide=21 title='Question #3'>
          21
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=22 title='NA'>
+        data-slide=22 title='Hypothesis testing has four possible outcomes'>
          22
       </a>
     </li>
@@ -860,8 +909,14 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title='Question #3'>
+        data-slide=24 title='NA'>
          24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Question #4'>
+         25
       </a>
     </li>
   </ul>

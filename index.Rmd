@@ -346,14 +346,14 @@ Table 2: A 3x3 contingency table
 
 |                            | Never Sick  |  Infrequently Sick |  Sometimes Sick |  Mostly Sick |  Always Sick |  Total |
 |----------------------------|------------:|-------------------:|----------------:|-------------:|-------------:|-------:|
-| Ridiculously High Exposure |             |                    |                 |              |              |        |
-| Very High Exposure         |             |                    |                 |              |              |        |
-| High Exposure              |             |                    |                 |              |              |        |
-| Medium Exposure            |             |                    |                 |              |              |        |
-| Low Exposure               |             |                    |                 |              |              |        | 
-| Very Low Exposure          |             |                    |                 |              |              |        |
-| Ridiculously Low Exposure  |             |                    |                 |              |              |        |
-| Total                      |             |                    |                 |              |              |        |
+| Ridiculously High Exposure |     10      |          90        |       34        |      12      |    12        |   158  |
+| Very High Exposure         |     30      |         345        |       54        |      43      |    21        |   493  |
+| High Exposure              |     70      |          57        |       67        |      65      |    32        |   291  |
+| Medium Exposure            |    200      |          33        |       87        |      25      |    42        |   387  |
+| Low Exposure               |    130      |          89        |       58        |      45      |    56        |   378  | 
+| Very Low Exposure          |    100      |          54        |       36        |      23      |    78        |   291  |
+| Ridiculously Low Exposure  |     90      |          23        |       36        |      63      |     8        |   220  |
+| Total                      |    530      |         691        |      372        |     276      |   249        |  2118  |
 Table 3: A 7x5 contingency table
 
 --- &vcenter
@@ -421,6 +421,10 @@ show(pos)
   - False Positive
 > - Type 2 - Failure to reject a false \(H_0\)
   - False Negative
+
+--- &vcenter
+
+<div class="centered"><font size="7">Past here is in progress</font size></div>
 
 --- &vcenter
 

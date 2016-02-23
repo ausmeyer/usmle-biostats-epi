@@ -287,7 +287,7 @@ The correlation can be positive or negative
 
 ## Question #3
 
-Investigators are developed a new serum biomarker as a predictor for prostate cancer. To test it, they plan a cross-sectional study compromised of two groups. In one group, the researchers will include measurements of men with biopsy confirmed prostate cancer. In the other group, researchers will measure the level of their biomarker in men that have never previously been diagnosed with prostate cancer nor had a positive PSA test. The investigators will assume their biomarker is normally distributed. What is the best test to investigate whether the biomarker can distinguish the two groups?
+Investigators developed a new serum biomarker as a predictor for prostate cancer. To test it, they plan a cross-sectional study compromised of two groups. In one group, the researchers will include measurements of men with biopsy confirmed prostate cancer. In the other group, researchers will measure the level of their biomarker in men that have never previously been diagnosed with prostate cancer nor had a positive PSA test. The investigators will assume their biomarker is normally distributed. What is the best test to investigate whether the biomarker can distinguish the two groups?
 
 1. Two sample Mann-Whitney U-test
 2. Pearson correlation

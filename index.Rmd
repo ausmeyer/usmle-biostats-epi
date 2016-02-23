@@ -9,6 +9,9 @@ hitheme     : tomorrow      #
 widgets     : [mathjax, quiz, bootstrap, interactive] 
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
+github:
+  user: ausmeyer
+  repo: intro-biostats-epi
 ---
 
 <style>

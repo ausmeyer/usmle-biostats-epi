@@ -44,32 +44,36 @@ body {
   - Epidemiological Biases - 5 minutes
   - Types of Studies - 10 minutes
 
+--- .segue
+
+## Biostatistics
+
 --- &vcenter
 
-<div class="centered"><font size="7">Biostatistics</font size></div>
+## There are some important random terms
+
+ > - Generalizability
+  - How applicable is result to general population
+ <br><br>
+ > - P-value
+  - Probability of finding a value this extreme by random chance
+ <br><br>
+ > - Confidence Interval
+  - Interval over which real population number is found with a specified probability
+ <br><br>
+ > - Efficacy
+ <br><br>
+ > - Effectiveness
 
 --- &vcenter
 
 ## Accuracy is closeness and Precision is repeatability
 
-<div class="centered"><img src='{{page.url.assets}}/img/precision_accuracy.png' width='80%' /></div>
+![img](assets/img/precision_accuracy.png)
 
---- &vcenter
+--- .segue
 
-## Use these terms to describe levels of belief
-
- > - Generalizability
-  - How applicable is result to general population
- <br><br><br>
- > - P-value
-  - Probability of finding a value this extreme by random chance
- <br><br><br>
- > - Confidence Interval
-  - Interval over which real population number is found with a specified probability
-
---- &vcenter
-
-<div class="centered"><font size="7">Ways to describe distributions of data</font size></div>
+## Describing Distributions
 
 --- &twocolumn
 
@@ -149,9 +153,9 @@ Mode is most common, median is middle, mean is average value.
 ***.explanation
 Always remember that the y-axis on these plots are counts or frequency. Therefore, which line is closest to the peak on the y-axis is the mode. The median is **always** in the middle. The mean is the most susceptible to outliers so in a skewed distribution it will **always** be farthest out on the tail.
 
---- &vcenter
+--- .segue
 
-<div class="centered"><font size="7">Understanding hypothesis testing</font size></div>
+## Hypothesis Testing
 
 --- &vcenter
 
@@ -199,7 +203,7 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
   ```
   
   ```
-  ## [1] 6.652389e-85
+  ## [1] 1.060103e-92
   ```
 <br>
  > - Have we rejected the null hypothesis?
@@ -324,9 +328,9 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 
 <div class="centered"><font size="7">Past here is in progress</font size></div>
 
---- &vcenter
+--- .segue
 
-<div class="centered"><font size="7">Epidemiology</font size></div>
+## Epidemiology
 
 ---  &radio
 

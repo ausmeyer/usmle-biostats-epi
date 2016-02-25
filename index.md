@@ -28,6 +28,14 @@ body {
 }
 </style>
 
+<!-- Limit image width and height -->
+<style type="text/css">
+img {     
+  max-height: 560px;     
+  max-width: 964px; 
+}
+</style>
+
 ## Roadmap
 
  - Biostatistics - 20 minutes
@@ -69,7 +77,7 @@ body {
 
 ## Accuracy is closeness and Precision is repeatability
 
-![img](assets/img/precision_accuracy.png)
+![](assets/img/precision_accuracy.png)
 
 --- .segue
 

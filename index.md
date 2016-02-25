@@ -31,8 +31,8 @@ body {
 <!-- Limit image width and height -->
 <style type="text/css">
 img {     
-  max-height: 560px;     
-  max-width: 964px; 
+  max-height: 500px;     
+  max-width: 900px; 
 }
 </style>
 
@@ -318,7 +318,7 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 ## Hypothesis testing has four possible outcomes
 
 ***=left
-<div class="centered"><img src='{{page.url.assets}}/img/truth_table.png' /></div>
+![](assets/img/truth_table.png)
 
 ***=right
 <br>

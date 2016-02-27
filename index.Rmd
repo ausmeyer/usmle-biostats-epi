@@ -678,7 +678,7 @@ ggplot(data=dat, aes(x=Groups, y=Incidence)) +
 dat <- data.frame(Groups = c('Control', 'Treatment'), Risk = c(0.6, 0.34))
 ggplot(data=dat, aes(x=Groups, y=Risk)) +
   geom_bar(colour="black", stat="identity") +
-  xlim(0,1) + 
+  ylim(0,1) + 
   annotate("segment", x = 2, xend = 2, y = 0.34, yend = 0.6, colour = "red", size = 1.5) +
-  annotate("text", x = 1.95, y = 0.47, colour = "red", size = 6, label = "Risk Difference", angle = 90)
+  annotate("text", x = 1.95, y = 0.47, colour = "red", size = 4, label = "Risk Difference", angle = 90)
 ```

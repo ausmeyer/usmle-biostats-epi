@@ -918,6 +918,46 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 
 <slide class="" id="slide-32" style="background:;">
   <hgroup>
+    <h2>Odds and risk connect disease with exposure</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;'>
+    <ul class = "build incremental">
+<li>Odds 
+
+<ul>
+<li>Risk that someone with an exposure will get disease</li>
+</ul></li>
+<li>Odds ratio
+
+<ul>
+<li>Excess odds of exposure of one population relative to another
+<br><br></li>
+</ul></li>
+<li>Risk - <strong>Must know the prevalence</strong>
+
+<ul>
+<li><strong>Probability</strong> that someone with an exposure will get a disease</li>
+</ul></li>
+<li>Risk Ratio (Relative Risk)
+
+<ul>
+<li>Excess risk of one population relative to another</li>
+</ul></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+    <p><img src="assets/img/contingency_table.png" alt=""></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  <hgroup>
     <h2>Question #5</h2>
   </hgroup>
   <article data-timings="">
@@ -946,6 +986,62 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <p>Give an explanation</p>
 
 </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34">
+<hgroup>
+  <h2>OR approximates RR in low prevalence diseases</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/img/contingency_table.png" alt=""></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-35">
+<hgroup>
+  <h2>Attributable risk is an incidence difference</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/fig/unnamed-chunk-17-1.png" alt="plot of chunk unnamed-chunk-17"></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>Absolute risk reduction is a risk difference</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br></p>
+
+<div style='float:left;width:48%;'>
+    <ul class = "build incremental">
+<li>Reminder
+
+<ul>
+<li>Exposed: \(Risk = A / (A + B)\)</li>
+<li>Unexposed: \(Risk = C / (C + D)\)
+<br><br></li>
+</ul></li>
+<li>\(ARR = Risk_{Unexposed} - Risk_{Exposed}\)</li>
+<li>\(ARR = Risk_{Control} - Risk_{Treatment}\)
+<br><br></li>
+<li>Number needed to treat
+
+<ul>
+<li>Number of patients treated for <strong>ONE</strong> patient benefited</li>
+<li>\(NNT = 1 / ARR\)</li>
+</ul></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+    <p><img src="assets/fig/unnamed-chunk-18-1.png" alt="plot of chunk unnamed-chunk-18"></p>
+
 </div>
   </article>
   <!-- Presenter Notes -->
@@ -1143,8 +1239,32 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=32 title='Question #5'>
+        data-slide=32 title='Odds and risk connect disease with exposure'>
          32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='Question #5'>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='OR approximates RR in low prevalence diseases'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='Attributable risk is an incidence difference'>
+         35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Absolute risk reduction is a risk difference'>
+         36
       </a>
     </li>
   </ul>

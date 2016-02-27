@@ -401,6 +401,26 @@ Question prefaces a positive test result
 4. Incorrect - The question is concerned about positives tests which do not factor into negative predictive value
 5. Incorrect - The question is concerned about positives tests which do not factor into negative predictive value
 
+--- &twocolumn
+
+## Odds and risk connect disease with exposure
+
+***=left
+
+> - Odds 
+  - Risk that someone with an exposure will get disease
+> - Odds ratio
+  - Excess odds of exposure of one population relative to another
+<br><br>
+> - Risk - __Must know the prevalence__
+  - __Probability__ that someone with an exposure will get a disease
+> - Risk Ratio (Relative Risk)
+  - Excess risk of one population relative to another
+
+***=right
+
+![](assets/img/contingency_table.png)
+
 --- &radio
 
 ## Question #5
@@ -418,3 +438,34 @@ Think about the denominators for odds and risks.
 
 ***.explanation
 Give an explanation
+
+--- &vcenter
+
+## OR approximates RR in low prevalence diseases
+
+![](assets/img/contingency_table.png)
+
+--- &vcenter
+
+## Attributable risk is an incidence difference
+![plot of chunk unnamed-chunk-17](assets/fig/unnamed-chunk-17-1.png)
+
+--- &twocolumn
+
+## Absolute risk reduction is a risk difference
+
+<br>
+***=left
+> - Reminder
+  - Exposed: \(Risk = A / (A + B)\)
+  - Unexposed: \(Risk = C / (C + D)\)
+<br><br>
+> - \(ARR = Risk_{Unexposed} - Risk_{Exposed}\)
+> - \(ARR = Risk_{Control} - Risk_{Treatment}\)
+<br><br>
+> - Number needed to treat
+  - Number of patients treated for __ONE__ patient benefited
+  - \(NNT = 1 / ARR\)
+
+***=right
+![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)

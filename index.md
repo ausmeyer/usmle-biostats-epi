@@ -377,9 +377,33 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 <br>  
 > - __Both depend on how prevalent the disease is in the population__
 
+--- &radio2
+## Question #4
+
+Assume a steady-state population that is not changing in anyway. Which of the following statements is true for people who test positive regarding moving the cutoff for a positive test from the solid to the dotted line?
+
+1. Decrease in test specificity
+2. Increase in test sensitivity
+3. _Increase in PPV_
+4. Increase in NPV
+5. Decrase in NPV
+
+***=image
+![plot of chunk unnamed-chunk-16](assets/fig/unnamed-chunk-16-1.png)
+
+***.hint
+Question prefaces a positive test result
+
+***.explanation
+1. Incorrect - Moving the line to the right increases the specificity because it captures more true negatives as a portion of total negative individuals
+2. Incorrect - Moving the line to the right decreases the sensitivity because it captures fewer true positives as a portion of total positive individuals
+3. Correct - Moving the line to the right increase positive predictive value drives up the portion of true positives to total positive test by reducing the number of false positives
+4. Incorrect - The question is concerned about positives tests which do not factor into negative predictive value
+5. Incorrect - The question is concerned about positives tests which do not factor into negative predictive value
+
 --- &radio
 
-## Question #4
+## Question #5
 
 Investigators are studying the association between mesothelioma and asbestos exposure. Due to the relative rarity of the disease, they design a very large case-control study. In the end, they find an \(OR = 20 (19.54;20.52, p < 0.001)\). After assuming that the OR is a good approximation of risk, the authors conclude that the risk of mesothelioma is 20 times higher in those exposed to asbestos compared to control. Why is their assumption reasonable?
 

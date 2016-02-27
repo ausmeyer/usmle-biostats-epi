@@ -13,7 +13,6 @@ github:
   user: ausmeyer
   repo: intro-biostats-epi
 ---
-
 <style>
 em {
   font-style: italic
@@ -53,38 +52,33 @@ img {
   - Types of Studies - 10 minutes
 
 --- .segue
-
 ## Biostatistics
 
 --- &vcenter
-
 ## There are some important random terms
 
- > - Generalizability
+> - Generalizability
   - How applicable is result to general population
- <br><br>
- > - P-value
+<br><br>
+> - P-value
   - Probability of finding a value this extreme by random chance
- <br><br>
- > - Confidence Interval
+<br><br>
+> - Confidence Interval
   - Interval over which real population number is found with a specified probability
- <br><br>
- > - Efficacy
- <br><br>
- > - Effectiveness
+<br><br>
+> - Efficacy
+<br><br>
+> - Effectiveness
 
 --- &vcenter
-
 ## Accuracy is closeness and Precision is repeatability
 
 ![](assets/img/precision_accuracy.png)
 
 --- .segue
-
 ## Describing Distributions
 
 --- &twocolumn
-
 ## Statistical distributions have invariant properties
 
 ***=left
@@ -120,7 +114,6 @@ ggplot(data.frame(data = studentt), aes(data)) +
 ```
 
 ---  &radio
-
 ## Question #1
 
 Investigators are studying prostate specific antigen (PSA) as a predictor of prostate cancer. To make the statistics easier, they are going to assume that PSA is a normally distributed population variable. Which of the following is correct under their assumption?
@@ -144,7 +137,6 @@ The important invariant properties (for you) of normal distributions are the fol
 5. Constant relationship between standard deviation and percentiles
 
 --- &twocolumn
-
 ## Real distributions can have one or multiple peaks
 
 ***=left
@@ -176,7 +168,6 @@ ggplot(data.frame(data = c(norm1, norm2)), aes(data)) +
 ```
 
 --- &twocolumn
-
 ## Skew describes the direction of the tail
 
 ***=left
@@ -223,7 +214,6 @@ ggplot(data.frame(data = l.skew), aes(data)) +
 ```
 
 --- &radio2
-
 ## Question #2
 
 Which of the following corresponds to the measures of central tendency on the graph from **left to right**? 
@@ -253,7 +243,6 @@ ggplot(data.frame(data = r.skew), aes(data)) +
   ylim(0, 6500) +
   ggtitle("") + 
   labs(x="", y="")
-
 ```
 
 ***.hint
@@ -263,23 +252,20 @@ Mode is most common, median is middle, mean is average value.
 Always remember that the y-axis on these plots are counts or frequency. Therefore, which line is closest to the peak on the y-axis is the mode. The median is **always** in the middle. The mean is the most susceptible to outliers so in a skewed distribution it will **always** be farthest out on the tail.
 
 --- .segue
-
 ## Hypothesis Testing
 
 --- &vcenter
-
 ## The null hypothesis (\(H_0\)) is always the default
 
- > - Assuming there are two or more groups being compared...
- <br><br><br>
- > - \(H_0\): There is no difference in the means of the groups.
- <br><br><br>
- > - For Step 1, probably safe to assume null is always rejected with \(p < 0.05\).
- <br><br><br>
- > - \(H_A\): The difference between the means of the groups is real.
+> - Assuming there are two or more groups being compared...
+<br><br><br>
+> - \(H_0\): There is no difference in the means of the groups.
+<br><br><br>
+> - For Step 1, probably safe to assume null is always rejected with \(p < 0.05\).
+<br><br><br>
+> - \(H_A\): The difference between the means of the groups is real.
 
 --- &twocolumn
-
 ## T-test compares means of one or two groups
 
 ***=left
@@ -297,52 +283,45 @@ ggplot(data.frame(data = c(norm1, norm2), Groups = c(rep('Control', length(norm1
 ```
 
 ***=right 
-<br>
- > - One sample: \(H_0\) = There is no difference between group mean and zero
 <br><br>
- > - Two sample: \(H_0\) = There is no difference between the disease and control groups
+> - One sample: \(H_0\) = There is no difference between group mean and zero
 <br><br>
- > - Paired: \(H_0\) = The difference of a measured variable between two time points on the same individuals is zero
+> - Two sample: \(H_0\) = There is no difference between the disease and control groups
+<br><br>
+> - Paired: \(H_0\) = The difference of a measured variable between two time points on the same individuals is zero
 
 --- &vcenter
-
 <div class="centered"><font size="7">Will the plot be significant?</font size></div>
 
 --- &vcenter
-
 ## T-test compares means of one or two groups
 
  - Two sample: \(H_0\) = There is no difference between the disease and control groups
- 
+ <br>
  - Run the t-test
   ```{r, message=FALSE, warning=FALSE, echo=TRUE}
   norm1 <- rnorm(5000, mean = 4.75, sd = 1.2)
   norm2 <- rnorm(5000, mean = 5.25, sd = 1.2)
   (t.test(norm1, norm2))$p.value
   ```
-<br>
- > - Have we rejected the null hypothesis?
-  
- > - Yes, we have accepted \(H_A\). There is a difference between control and disease.
+  > - Have we rejected the null hypothesis?
+  <br>
+  > - Yes, we have accepted \(H_A\). There is a difference between control and disease.
 
 --- &vcenter
-
 ## Chi-squared test uses categorical (count) data
 
- > - Two common tests
-    > - Test of independence
-    > - Goodness-of-fit
-
- > - Test of independence
-    > - \(H_0\): There is no association between the variables under study
-    > - \(H_A\): There is an association between the variables under study
-
- > - Goodness-of-fit
-    > - \(H_0\): The number of cases occuring are equal to that expected by chance
-    > - \(H_A\): The number of cases occuring are unequal to that expected by chance
+> - Two common tests
+ - Test of independence
+ - Goodness-of-fit
+> - Test of independence
+ - \(H_0\): There is no association between the variables under study
+ - \(H_A\): There is an association between the variables under study
+> - Goodness-of-fit
+ - \(H_0\): The number of cases occuring are equal to that expected by chance
+ - \(H_A\): The number of cases occuring are unequal to that expected by chance
 
 --- &vcenter
-
 ## Always expect a contingency table for chi-squared
 
 |             | Healthy  | Disease  | Total  |
@@ -362,7 +341,6 @@ Table 1: A 2x2 contingency table
 Table 2: A 3x3 contingency table
 
 --- &vcenter
-
 ## The contingency table can be of any size
 
 |                            | Never Sick  |  Infrequently Sick |  Sometimes Sick |  Mostly Sick |  Always Sick |  Total |
@@ -378,7 +356,6 @@ Table 2: A 3x3 contingency table
 Table 3: A 7x5 contingency table
 
 --- &vcenter
-
 ## Pearson correlation compares two variables
 The correlation can be positive or negative
 
@@ -398,19 +375,18 @@ plot_grid(pos, neg)
 ```
 
 --- &twocolumn
-
 ## For correlation, r is the critical statistic
 ***=left
 <br>
- > - Must be quantitative data
-  - **Not count data**
+> - Must be quantitative data
+ - **Not count data**
 <br><br>
- > - \(r =\) correlation between variables
+> - \(r =\) correlation between variables
 <br><br>
- > - \(r^2 = \) amount of variance in y that is explained by x
+> - \(r^2 = \) amount of variance in y that is explained by x
 <br><br>
- > - p-value is still used for significance
-  - For Step 1, most likely significant at \(p < 0.05\)
+> - p-value is still used for significance
+ - For Step 1, most likely significant at \(p < 0.05\)
 
 ***=right
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
@@ -425,7 +401,6 @@ show(pos)
 ```
 
 ---  &radio
-
 ## Question #3
 
 Investigators developed a new serum biomarker as a predictor for prostate cancer. To test it, they plan a cross-sectional study compromised of two groups. In one group, the researchers will include measurements of men with biopsy confirmed prostate cancer. In the other group, researchers will measure the level of their biomarker in men that have never previously been diagnosed with prostate cancer nor had a positive PSA test. The investigators will assume their biomarker is normally distributed. What is the best test to investigate whether the biomarker can distinguish the two groups?
@@ -443,7 +418,6 @@ The number of groups and distribution is all that matters
 The two sample T-test is the appropriate test in this case. The two sample Mann-Whitney U-test could work as well, but is slightly less efficient for normally distributed data than the T-test. The Pearson correlation requires two measured variables on the same sample. A chi-squared test requires categorical (i.e. count) data. An analysis of variance is typically used to measure the difference in means of three or more groups.
 
 --- &twocolumn
-
 ## Hypothesis testing has four possible outcomes
 
 ***=left
@@ -452,24 +426,145 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 ***=right
 <br>
 > - Correct - Reject a false \(H_0\)
-  - Probability of success is called "power"
+ - Probability of success is called "power"
 > - Correct - Fail to reject a true \(H_0\)
-  - Probability determined by \(\alpha\) as \(1-\alpha\)
+ - Probability determined by \(\alpha\) as \(1-\alpha\)
 <br><br><br>
 > - Type 1 - Incorrect rejection of a true \(H_0\)
-  - False Positive
+ - False Positive
 > - Type 2 - Failure to reject a false \(H_0\)
-  - False Negative
-
---- &vcenter
-
-<div class="centered"><font size="7">Past here is in progress</font size></div>
+ - False Negative
 
 --- .segue
-
 ## Epidemiology
 
----  &radio
+--- &vcenter
+## Types of prevention
+  
+> - Primary - __Prevention__
+  - An action taken to prevent development of disease in a person who is well
+  <br><br>
+> - Secondary - __Screening__
+  - Identifying people in whom disease has begun but who do not have signs or symptoms
+  <br><br>
+> - Tertiary - __Treatment__
+  - Preventing complications in those who have developed signs and symptoms and have been diagnosed
+
+--- &vcenter
+## Endemic vs Sporadic vs Epidemic vs Pandemic
+
+![](assets/img/epidemic.jpg)
+
+--- &vcenter
+## Important difference is in setting and time frame
+  
+> - Attack rate
+  - Typically used during epidemics
+  - Number of people who get disease / Number of people who are exposed
+
+> - Incidence
+  - Given a __defined period of time__ and an at-risk population
+  - Number of people with disease / Number of people who are exposed
+
+> - Prevalence
+  - Given an at-risk population
+  - __No time frame__
+  - Number of people with disease/Number of people who are exposed
+  - For steady-state SIR diseases
+    - Prevalence = Incidence x Average Disease Duration
+
+--- &vcenter
+## Tests are usually cutoffs on a continuous variable
+  
+```{r, fig.width = 12, fig.height = 7, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+norm1 <- rnorm(5000, mean = 4.25, sd = 1.5)
+norm2 <- rnorm(5000, mean = 7.75, sd = 1.5)
+ggplot(data.frame(data = c(norm1, norm2), Groups = c(rep('Control', length(norm1)), rep('Disease', length(norm2)))), aes(data, fill = Groups)) + 
+  geom_density(alpha=0.2) + 
+  geom_vline(xintercept = 6, linetype = 'solid', lwd = 1) +
+  scale_fill_manual(values = c("Control" = "blue", "Disease" = "red")) +
+  labs(x="Cancer Biomarker", y="Fraction of Patients") +
+  annotate("text", x = 1.5, y = 0.02, label = "True\nNegative", size=5, hjust = 0) +
+  annotate("text", x = 4.7, y = 0.02, label = "False\nNegative", size=5, hjust = 0) +
+  annotate("text", x = 6.35, y = 0.02, label = "False\nPositive", size=5, hjust = 0) +
+  annotate("text", x = 9.2, y = 0.02, label = "True\nPositive", size=5, hjust = 0)
+```
+
+--- &vcenter
+## Sensitivity is true positives / number with disease
+  
+```{r, fig.width = 12, fig.height = 7, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+norm1 <- rnorm(5000, mean = 4.25, sd = 1.5)
+norm2 <- rnorm(5000, mean = 7.75, sd = 1.5)
+ggplot(data.frame(data = c(norm1, norm2), Groups = c(rep('Control', length(norm1)), rep('Disease', length(norm2)))), aes(data, fill = Groups)) + 
+  geom_density(alpha=0.2) + 
+  geom_vline(xintercept = 6, linetype = 'solid', lwd = 1) +
+  scale_fill_manual(values = c("Control" = "white", "Disease" = "red")) +
+  labs(x="Cancer Biomarker", y="Fraction of Patients") +
+  annotate("text", x = 1.5, y = 0.02, label = "True\nNegative", size=5, hjust = 0, color = '#dddddd') +
+  annotate("text", x = 4.7, y = 0.02, label = "False\nNegative", size=5, hjust = 0) +
+  annotate("text", x = 6.35, y = 0.02, label = "False\nPositive", size=5, hjust = 0, color = '#dddddd') +
+  annotate("text", x = 9.2, y = 0.02, label = "True\nPositive", size=5, hjust = 0)
+```
+
+--- &vcenter
+## Specificity is true negatives / number w/o disease
+  
+```{r, fig.width = 12, fig.height = 7, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+norm1 <- rnorm(5000, mean = 4.25, sd = 1.5)
+norm2 <- rnorm(5000, mean = 7.75, sd = 1.5)
+ggplot(data.frame(data = c(norm1, norm2), Groups = c(rep('Control', length(norm1)), rep('Disease', length(norm2)))), aes(data, fill = Groups)) + 
+  geom_density(alpha=0.2) + 
+  geom_vline(xintercept = 6, linetype = 'solid', lwd = 1) +
+  scale_fill_manual(values = c("Control" = "blue", "Disease" = "white")) +
+  labs(x="Cancer Biomarker", y="Fraction of Patients") +
+  annotate("text", x = 1.5, y = 0.02, label = "True\nNegative", size=5, hjust = 0) +
+  annotate("text", x = 4.7, y = 0.02, label = "False\nNegative", size=5, hjust = 0, color = '#dddddd') +
+  annotate("text", x = 6.35, y = 0.02, label = "False\nPositive", size=5, hjust = 0) +
+  annotate("text", x = 9.2, y = 0.02, label = "True\nPositive", size=5, hjust = 0, color = '#dddddd')
+```
+
+--- &twocolumn
+## PPV and NPV vary based on pre-test probability
+  
+***=left
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+n = 1000
+prevalence <- seq(0, 1, by = 0.001)
+sensitivity <- 0.9
+specificity <- 0.9
+TP <- n * prevalence
+TN <- n - TP
+FP <- n * (1 - specificity)
+FN <- n * prevalence * (1 - sensitivity)
+PPV <- TP / (TP + FP)
+data <- data.frame(x = prevalence, y = PPV)
+ggplot(data, aes(x = x, y = y)) + 
+  geom_line() +
+  ylim(0, 1) + 
+  labs(x="Prevalence", y="Positive Predictive Value")
+```
+
+***=right
+> - Positive Predictive Value
+  - Chance that person has the disease after a positive test result
+  - \(PPV = TP / (TP + FP)\)
+<br><br>
+> - Negative Predictive Value
+  - Chance that person does not have disease after a negative test result
+  - \(NPV = TN / (TN + FN)\)
+<br>  
+> - __Both depend on how prevalent the disease is in the population__
+
+--- &radio
 
 ## Question #4
 

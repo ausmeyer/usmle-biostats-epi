@@ -342,7 +342,7 @@ img {
 
 </div>
 <div style='float:right;width:48%;'>
-    <p><br></p>
+    <p><br><br></p>
 
 <ul class = "build incremental">
 <li>One sample: \(H_0\) = There is no difference between group mean and zero
@@ -373,7 +373,8 @@ img {
 </hgroup>
 <article class = 'flexbox vcenter'>
 <ul>
-<li><p>Two sample: \(H_0\) = There is no difference between the disease and control groups</p></li>
+<li>Two sample: \(H_0\) = There is no difference between the disease and control groups
+<br></li>
 <li><p>Run the t-test</p>
 
 <pre><code class="r">norm1 &lt;- rnorm(5000, mean = 4.75, sd = 1.2)
@@ -381,14 +382,13 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 (t.test(norm1, norm2))$p.value
 </code></pre>
 
-<pre><code>## [1] 1.060103e-92
+<pre><code>## [1] 1.505077e-95
 </code></pre>
 
-<p><br></p>
-
 <ul class = "build incremental">
-<li><p>Have we rejected the null hypothesis?</p></li>
-<li><p>Yes, we have accepted \(H_A\). There is a difference between control and disease.</p></li>
+<li>Have we rejected the null hypothesis?
+<br></li>
+<li>Yes, we have accepted \(H_A\). There is a difference between control and disease.</li>
 </ul></li>
 </ul>
 
@@ -401,21 +401,21 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </hgroup>
 <article class = 'flexbox vcenter'>
 <ul class = "build incremental">
-<li><p>Two common tests</p>
+<li>Two common tests
 
-<ul class = "build incremental">
+<ul>
 <li>Test of independence</li>
 <li>Goodness-of-fit</li>
 </ul></li>
-<li><p>Test of independence</p>
+<li>Test of independence
 
-<ul class = "build incremental">
+<ul>
 <li>\(H_0\): There is no association between the variables under study</li>
 <li>\(H_A\): There is an association between the variables under study</li>
 </ul></li>
-<li><p>Goodness-of-fit</p>
+<li>Goodness-of-fit
 
-<ul class = "build incremental">
+<ul>
 <li>\(H_0\): The number of cases occuring are equal to that expected by chance</li>
 <li>\(H_A\): The number of cases occuring are unequal to that expected by chance</li>
 </ul></li>
@@ -723,17 +723,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-23">
-<hgroup>
-  
-</hgroup>
-<article class = 'flexbox vcenter'>
-<div class="centered"><font size="7">Past here is in progress</font size></div>
-
-</article>
-<!-- Presenter Notes -->
-</slide>
-<slide class="segue" id="slide-24" style="background:;">
+<slide class="segue" id="slide-23" style="background:;">
   <hgroup>
     <h2>Epidemiology</h2>
   </hgroup>
@@ -743,7 +733,141 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-25" style="background:;">
+<slide class="" id="slide-24">
+<hgroup>
+  <h2>Types of prevention</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<ul class = "build incremental">
+<li>Primary - <strong>Prevention</strong>
+
+<ul>
+<li>An action taken to prevent development of disease in a person who is well
+<br><br></li>
+</ul></li>
+<li>Secondary - <strong>Screening</strong>
+
+<ul>
+<li>Identifying people in whom disease has begun but who do not have signs or symptoms
+<br><br></li>
+</ul></li>
+<li>Tertiary - <strong>Treatment</strong>
+
+<ul>
+<li>Preventing complications in those who have developed signs and symptoms and have been diagnosed</li>
+</ul></li>
+</ul>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-25">
+<hgroup>
+  <h2>Endemic vs Sporadic vs Epidemic vs Pandemic</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/img/epidemic.jpg" alt=""></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-26">
+<hgroup>
+  <h2>Important difference is in setting and time frame</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<ul class = "build incremental">
+<li><p>Attack rate</p>
+
+<ul>
+<li>Typically used during epidemics</li>
+<li>Number of people who get disease / Number of people who are exposed</li>
+</ul></li>
+<li><p>Incidence</p>
+
+<ul>
+<li>Given a <strong>defined period of time</strong> and an at-risk population</li>
+<li>Number of people with disease / Number of people who are exposed</li>
+</ul></li>
+<li><p>Prevalence</p>
+
+<ul>
+<li>Given an at-risk population</li>
+<li><strong>No time frame</strong></li>
+<li>Number of people with disease/Number of people who are exposed</li>
+<li>For steady-state SIR diseases</li>
+<li>Prevalence = Incidence x Average Disease Duration</li>
+</ul></li>
+</ul>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-27">
+<hgroup>
+  <h2>Tests are usually cutoffs on a continuous variable</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/fig/unnamed-chunk-12-1.png" alt="plot of chunk unnamed-chunk-12"></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-28">
+<hgroup>
+  <h2>Sensitivity is true positives / number with disease</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/fig/unnamed-chunk-13-1.png" alt="plot of chunk unnamed-chunk-13"></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-29">
+<hgroup>
+  <h2>Specificity is true negatives / number w/o disease</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/fig/unnamed-chunk-14-1.png" alt="plot of chunk unnamed-chunk-14"></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-30" style="background:;">
+  <hgroup>
+    <h2>PPV and NPV vary based on pre-test probability</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;'>
+    <p><img src="assets/fig/unnamed-chunk-15-1.png" alt="plot of chunk unnamed-chunk-15"></p>
+
+</div>
+<div style='float:right;width:48%;'>
+    <ul class = "build incremental">
+<li>Positive Predictive Value
+
+<ul>
+<li>Chance that person has the disease after a positive test result</li>
+<li>\(PPV = TP / (TP + FP)\)
+<br><br></li>
+</ul></li>
+<li>Negative Predictive Value
+
+<ul>
+<li>Chance that person does not have disease after a negative test result</li>
+<li>\(NPV = TN / (TN + FN)\)
+<br><br></li>
+</ul></li>
+<li><strong>Both depend on how prevalent the disease is in the population</strong></li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-31" style="background:;">
   <hgroup>
     <h2>Question #4</h2>
   </hgroup>
@@ -916,20 +1040,56 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=23 title='NA'>
+        data-slide=23 title='Epidemiology'>
          23
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title='Epidemiology'>
+        data-slide=24 title='Types of prevention'>
          24
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=25 title='Question #4'>
+        data-slide=25 title='Endemic vs Sporadic vs Epidemic vs Pandemic'>
          25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Important difference is in setting and time frame'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Tests are usually cutoffs on a continuous variable'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Sensitivity is true positives / number with disease'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Specificity is true negatives / number w/o disease'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='PPV and NPV vary based on pre-test probability'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Question #4'>
+         31
       </a>
     </li>
   </ul>

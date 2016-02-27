@@ -11,3 +11,6 @@ knitr
 googleVis
 shiny
 slidifyLibraries
+rCharts
+sp
+maptools

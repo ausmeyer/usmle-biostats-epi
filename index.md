@@ -13,7 +13,6 @@ github:
   user: ausmeyer
   repo: intro-biostats-epi
 ---
-
 <style>
 em {
   font-style: italic
@@ -53,38 +52,33 @@ img {
   - Types of Studies - 10 minutes
 
 --- .segue
-
 ## Biostatistics
 
 --- &vcenter
-
 ## There are some important random terms
 
- > - Generalizability
+> - Generalizability
   - How applicable is result to general population
- <br><br>
- > - P-value
+<br><br>
+> - P-value
   - Probability of finding a value this extreme by random chance
- <br><br>
- > - Confidence Interval
+<br><br>
+> - Confidence Interval
   - Interval over which real population number is found with a specified probability
- <br><br>
- > - Efficacy
- <br><br>
- > - Effectiveness
+<br><br>
+> - Efficacy
+<br><br>
+> - Effectiveness
 
 --- &vcenter
-
 ## Accuracy is closeness and Precision is repeatability
 
 ![](assets/img/precision_accuracy.png)
 
 --- .segue
-
 ## Describing Distributions
 
 --- &twocolumn
-
 ## Statistical distributions have invariant properties
 
 ***=left
@@ -94,7 +88,6 @@ img {
 ![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
 
 ---  &radio
-
 ## Question #1
 
 Investigators are studying prostate specific antigen (PSA) as a predictor of prostate cancer. To make the statistics easier, they are going to assume that PSA is a normally distributed population variable. Which of the following is correct under their assumption?
@@ -118,7 +111,6 @@ The important invariant properties (for you) of normal distributions are the fol
 5. Constant relationship between standard deviation and percentiles
 
 --- &twocolumn
-
 ## Real distributions can have one or multiple peaks
 
 ***=left
@@ -129,7 +121,6 @@ The important invariant properties (for you) of normal distributions are the fol
 ![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4-1.png)
 
 --- &twocolumn
-
 ## Skew describes the direction of the tail
 
 ***=left
@@ -140,7 +131,6 @@ The important invariant properties (for you) of normal distributions are the fol
 ![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6-1.png)
 
 --- &radio2
-
 ## Question #2
 
 Which of the following corresponds to the measures of central tendency on the graph from **left to right**? 
@@ -162,46 +152,41 @@ Mode is most common, median is middle, mean is average value.
 Always remember that the y-axis on these plots are counts or frequency. Therefore, which line is closest to the peak on the y-axis is the mode. The median is **always** in the middle. The mean is the most susceptible to outliers so in a skewed distribution it will **always** be farthest out on the tail.
 
 --- .segue
-
 ## Hypothesis Testing
 
 --- &vcenter
-
 ## The null hypothesis (\(H_0\)) is always the default
 
- > - Assuming there are two or more groups being compared...
- <br><br><br>
- > - \(H_0\): There is no difference in the means of the groups.
- <br><br><br>
- > - For Step 1, probably safe to assume null is always rejected with \(p < 0.05\).
- <br><br><br>
- > - \(H_A\): The difference between the means of the groups is real.
+> - Assuming there are two or more groups being compared...
+<br><br><br>
+> - \(H_0\): There is no difference in the means of the groups.
+<br><br><br>
+> - For Step 1, probably safe to assume null is always rejected with \(p < 0.05\).
+<br><br><br>
+> - \(H_A\): The difference between the means of the groups is real.
 
 --- &twocolumn
-
 ## T-test compares means of one or two groups
 
 ***=left
 ![plot of chunk unnamed-chunk-8](assets/fig/unnamed-chunk-8-1.png)
 
 ***=right 
-<br>
- > - One sample: \(H_0\) = There is no difference between group mean and zero
 <br><br>
- > - Two sample: \(H_0\) = There is no difference between the disease and control groups
+> - One sample: \(H_0\) = There is no difference between group mean and zero
 <br><br>
- > - Paired: \(H_0\) = The difference of a measured variable between two time points on the same individuals is zero
+> - Two sample: \(H_0\) = There is no difference between the disease and control groups
+<br><br>
+> - Paired: \(H_0\) = The difference of a measured variable between two time points on the same individuals is zero
 
 --- &vcenter
-
 <div class="centered"><font size="7">Will the plot be significant?</font size></div>
 
 --- &vcenter
-
 ## T-test compares means of one or two groups
 
  - Two sample: \(H_0\) = There is no difference between the disease and control groups
- 
+ <br>
  - Run the t-test
   
   ```r
@@ -211,31 +196,26 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
   ```
   
   ```
-  ## [1] 1.060103e-92
+  ## [1] 1.505077e-95
   ```
-<br>
- > - Have we rejected the null hypothesis?
-  
- > - Yes, we have accepted \(H_A\). There is a difference between control and disease.
+  > - Have we rejected the null hypothesis?
+  <br>
+  > - Yes, we have accepted \(H_A\). There is a difference between control and disease.
 
 --- &vcenter
-
 ## Chi-squared test uses categorical (count) data
 
- > - Two common tests
-    > - Test of independence
-    > - Goodness-of-fit
-
- > - Test of independence
-    > - \(H_0\): There is no association between the variables under study
-    > - \(H_A\): There is an association between the variables under study
-
- > - Goodness-of-fit
-    > - \(H_0\): The number of cases occuring are equal to that expected by chance
-    > - \(H_A\): The number of cases occuring are unequal to that expected by chance
+> - Two common tests
+ - Test of independence
+ - Goodness-of-fit
+> - Test of independence
+ - \(H_0\): There is no association between the variables under study
+ - \(H_A\): There is an association between the variables under study
+> - Goodness-of-fit
+ - \(H_0\): The number of cases occuring are equal to that expected by chance
+ - \(H_A\): The number of cases occuring are unequal to that expected by chance
 
 --- &vcenter
-
 ## Always expect a contingency table for chi-squared
 
 |             | Healthy  | Disease  | Total  |
@@ -255,7 +235,6 @@ Table 1: A 2x2 contingency table
 Table 2: A 3x3 contingency table
 
 --- &vcenter
-
 ## The contingency table can be of any size
 
 |                            | Never Sick  |  Infrequently Sick |  Sometimes Sick |  Mostly Sick |  Always Sick |  Total |
@@ -271,32 +250,29 @@ Table 2: A 3x3 contingency table
 Table 3: A 7x5 contingency table
 
 --- &vcenter
-
 ## Pearson correlation compares two variables
 The correlation can be positive or negative
 
 ![plot of chunk unnamed-chunk-10](assets/fig/unnamed-chunk-10-1.png)
 
 --- &twocolumn
-
 ## For correlation, r is the critical statistic
 ***=left
 <br>
- > - Must be quantitative data
-  - **Not count data**
+> - Must be quantitative data
+ - **Not count data**
 <br><br>
- > - \(r =\) correlation between variables
+> - \(r =\) correlation between variables
 <br><br>
- > - \(r^2 = \) amount of variance in y that is explained by x
+> - \(r^2 = \) amount of variance in y that is explained by x
 <br><br>
- > - p-value is still used for significance
-  - For Step 1, most likely significant at \(p < 0.05\)
+> - p-value is still used for significance
+ - For Step 1, most likely significant at \(p < 0.05\)
 
 ***=right
 ![plot of chunk unnamed-chunk-11](assets/fig/unnamed-chunk-11-1.png)
 
 ---  &radio
-
 ## Question #3
 
 Investigators developed a new serum biomarker as a predictor for prostate cancer. To test it, they plan a cross-sectional study compromised of two groups. In one group, the researchers will include measurements of men with biopsy confirmed prostate cancer. In the other group, researchers will measure the level of their biomarker in men that have never previously been diagnosed with prostate cancer nor had a positive PSA test. The investigators will assume their biomarker is normally distributed. What is the best test to investigate whether the biomarker can distinguish the two groups?
@@ -314,7 +290,6 @@ The number of groups and distribution is all that matters
 The two sample T-test is the appropriate test in this case. The two sample Mann-Whitney U-test could work as well, but is slightly less efficient for normally distributed data than the T-test. The Pearson correlation requires two measured variables on the same sample. A chi-squared test requires categorical (i.e. count) data. An analysis of variance is typically used to measure the difference in means of three or more groups.
 
 --- &twocolumn
-
 ## Hypothesis testing has four possible outcomes
 
 ***=left
@@ -323,24 +298,86 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 ***=right
 <br>
 > - Correct - Reject a false \(H_0\)
-  - Probability of success is called "power"
+ - Probability of success is called "power"
 > - Correct - Fail to reject a true \(H_0\)
-  - Probability determined by \(\alpha\) as \(1-\alpha\)
+ - Probability determined by \(\alpha\) as \(1-\alpha\)
 <br><br><br>
 > - Type 1 - Incorrect rejection of a true \(H_0\)
-  - False Positive
+ - False Positive
 > - Type 2 - Failure to reject a false \(H_0\)
-  - False Negative
-
---- &vcenter
-
-<div class="centered"><font size="7">Past here is in progress</font size></div>
+ - False Negative
 
 --- .segue
-
 ## Epidemiology
 
----  &radio
+--- &vcenter
+## Types of prevention
+  
+> - Primary - __Prevention__
+  - An action taken to prevent development of disease in a person who is well
+  <br><br>
+> - Secondary - __Screening__
+  - Identifying people in whom disease has begun but who do not have signs or symptoms
+  <br><br>
+> - Tertiary - __Treatment__
+  - Preventing complications in those who have developed signs and symptoms and have been diagnosed
+
+--- &vcenter
+## Endemic vs Sporadic vs Epidemic vs Pandemic
+
+![](assets/img/epidemic.jpg)
+
+--- &vcenter
+## Important difference is in setting and time frame
+  
+> - Attack rate
+  - Typically used during epidemics
+  - Number of people who get disease / Number of people who are exposed
+
+> - Incidence
+  - Given a __defined period of time__ and an at-risk population
+  - Number of people with disease / Number of people who are exposed
+
+> - Prevalence
+  - Given an at-risk population
+  - __No time frame__
+  - Number of people with disease/Number of people who are exposed
+  - For steady-state SIR diseases
+    - Prevalence = Incidence x Average Disease Duration
+
+--- &vcenter
+## Tests are usually cutoffs on a continuous variable
+  
+![plot of chunk unnamed-chunk-12](assets/fig/unnamed-chunk-12-1.png)
+
+--- &vcenter
+## Sensitivity is true positives / number with disease
+  
+![plot of chunk unnamed-chunk-13](assets/fig/unnamed-chunk-13-1.png)
+
+--- &vcenter
+## Specificity is true negatives / number w/o disease
+  
+![plot of chunk unnamed-chunk-14](assets/fig/unnamed-chunk-14-1.png)
+
+--- &twocolumn
+## PPV and NPV vary based on pre-test probability
+  
+***=left
+![plot of chunk unnamed-chunk-15](assets/fig/unnamed-chunk-15-1.png)
+
+***=right
+> - Positive Predictive Value
+  - Chance that person has the disease after a positive test result
+  - \(PPV = TP / (TP + FP)\)
+<br><br>
+> - Negative Predictive Value
+  - Chance that person does not have disease after a negative test result
+  - \(NPV = TN / (TN + FN)\)
+<br>  
+> - __Both depend on how prevalent the disease is in the population__
+
+--- &radio
 
 ## Question #4
 

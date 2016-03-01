@@ -447,7 +447,7 @@ Give an explanation
 
 --- &vcenter
 
-## Attributable risk is an incidence difference
+## Attributable risk is a relative incidence difference
 ![plot of chunk unnamed-chunk-17](assets/fig/unnamed-chunk-17-1.png)
 
 --- &twocolumn
@@ -460,12 +460,13 @@ Give an explanation
   - Exposed: \(Risk = A / (A + B)\)
   - Unexposed: \(Risk = C / (C + D)\)
 <br><br>
-> - \(ARR = Risk_{Unexposed} - Risk_{Exposed}\)
+> - \(AR = Risk_{Unexposed} - Risk_{Exposed}\)
 > - \(ARR = Risk_{Control} - Risk_{Treatment}\)
 <br><br>
 > - Number needed to treat
   - Number of patients treated for __ONE__ patient benefited
   - \(NNT = 1 / ARR\)
+  - FYI: \(NNH = 1 / AR\)
 
 ***=right
 ![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)

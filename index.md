@@ -329,18 +329,17 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 ![](assets/img/epidemic.jpg)
 
 --- &vcenter
-## Important difference is in setting and time frame
+## Metric differences lie in setting and time frame
   
 > - Attack rate
   - Typically used during epidemics
   - Number of people who get disease / Number of people who are exposed
 
 > - Incidence
-  - Given a __defined period of time__ and an at-risk population
+  - Given a __defined period of time__
   - Number of people with disease / Number of people who are exposed
 
 > - Prevalence
-  - Given an at-risk population
   - __No time frame__
   - Number of people with disease/Number of people who are exposed
   - For steady-state SIR diseases
@@ -495,13 +494,24 @@ What gives a narrower confidence interval?
 ![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)
 
 --- .segue
+## Types of Biases
+
+--- 
+## Place holder
+
+--- 
+## Place holder
+
+--- 
+## Place holder
+
+--- .segue
 ## Types of studies
 
 --- &vcenter
 <div class="centered"><font size="7">Experimental Trials</font size></div>
 
 --- &vcenter
-
 ## Randomized control trial is in the name
 ![](assets/img/randomized_control.png)
 
@@ -553,3 +563,8 @@ What gives a narrower confidence interval?
  > - Retrospective
    - Information bias
 
+--- &vcenter
+## Case-control trials measure chance of exposure given disease
+
+--- &vcenter
+## Cross-sectional trials measure exposure and disease simultaneously

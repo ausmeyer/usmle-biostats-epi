@@ -723,6 +723,13 @@ ggplot(data=dat, aes(x=Groups, y=Risk)) +
 ## Types of studies
 
 --- &vcenter
+## The pyramid of evidence is a hierarchy
+
+![](assets/img/evidence_pyramid.jpg)
+
+__Closer to the top means better evidence__
+
+--- &vcenter
 <div class="centered"><font size="7">Experimental Trials</font size></div>
 
 --- &vcenter

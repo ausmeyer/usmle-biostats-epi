@@ -509,6 +509,13 @@ What gives a narrower confidence interval?
 ## Types of studies
 
 --- &vcenter
+## The pyramid of evidence is a hierarchy
+
+![](assets/img/evidence_pyramid.jpg)
+
+Closer to the top means better evidence
+
+--- &vcenter
 <div class="centered"><font size="7">Experimental Trials</font size></div>
 
 --- &vcenter

@@ -513,7 +513,7 @@ What gives a narrower confidence interval?
 
 ![](assets/img/evidence_pyramid.jpg)
 
-Closer to the top means better evidence
+__Closer to the top means better evidence__
 
 --- &vcenter
 <div class="centered"><font size="7">Experimental Trials</font size></div>

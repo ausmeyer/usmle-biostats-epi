@@ -43,8 +43,7 @@ img {
   - Distributions - 5 minutes
   - Hypothesis Testing - 10 minutes
  - Epidemiology - 40 minutes
-  - Types of Prevention - 2 minutes
-  - Types of Outbreaks - 2 minutes
+  - Types of Prevention and Outbreaks - 4 minutes
   - Measures of Morbidity and Mortality - 5 minutes
   - Validity and Reliability of Clinical Tests - 6 minutes
   - Measures of Risk - 10
@@ -226,27 +225,27 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
 Table 1: A 2x2 contingency table
 
 
-|                 | Never Sick  |  Sometimes Sick | Mostly Sick  | Total  |
+| Exposure Status | Never Sick  |  Sometimes Sick | Mostly Sick  | Total  |
 |-----------------|------------:|----------------:|-------------:|-------:|
-| High Exposure   |      10     |     20          |   180        |  210   |
-| Medium Exposure |      20     |    100          |    20        |  140   |
-| Low Exposure    |     100     |     40          |    10        |  150   |  
+| High            |      10     |     20          |   180        |  210   |
+| Medium          |      20     |    100          |    20        |  140   |
+| Low             |     100     |     40          |    10        |  150   |  
 | Total           |     130     |    160          |   210        |  500   |
 Table 2: A 3x3 contingency table
 
 --- &vcenter
 ## The contingency table can be of any size
 
-|                            | Never Sick  |  Infrequently Sick |  Sometimes Sick |  Mostly Sick |  Always Sick |  Total |
-|----------------------------|------------:|-------------------:|----------------:|-------------:|-------------:|-------:|
-| Ridiculously High Exposure |     10      |          90        |       34        |      12      |    12        |   158  |
-| Very High Exposure         |     30      |         345        |       54        |      43      |    21        |   493  |
-| High Exposure              |     70      |          57        |       67        |      65      |    32        |   291  |
-| Medium Exposure            |    200      |          33        |       87        |      25      |    42        |   387  |
-| Low Exposure               |    130      |          89        |       58        |      45      |    56        |   378  | 
-| Very Low Exposure          |    100      |          54        |       36        |      23      |    78        |   291  |
-| Ridiculously Low Exposure  |     90      |          23        |       36        |      63      |     8        |   220  |
-| Total                      |    530      |         691        |      372        |     276      |   249        |  2118  |
+| Exposure Status | Never Sick  |  Infrequently Sick |  Sometimes Sick |  Mostly Sick |  Always Sick |  Total |
+|-----------------|------------:|-------------------:|----------------:|-------------:|-------------:|-------:|
+| Super High      |     10      |          90        |       34        |      12      |    12        |   158  |
+| Very High       |     30      |         345        |       54        |      43      |    21        |   493  |
+| High            |     70      |          57        |       67        |      65      |    32        |   291  |
+| Medium          |    200      |          33        |       87        |      25      |    42        |   387  |
+| Low             |    130      |          89        |       58        |      45      |    56        |   378  | 
+| Very Low        |    100      |          54        |       36        |      23      |    78        |   291  |
+| Super Low       |     90      |          23        |       36        |      63      |     8        |   220  |
+| Total           |    530      |         691        |      372        |     276      |   249        |  2118  |
 Table 3: A 7x5 contingency table
 
 --- &vcenter
@@ -526,7 +525,7 @@ What gives a narrower confidence interval?
 <br><br>
  - This post hoc analysis is overly simplified for real life
  - This understanding is sufficient for step 1
- - Confounders reduced becaue a patient can serve as their own control
+ - Confounders reduced because a patient can serve as their own control
 
 --- &vcenter
 <div class="centered"><font size="7">Observational Studies</font size></div>
@@ -553,3 +552,4 @@ What gives a narrower confidence interval?
  <br><br>
  > - Retrospective
    - Information bias
+

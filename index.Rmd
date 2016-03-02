@@ -611,7 +611,7 @@ Question prefaces a positive test result
   - Risk that someone with an exposure will get disease
 > - Odds ratio (OR)
   - Excess odds of exposure of one population relative to another
-> - Risk - __Must know the prevalence__
+> - Risk - __Must know disease prevalence__
   - __Probability__ that someone with an exposure will get a disease
 > - Risk Ratio (Relative Risk or RR)
   - Excess risk of one population relative to another

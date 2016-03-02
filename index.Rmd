@@ -58,16 +58,18 @@ img {
 
 > - Generalizability
   - How applicable is result to general population
-<br><br>
+<br>
 > - P-value
   - Probability of finding a value this extreme by random chance
-<br><br>
+<br>
 > - Confidence Interval
   - Interval over which real population number is found with a specified probability
-<br><br>
+<br>
 > - Efficacy
-<br><br>
+  - Performance of treatment under ideal circumstances
+<br>
 > - Effectiveness
+  - Performance of treatment under real world circumstances
 
 --- &vcenter
 ## Accuracy is closeness and Precision is repeatability

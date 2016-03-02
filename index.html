@@ -699,12 +699,14 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 
 <ul>
 <li>Probability of success is called &quot;power&quot;</li>
+<li>Power depends on sample size</li>
+<li>bigger sample = bigger power</li>
 </ul></li>
 <li>Correct - Fail to reject a true \(H_0\)
 
 <ul>
 <li>Probability determined by \(\alpha\) as \(1-\alpha\)
-<br><br><br></li>
+<br><br></li>
 </ul></li>
 <li>Type 1 - Incorrect rejection of a true \(H_0\)
 
@@ -929,22 +931,22 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <ul>
 <li>Risk that someone with an exposure will get disease</li>
 </ul></li>
-<li>Odds ratio
+<li>Odds ratio (OR)
 
 <ul>
-<li>Excess odds of exposure of one population relative to another
-<br><br></li>
+<li>Excess odds of exposure of one population relative to another</li>
 </ul></li>
 <li>Risk - <strong>Must know the prevalence</strong>
 
 <ul>
 <li><strong>Probability</strong> that someone with an exposure will get a disease</li>
 </ul></li>
-<li>Risk Ratio (Relative Risk)
+<li>Risk Ratio (Relative Risk or RR)
 
 <ul>
 <li>Excess risk of one population relative to another</li>
 </ul></li>
+<li>Both significant if CI does not include 1</li>
 </ul>
 
 </div>
@@ -1001,7 +1003,48 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-35">
+<slide class="" id="slide-35" style="background:;">
+  <hgroup>
+    <h2>Question #6</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div class="quiz quiz-single well ">
+  <p>Two studies were conducted on different samples from the same population to assess the relationship between oral contraceptive use and the risk of deep venous thrombosis (DVT). Study A showed an increased risk of DVT among oral contraceptive users, with a relative risk of 2.0 and a 95% CI of 1.2-2.8. Study B showed a relative risk of 2.05 and a 95% CI of 0.8-3.1. Which of the following statements is most likely to be true regarding these 2 studies?</p>
+
+<ol>
+<li>The p-value in study B is likely to be &lt; 0.05</li>
+<li>The result in study A is not accurate</li>
+<li>The result in study A is not statistically significant</li>
+<li>The result in study B is likely biased</li>
+<li><em>The sample size is likely smaller in study B than study A</em></li>
+</ol>
+
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear btn btn-danger">Clear</button>
+  
+  <div class="quiz-hint">
+  <p>What gives a narrower confidence interval?</p>
+
+</div>
+<div class="quiz-explanation">
+  <ol>
+<li>Incorrect - The CI in study B overlaps 1 so it is not significant</li>
+<li>Incorrect - It is hard to judge accuracy without knowing the objective Truth</li>
+<li>Inccorect - The CI in study A does not include 1 so it is statistically significant</li>
+<li>Incorrect - There is no reason to believe B is biased</li>
+<li>Correct - Per slide 23/38 bigger sample leads to improved ability to reject a false null hypothesis</li>
+</ol>
+
+</div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-36">
 <hgroup>
   <h2>Attributable risk is a relative incidence difference</h2>
 </hgroup>
@@ -1011,7 +1054,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-36" style="background:;">
+<slide class="" id="slide-37" style="background:;">
   <hgroup>
     <h2>Absolute risk reduction is a risk difference</h2>
   </hgroup>
@@ -1048,6 +1091,141 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
+<slide class="segue" id="slide-38" style="background:;">
+  <hgroup>
+    <h2>Types of studies</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-39">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<div class="centered"><font size="7">Experimental Trials</font size></div>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-40">
+<hgroup>
+  <h2>Randomized control trial is in the name</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/img/randomized_control.png" alt=""></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-41">
+<hgroup>
+  <h2>Randomized control trials are the gold standard</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<ul class = "build incremental">
+<li>This is widely considered the gold standard for clinical evidence
+<br><br></li>
+<li>Question: <strong>Primary</strong> purpose of randomization?</li>
+<li>Answer: To eliminate <strong>selection bias</strong>
+
+<ul>
+<li>Selection bias is eliminated if randomization is technically correct
+<br><br></li>
+</ul></li>
+<li>Question: Secondary goal of randomization?</li>
+<li>Answer: To control confounders
+
+<ul>
+<li>Confounders are not necessarily eliminated even with perfect technical execution
+<br><br></li>
+</ul></li>
+<li>Can use relative risk because investigator knows prevalence of exposure and disease</li>
+</ul>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-42">
+<hgroup>
+  <h2>Crossover trial means the two groups switch</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/img/crossover.png" alt="">
+<br><br></p>
+
+<ul>
+<li>This post hoc analysis is overly simplified for real life</li>
+<li>This understanding is sufficient for step 1</li>
+<li>Confounders reduced becaue a patient can serve as their own control</li>
+</ul>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-43">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
+<div class="centered"><font size="7">Observational Studies</font size></div>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-44">
+<hgroup>
+  <h2>Prospective cohorts follow groups into the future</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/img/prospective_cohort.png" alt=""></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-45">
+<hgroup>
+  <h2>Retrospective cohorts follow groups from the past</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/img/retrospective_cohort.png" alt=""></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-46">
+<hgroup>
+  <h2>Cohorts form the next level of evidence</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<ul class = "build incremental">
+<li>Can use relative risk because investigator knows prevalence of exposure and disease</li>
+<li>Subjects vary by exposure status
+<br><br></li>
+<li>Biggest bias is selection
+
+<ul>
+<li>Investigator has infinite control over inclusion</li>
+</ul></li>
+<li>Other biases
+
+<ul>
+<li>Attrition, loss-to-followup, confounding, Hawthorne
+<br><br></li>
+</ul></li>
+<li>Retrospective
+
+<ul>
+<li>Information bias</li>
+</ul></li>
+</ul>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
     <slide class="backdrop"></slide>
   </slides>
   <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
@@ -1258,14 +1436,74 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=35 title='Attributable risk is a relative incidence difference'>
+        data-slide=35 title='Question #6'>
          35
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=36 title='Absolute risk reduction is a risk difference'>
+        data-slide=36 title='Attributable risk is a relative incidence difference'>
          36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='Absolute risk reduction is a risk difference'>
+         37
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='Types of studies'>
+         38
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='NA'>
+         39
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='Randomized control trial is in the name'>
+         40
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=41 title='Randomized control trials are the gold standard'>
+         41
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=42 title='Crossover trial means the two groups switch'>
+         42
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=43 title='NA'>
+         43
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=44 title='Prospective cohorts follow groups into the future'>
+         44
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=45 title='Retrospective cohorts follow groups from the past'>
+         45
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=46 title='Cohorts form the next level of evidence'>
+         46
       </a>
     </li>
   </ul>

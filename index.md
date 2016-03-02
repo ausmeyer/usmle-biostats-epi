@@ -299,9 +299,11 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 <br>
 > - Correct - Reject a false \(H_0\)
  - Probability of success is called "power"
+ - Power depends on sample size
+ - bigger sample = bigger power
 > - Correct - Fail to reject a true \(H_0\)
  - Probability determined by \(\alpha\) as \(1-\alpha\)
-<br><br><br>
+<br><br>
 > - Type 1 - Incorrect rejection of a true \(H_0\)
  - False Positive
 > - Type 2 - Failure to reject a false \(H_0\)
@@ -409,13 +411,13 @@ Question prefaces a positive test result
 
 > - Odds 
   - Risk that someone with an exposure will get disease
-> - Odds ratio
+> - Odds ratio (OR)
   - Excess odds of exposure of one population relative to another
-<br><br>
 > - Risk - __Must know the prevalence__
   - __Probability__ that someone with an exposure will get a disease
-> - Risk Ratio (Relative Risk)
+> - Risk Ratio (Relative Risk or RR)
   - Excess risk of one population relative to another
+> - Both significant if CI does not include 1
 
 ***=right
 
@@ -445,6 +447,28 @@ Give an explanation
 
 ![](assets/img/contingency_table.png)
 
+--- &radio
+
+## Question #6
+
+Two studies were conducted on different samples from the same population to assess the relationship between oral contraceptive use and the risk of deep venous thrombosis (DVT). Study A showed an increased risk of DVT among oral contraceptive users, with a relative risk of 2.0 and a 95% CI of 1.2-2.8. Study B showed a relative risk of 2.05 and a 95% CI of 0.8-3.1. Which of the following statements is most likely to be true regarding these 2 studies?
+
+1. The p-value in study B is likely to be < 0.05
+2. The result in study A is not accurate
+3. The result in study A is not statistically significant
+4. The result in study B is likely biased
+5. _The sample size is likely smaller in study B than study A_
+
+***.hint
+What gives a narrower confidence interval?
+
+***.explanation
+1. Incorrect - The CI in study B overlaps 1 so it is not significant
+2. Incorrect - It is hard to judge accuracy without knowing the objective Truth
+3. Inccorect - The CI in study A does not include 1 so it is statistically significant
+4. Incorrect - There is no reason to believe B is biased
+5. Correct - Per slide 23/38 bigger sample leads to improved ability to reject a false null hypothesis
+
 --- &vcenter
 
 ## Attributable risk is a relative incidence difference
@@ -470,3 +494,62 @@ Give an explanation
 
 ***=right
 ![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)
+
+--- .segue
+## Types of studies
+
+--- &vcenter
+<div class="centered"><font size="7">Experimental Trials</font size></div>
+
+--- &vcenter
+
+## Randomized control trial is in the name
+![](assets/img/randomized_control.png)
+
+--- &vcenter
+## Randomized control trials are the gold standard
+> - This is widely considered the gold standard for clinical evidence
+<br><br>
+> - Question: __Primary__ purpose of randomization?
+> - Answer: To eliminate __selection bias__
+  - Selection bias is eliminated if randomization is technically correct
+<br><br>
+> - Question: Secondary goal of randomization?
+> - Answer: To control confounders
+  - Confounders are not necessarily eliminated even with perfect technical execution
+<br><br>
+> - Can use relative risk because investigator knows prevalence of exposure and disease
+
+--- &vcenter
+## Crossover trial means the two groups switch
+![](assets/img/crossover.png)
+<br><br>
+ - This post hoc analysis is overly simplified for real life
+ - This understanding is sufficient for step 1
+ - Confounders reduced becaue a patient can serve as their own control
+
+--- &vcenter
+<div class="centered"><font size="7">Observational Studies</font size></div>
+
+--- &vcenter
+## Prospective cohorts follow groups into the future
+
+![](assets/img/prospective_cohort.png)
+
+--- &vcenter
+## Retrospective cohorts follow groups from the past
+
+![](assets/img/retrospective_cohort.png)
+
+--- &vcenter
+## Cohorts form the next level of evidence
+ > - Can use relative risk because investigator knows prevalence of exposure and disease
+ > - Subjects vary by exposure status
+ <br><br>
+ > - Biggest bias is selection
+   - Investigator has infinite control over inclusion
+ > - Other biases
+   - Attrition, loss-to-followup, confounding, Hawthorne
+ <br><br>
+ > - Retrospective
+   - Information bias

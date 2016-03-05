@@ -415,7 +415,7 @@ Assume a steady-state population that is not changing in anyway. Which of the fo
 2. Increase in test sensitivity
 3. _Increase in PPV_
 4. Increase in NPV
-5. Decrase in NPV
+5. Decrease in NPV
 
 ***=image
 ![plot of chunk unnamed-chunk-16](assets/fig/unnamed-chunk-16-1.png)

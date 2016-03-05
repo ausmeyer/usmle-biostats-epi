@@ -57,13 +57,13 @@ img {
 ## There are some important random terms
 
 > - Generalizability
-  - How applicable is result to general population
+  - How applicable is result to general population?
 <br>
 > - P-value
   - Probability of finding a value this extreme by random chance
 <br>
 > - Confidence Interval
-  - Interval over which real population number is found with a specified probability
+  - Interval over which population value is found with a specified probability (e.g. 95%)
 <br>
 > - Efficacy
   - Performance of treatment under ideal circumstances
@@ -72,7 +72,7 @@ img {
   - Performance of treatment under real world circumstances
 
 --- &vcenter
-## Accuracy is closeness and Precision is repeatability
+## Precision is repeatability, Accuracy is closeness
 
 ![](assets/img/precision_accuracy.png)
 
@@ -91,7 +91,7 @@ img {
 ---  &radio
 ## Question #1
 
-Investigators are studying prostate specific antigen (PSA) as a predictor of prostate cancer. To make the statistics easier, they are going to assume that PSA is a normally distributed population variable. Which of the following is correct under their assumption?
+Investigators are studying prostate specific antigen (PSA) as a predictor for prostate cancer. To make the statistics easier, they are going to assume that PSA is a normally distributed population variable. Which of the following is correct under their assumption?
 
 1. Mode is greater than median
 2. Median is greater than mode
@@ -158,7 +158,8 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
 --- &vcenter
 ## The null hypothesis (\(H_0\)) is always the default
 
-> - Assuming there are two or more groups being compared...
+> - Assume:
+  - There are two or more groups being compared, or one group being compared to zero
 <br><br><br>
 > - \(H_0\): There is no difference in the means of the groups.
 <br><br><br>
@@ -276,7 +277,7 @@ The correlation can be positive or negative
 ---  &radio
 ## Question #3
 
-Investigators developed a new serum biomarker as a predictor for prostate cancer. To test it, they plan a cross-sectional study compromised of two groups. In one group, the researchers will include measurements of men with biopsy confirmed prostate cancer. In the other group, researchers will measure the level of their biomarker in men that have never previously been diagnosed with prostate cancer nor had a positive PSA test. The investigators will assume their biomarker is normally distributed. What is the best test to investigate whether the biomarker can distinguish the two groups?
+Investigators developed a new serum biomarker as a predictor for prostate cancer. To test it, they plan a cross-sectional study comprised of two groups. In one group, the researchers will include measurements of men with biopsy confirmed prostate cancer. In the other group, researchers will measure the level of their biomarker in men that have never previously been diagnosed with prostate cancer nor had a positive PSA test. The investigators will assume their biomarker is normally distributed. What is the best test to investigate whether the biomarker can distinguish the two groups?
 
 1. Two sample Mann-Whitney U-test
 2. Pearson correlation

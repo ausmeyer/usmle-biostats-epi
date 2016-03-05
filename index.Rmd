@@ -398,7 +398,9 @@ pos <- ggplot(mtcars, aes(x=wt, y=hp)) +
   geom_point() + 
   geom_smooth(method='lm',formula=y~x) +
   ggtitle("Positive Correlation") + 
-  labs(x="Weight", y="Horse Power")
+  labs(x="Weight", y="Horse Power") +
+  annotate("text", x = 1.5, y = 300, label = paste("r = ", round(cor(mtcars$wt, mtcars$hp), digits = 3), sep = ''), size=5, hjust = 0) +
+  annotate("text", x = 1.5, y = 280, label = paste("r^2 = ", round(cor(mtcars$wt, mtcars$hp)^2, digits = 3), sep = ''), size=5, hjust = 0)
 show(pos)
 ```
 
@@ -721,7 +723,7 @@ ggplot(data=dat, aes(x=Groups, y=Incidence)) +
   - FYI: \(NNH = 1 / AR\)
 
 ***=right
-```{r, message=FALSE, warning=FALSE, echo=FALSE}
+```{r, fig.height=7, fig.width=6, message=FALSE, warning=FALSE, echo=FALSE}
 
 dat <- data.frame(Groups = c('Control', 'Treatment'), Risk = c(0.6, 0.34))
 ggplot(data=dat, aes(x=Groups, y=Risk)) +

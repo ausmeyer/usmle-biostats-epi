@@ -407,7 +407,7 @@ show(pos)
 ```
 
 --- &twocolumn
-## A wider spread in \(y\) mean a lower \(r^2\)
+## A wider spread in \(y\) means a lower \(r^2\)
 
 ***=left
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}

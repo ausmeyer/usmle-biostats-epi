@@ -275,7 +275,7 @@ The correlation can be positive or negative
 ![plot of chunk unnamed-chunk-11](assets/fig/unnamed-chunk-11-1.png)
 
 --- &twocolumn
-## A wider spread in \(y\) mean a lower \(r^2\)
+## A wider spread in \(y\) means a lower \(r^2\)
 
 ***=left
 ![plot of chunk unnamed-chunk-12](assets/fig/unnamed-chunk-12-1.png)

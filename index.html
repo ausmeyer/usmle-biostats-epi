@@ -119,7 +119,7 @@ img {
 <li>Generalizability
 
 <ul>
-<li>How applicable is result to general population?
+<li>How applicable is a finding to the general population
 <br></li>
 </ul></li>
 <li>P-value
@@ -427,8 +427,8 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <li>Goodness-of-fit
 
 <ul>
-<li>\(H_0\): The number of cases occuring are equal to that expected by chance</li>
-<li>\(H_A\): The number of cases occuring are unequal to that expected by chance</li>
+<li>\(H_0\): The number of cases occuring is equal to that expected by chance</li>
+<li>\(H_A\): The number of cases occuring is unequal to that expected by chance</li>
 </ul></li>
 </ul>
 
@@ -663,6 +663,75 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   </hgroup>
   <article data-timings="">
     
+<div class='row-fluid'>
+  <div class='span6'>
+    <table><thead>
+<tr>
+<th></th>
+<th>Clot</th>
+<th>No Clot</th>
+<th>Total</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>OCP Use</td>
+<td>500</td>
+<td>400</td>
+<td>900</td>
+</tr>
+<tr>
+<td>No OCP Use</td>
+<td>80</td>
+<td>20</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>580</td>
+<td>420</td>
+<td>1000</td>
+</tr>
+</tbody></table>
+
+  </div>
+  <div class='span6'>
+    <div class="quiz quiz-single well new">
+      <p>A study was conducted to assess the association between oral contraceptive (OCP) use and confirmed blood clots. The data from the study are presented to the left. Which of the following is the best method to assess the association between OCP use and blood clots?</p>
+
+<ol>
+<li>Two sample T-test</li>
+<li>Analysis of variance</li>
+<li>Pearson correlation</li>
+<li><em>Chi-square test</em></li>
+<li>Spearman correlation</li>
+</ol>
+
+      <button class="quiz-submit btn btn-primary">Submit</button>
+      <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+      <button class="quiz-show-answer btn btn-success">Show Answer</button>
+      <button class="quiz-clear btn btn-danger">Clear</button>
+      
+      <div class="quiz-hint">
+  <p>What kind of data is this?</p>
+
+</div>
+<div class="quiz-explanation">
+  <p>The only test available that utilizes categorical data is the Chi-square test. All of the other tests require at least rank or quantitative data.</p>
+
+</div>
+    </div>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Question #4</h2>
+  </hgroup>
+  <article data-timings="">
+    
 <div class="quiz quiz-single well ">
   <p>Investigators developed a new serum biomarker as a predictor for prostate cancer. To test it, they plan a cross-sectional study comprised of two groups. In one group, the researchers will include measurements of men with biopsy confirmed prostate cancer. In the other group, researchers will measure the level of their biomarker in men that have never previously been diagnosed with prostate cancer nor had a positive PSA test. The investigators will assume their biomarker is normally distributed. What is the best test to investigate whether the biomarker can distinguish the two groups?</p>
 
@@ -692,7 +761,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-22" style="background:;">
+<slide class="" id="slide-23" style="background:;">
   <hgroup>
     <h2>Hypothesis testing has four possible outcomes</h2>
   </hgroup>
@@ -736,7 +805,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue" id="slide-23" style="background:;">
+<slide class="segue" id="slide-24" style="background:;">
   <hgroup>
     <h2>Epidemiology</h2>
   </hgroup>
@@ -746,7 +815,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-24">
+<slide class="" id="slide-25">
 <hgroup>
   <h2>Types of prevention</h2>
 </hgroup>
@@ -769,12 +838,17 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <ul>
 <li>Preventing complications in those who have developed signs and symptoms and have been diagnosed</li>
 </ul></li>
+<li>Quaternary - <strong>Quit overtesting and overtreating</strong>
+
+<ul>
+<li>Recent effort to minimize excessive healthcare interventions in disease process</li>
+</ul></li>
 </ul>
 
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-25">
+<slide class="" id="slide-26">
 <hgroup>
   <h2>Endemic vs Sporadic vs Epidemic vs Pandemic</h2>
 </hgroup>
@@ -784,7 +858,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-26">
+<slide class="" id="slide-27">
 <hgroup>
   <h2>Metric differences lie in setting and time frame</h2>
 </hgroup>
@@ -807,7 +881,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <ul>
 <li><strong>No time frame</strong></li>
 <li>Number of people with disease/Number of people who are exposed</li>
-<li>For steady-state SIR diseases</li>
+<li>For steady-state, simple diseases (e.g. SIR infections)</li>
 <li>Prevalence = Incidence x Average Disease Duration</li>
 </ul></li>
 </ul>
@@ -815,7 +889,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-27">
+<slide class="" id="slide-28">
 <hgroup>
   <h2>Tests are usually cutoffs on a continuous variable</h2>
 </hgroup>
@@ -825,7 +899,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-28">
+<slide class="" id="slide-29">
 <hgroup>
   <h2>Sensitivity is true positives / number with disease</h2>
 </hgroup>
@@ -835,7 +909,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-29">
+<slide class="" id="slide-30">
 <hgroup>
   <h2>Specificity is true negatives / number w/o disease</h2>
 </hgroup>
@@ -845,7 +919,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-30" style="background:;">
+<slide class="" id="slide-31" style="background:;">
   <hgroup>
     <h2>PPV and NPV vary based on pre-test probability</h2>
   </hgroup>
@@ -879,9 +953,9 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-31" style="background:;">
+<slide class="" id="slide-32" style="background:;">
   <hgroup>
-    <h2>Question #4</h2>
+    <h2>Question #5</h2>
   </hgroup>
   <article data-timings="">
     
@@ -928,7 +1002,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-32" style="background:;">
+<slide class="" id="slide-33" style="background:;">
   <hgroup>
     <h2>Odds and risk connect disease with exposure</h2>
   </hgroup>
@@ -968,9 +1042,9 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-33" style="background:;">
+<slide class="" id="slide-34" style="background:;">
   <hgroup>
-    <h2>Question #5</h2>
+    <h2>Question #6</h2>
   </hgroup>
   <article data-timings="">
     
@@ -1003,7 +1077,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-34">
+<slide class="" id="slide-35">
 <hgroup>
   <h2>OR approximates RR in low prevalence diseases</h2>
 </hgroup>
@@ -1013,9 +1087,9 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-35" style="background:;">
+<slide class="" id="slide-36" style="background:;">
   <hgroup>
-    <h2>Question #6</h2>
+    <h2>Question #7</h2>
   </hgroup>
   <article data-timings="">
     
@@ -1054,7 +1128,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-36">
+<slide class="" id="slide-37">
 <hgroup>
   <h2>Attributable risk is a relative incidence difference</h2>
 </hgroup>
@@ -1064,7 +1138,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-37" style="background:;">
+<slide class="" id="slide-38" style="background:;">
   <hgroup>
     <h2>Absolute risk reduction is a risk difference</h2>
   </hgroup>
@@ -1101,19 +1175,9 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue" id="slide-38" style="background:;">
+<slide class="segue" id="slide-39" style="background:;">
   <hgroup>
     <h2>Types of Biases</h2>
-  </hgroup>
-  <article data-timings="">
-    
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-39" style="background:;">
-  <hgroup>
-    <h2>Place holder</h2>
   </hgroup>
   <article data-timings="">
     
@@ -1141,7 +1205,17 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue" id="slide-42" style="background:;">
+<slide class="" id="slide-42" style="background:;">
+  <hgroup>
+    <h2>Place holder</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue" id="slide-43" style="background:;">
   <hgroup>
     <h2>Types of studies</h2>
   </hgroup>
@@ -1151,7 +1225,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-43">
+<slide class="" id="slide-44">
 <hgroup>
   <h2>The pyramid of evidence is a hierarchy</h2>
 </hgroup>
@@ -1163,7 +1237,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-44">
+<slide class="" id="slide-45">
 <hgroup>
   
 </hgroup>
@@ -1173,7 +1247,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-45">
+<slide class="" id="slide-46">
 <hgroup>
   <h2>Randomized control trial is in the name</h2>
 </hgroup>
@@ -1183,7 +1257,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-46">
+<slide class="" id="slide-47">
 <hgroup>
   <h2>Randomized control trials are the gold standard</h2>
 </hgroup>
@@ -1211,7 +1285,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-47">
+<slide class="" id="slide-48">
 <hgroup>
   <h2>Crossover trial means the two groups switch</h2>
 </hgroup>
@@ -1228,7 +1302,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-48">
+<slide class="" id="slide-49">
 <hgroup>
   
 </hgroup>
@@ -1238,7 +1312,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-49">
+<slide class="" id="slide-50">
 <hgroup>
   <h2>Prospective cohorts follow groups into the future</h2>
 </hgroup>
@@ -1248,7 +1322,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-50">
+<slide class="" id="slide-51">
 <hgroup>
   <h2>Retrospective cohorts follow groups from the past</h2>
 </hgroup>
@@ -1258,7 +1332,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-51">
+<slide class="" id="slide-52">
 <hgroup>
   <h2>Cohorts form the next level of evidence</h2>
 </hgroup>
@@ -1288,7 +1362,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-52">
+<slide class="" id="slide-53">
 <hgroup>
   <h2>Case-control trials measure chance of exposure given disease</h2>
 </hgroup>
@@ -1297,7 +1371,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </article>
 <!-- Presenter Notes -->
 </slide>
-<slide class="" id="slide-53">
+<slide class="" id="slide-54">
 <hgroup>
   <h2>Cross-sectional trials measure exposure and disease simultaneously</h2>
 </hgroup>
@@ -1438,109 +1512,109 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=22 title='Hypothesis testing has four possible outcomes'>
+        data-slide=22 title='Question #4'>
          22
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=23 title='Epidemiology'>
+        data-slide=23 title='Hypothesis testing has four possible outcomes'>
          23
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title='Types of prevention'>
+        data-slide=24 title='Epidemiology'>
          24
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=25 title='Endemic vs Sporadic vs Epidemic vs Pandemic'>
+        data-slide=25 title='Types of prevention'>
          25
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=26 title='Metric differences lie in setting and time frame'>
+        data-slide=26 title='Endemic vs Sporadic vs Epidemic vs Pandemic'>
          26
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=27 title='Tests are usually cutoffs on a continuous variable'>
+        data-slide=27 title='Metric differences lie in setting and time frame'>
          27
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=28 title='Sensitivity is true positives / number with disease'>
+        data-slide=28 title='Tests are usually cutoffs on a continuous variable'>
          28
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=29 title='Specificity is true negatives / number w/o disease'>
+        data-slide=29 title='Sensitivity is true positives / number with disease'>
          29
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=30 title='PPV and NPV vary based on pre-test probability'>
+        data-slide=30 title='Specificity is true negatives / number w/o disease'>
          30
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=31 title='Question #4'>
+        data-slide=31 title='PPV and NPV vary based on pre-test probability'>
          31
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=32 title='Odds and risk connect disease with exposure'>
+        data-slide=32 title='Question #5'>
          32
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=33 title='Question #5'>
+        data-slide=33 title='Odds and risk connect disease with exposure'>
          33
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=34 title='OR approximates RR in low prevalence diseases'>
+        data-slide=34 title='Question #6'>
          34
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=35 title='Question #6'>
+        data-slide=35 title='OR approximates RR in low prevalence diseases'>
          35
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=36 title='Attributable risk is a relative incidence difference'>
+        data-slide=36 title='Question #7'>
          36
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=37 title='Absolute risk reduction is a risk difference'>
+        data-slide=37 title='Attributable risk is a relative incidence difference'>
          37
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=38 title='Types of Biases'>
+        data-slide=38 title='Absolute risk reduction is a risk difference'>
          38
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=39 title='Place holder'>
+        data-slide=39 title='Types of Biases'>
          39
       </a>
     </li>
@@ -1558,74 +1632,80 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=42 title='Types of studies'>
+        data-slide=42 title='Place holder'>
          42
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=43 title='The pyramid of evidence is a hierarchy'>
+        data-slide=43 title='Types of studies'>
          43
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=44 title='NA'>
+        data-slide=44 title='The pyramid of evidence is a hierarchy'>
          44
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=45 title='Randomized control trial is in the name'>
+        data-slide=45 title='NA'>
          45
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=46 title='Randomized control trials are the gold standard'>
+        data-slide=46 title='Randomized control trial is in the name'>
          46
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=47 title='Crossover trial means the two groups switch'>
+        data-slide=47 title='Randomized control trials are the gold standard'>
          47
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=48 title='NA'>
+        data-slide=48 title='Crossover trial means the two groups switch'>
          48
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=49 title='Prospective cohorts follow groups into the future'>
+        data-slide=49 title='NA'>
          49
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=50 title='Retrospective cohorts follow groups from the past'>
+        data-slide=50 title='Prospective cohorts follow groups into the future'>
          50
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=51 title='Cohorts form the next level of evidence'>
+        data-slide=51 title='Retrospective cohorts follow groups from the past'>
          51
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=52 title='Case-control trials measure chance of exposure given disease'>
+        data-slide=52 title='Cohorts form the next level of evidence'>
          52
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=53 title='Cross-sectional trials measure exposure and disease simultaneously'>
+        data-slide=53 title='Case-control trials measure chance of exposure given disease'>
          53
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=54 title='Cross-sectional trials measure exposure and disease simultaneously'>
+         54
       </a>
     </li>
   </ul>

@@ -57,7 +57,7 @@ img {
 ## There are some important random terms
 
 > - Generalizability
-  - How applicable is result to general population?
+  - How applicable is a finding to the general population
 <br>
 > - P-value
   - Probability of finding a value this extreme by random chance
@@ -214,8 +214,8 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
  - \(H_0\): There is no association between the variables under study
  - \(H_A\): There is an association between the variables under study
 > - Goodness-of-fit
- - \(H_0\): The number of cases occuring are equal to that expected by chance
- - \(H_A\): The number of cases occuring are unequal to that expected by chance
+ - \(H_0\): The number of cases occuring is equal to that expected by chance
+ - \(H_A\): The number of cases occuring is unequal to that expected by chance
 
 --- &vcenter
 ## Always expect a contingency table for chi-squared
@@ -274,8 +274,32 @@ The correlation can be positive or negative
 ***=right
 ![plot of chunk unnamed-chunk-11](assets/fig/unnamed-chunk-11-1.png)
 
----  &radio
+--- &radio2
 ## Question #3
+
+A study was conducted to assess the association between oral contraceptive (OCP) use and confirmed blood clots. The data from the study are presented to the left. Which of the following is the best method to assess the association between OCP use and blood clots?
+
+1. Two sample T-test
+2. Analysis of variance
+3. Pearson correlation
+4. _Chi-square test_
+5. Spearman correlation
+
+***=image
+|             |   Clot   | No Clot  | Total  |
+|-------------|----------|----------|--------|
+| OCP Use     |    500   |    400   |   900  |   
+| No OCP Use  |     80   |     20   |   100  |   
+| Total       |    580   |    420   |  1000  |   
+
+***.hint
+What kind of data is this?
+
+***.explanation
+The only test available that utilizes categorical data is the Chi-square test. All of the other tests require at least rank or quantitative data.
+
+---  &radio
+## Question #4
 
 Investigators developed a new serum biomarker as a predictor for prostate cancer. To test it, they plan a cross-sectional study comprised of two groups. In one group, the researchers will include measurements of men with biopsy confirmed prostate cancer. In the other group, researchers will measure the level of their biomarker in men that have never previously been diagnosed with prostate cancer nor had a positive PSA test. The investigators will assume their biomarker is normally distributed. What is the best test to investigate whether the biomarker can distinguish the two groups?
 
@@ -325,6 +349,8 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
   <br><br>
 > - Tertiary - __Treatment__
   - Preventing complications in those who have developed signs and symptoms and have been diagnosed
+> - Quaternary - __Quit overtesting and overtreating__
+  - Recent effort to minimize excessive healthcare interventions in disease process
 
 --- &vcenter
 ## Endemic vs Sporadic vs Epidemic vs Pandemic
@@ -345,7 +371,7 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 > - Prevalence
   - __No time frame__
   - Number of people with disease/Number of people who are exposed
-  - For steady-state SIR diseases
+  - For steady-state, simple diseases (e.g. SIR infections)
     - Prevalence = Incidence x Average Disease Duration
 
 --- &vcenter
@@ -381,7 +407,7 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 > - __Both depend on how prevalent the disease is in the population__
 
 --- &radio2
-## Question #4
+## Question #5
 
 Assume a steady-state population that is not changing in anyway. Which of the following statements is true for people who test positive regarding moving the cutoff for a positive test from the solid to the dotted line?
 
@@ -425,8 +451,7 @@ Question prefaces a positive test result
 ![](assets/img/contingency_table.png)
 
 --- &radio
-
-## Question #5
+## Question #6
 
 Investigators are studying the association between mesothelioma and asbestos exposure. Due to the relative rarity of the disease, they design a very large case-control study. In the end, they find an \(OR = 20 (19.54;20.52, p < 0.001)\). After assuming that the OR is a good approximation of risk, the authors conclude that the risk of mesothelioma is 20 times higher in those exposed to asbestos compared to control. Why is their assumption reasonable?
 
@@ -443,14 +468,12 @@ Think about the denominators for odds and risks.
 Give an explanation
 
 --- &vcenter
-
 ## OR approximates RR in low prevalence diseases
 
 ![](assets/img/contingency_table.png)
 
 --- &radio
-
-## Question #6
+## Question #7
 
 Two studies were conducted on different samples from the same population to assess the relationship between oral contraceptive use and the risk of deep venous thrombosis (DVT). Study A showed an increased risk of DVT among oral contraceptive users, with a relative risk of 2.0 and a 95% CI of 1.2-2.8. Study B showed a relative risk of 2.05 and a 95% CI of 0.8-3.1. Which of the following statements is most likely to be true regarding these 2 studies?
 
@@ -471,12 +494,10 @@ What gives a narrower confidence interval?
 5. Correct - Per slide 23/38 bigger sample leads to improved ability to reject a false null hypothesis
 
 --- &vcenter
-
 ## Attributable risk is a relative incidence difference
 ![plot of chunk unnamed-chunk-17](assets/fig/unnamed-chunk-17-1.png)
 
 --- &twocolumn
-
 ## Absolute risk reduction is a risk difference
 
 <br>

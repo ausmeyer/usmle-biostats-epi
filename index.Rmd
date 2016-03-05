@@ -399,8 +399,51 @@ pos <- ggplot(mtcars, aes(x=wt, y=hp)) +
   geom_smooth(method='lm',formula=y~x) +
   ggtitle("Positive Correlation") + 
   labs(x="Weight", y="Horse Power") +
-  annotate("text", x = 1.5, y = 300, label = paste("r = ", round(cor(mtcars$wt, mtcars$hp), digits = 3), sep = ''), size=5, hjust = 0) +
-  annotate("text", x = 1.5, y = 280, label = paste("r^2 = ", round(cor(mtcars$wt, mtcars$hp)^2, digits = 3), sep = ''), size=5, hjust = 0)
+  xlim(1.5, 5.5) +
+  ylim(00, 310) +
+  annotate("text", x = 1.6, y = 300, label = paste("r = ", round(cor(mtcars$wt, mtcars$hp), digits = 3), sep = ''), size=5, hjust = 0) +
+  annotate("text", x = 1.6, y = 280, label = paste("r^2 = ", round(cor(mtcars$wt, mtcars$hp)^2, digits = 3), sep = ''), size=5, hjust = 0)
+show(pos)
+```
+
+--- &twocolumn
+## A wider spread in \(y\) mean a lower \(r^2\)
+
+***=left
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+pos <- ggplot(mtcars, aes(x=wt, y=hp)) + 
+  geom_point() + 
+  geom_smooth(method='lm',formula=y~x) +
+  ggtitle("Narrower spread in y-axis") + 
+  labs(x="Weight", y="Horse Power") +
+  xlim(1.5, 5.5) +
+  ylim(0, 310) +
+  annotate("text", x = 1.6, y = 300, label = paste("r = ", round(cor(mtcars$wt, mtcars$hp), digits = 3), sep = ''), size=5, hjust = 0) +
+  annotate("text", x = 1.6, y = 280, label = paste("r^2 = ", round(cor(mtcars$wt, mtcars$hp)^2, digits = 3), sep = ''), size=5, hjust = 0)
+show(pos)
+```
+
+***=right
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+fit <- lm(hp~wt, data=mtcars)
+predicted.y <- predict(fit)
+new.y <- mtcars$hp
+new.y[new.y - predicted.y > 0] <- new.y + 30
+new.y[new.y - predicted.y < 0] <- new.y - 30
+newdata <- data.frame(wt=mtcars$wt, hp=new.y)
+pos <- ggplot(newdata, aes(x=wt, y=hp)) + 
+  geom_point() + 
+  geom_smooth(method='lm',formula=y~x) +
+  ggtitle("Wider Spread in y-axis") + 
+  labs(x="Weight", y="Horse Power") +
+  xlim(1.5, 5.5) +
+  ylim(0, 310) +
+  annotate("text", x = 1.6, y = 300, label = paste("r = ", round(cor(newdata$wt, newdata$hp), digits = 3), sep = ''), size=5, hjust = 0) +
+  annotate("text", x = 1.6, y = 280, label = paste("r^2 = ", round(cor(newdata$wt, newdata$hp)^2, digits = 3), sep = ''), size=5, hjust = 0)
 show(pos)
 ```
 

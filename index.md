@@ -274,6 +274,15 @@ The correlation can be positive or negative
 ***=right
 ![plot of chunk unnamed-chunk-11](assets/fig/unnamed-chunk-11-1.png)
 
+--- &twocolumn
+## A wider spread in \(y\) mean a lower \(r^2\)
+
+***=left
+![plot of chunk unnamed-chunk-12](assets/fig/unnamed-chunk-12-1.png)
+
+***=right
+![plot of chunk unnamed-chunk-13](assets/fig/unnamed-chunk-13-1.png)
+
 --- &radio2
 ## Question #3
 
@@ -377,23 +386,23 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 --- &vcenter
 ## Tests are usually cutoffs on a continuous variable
   
-![plot of chunk unnamed-chunk-12](assets/fig/unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-14](assets/fig/unnamed-chunk-14-1.png)
 
 --- &vcenter
 ## Sensitivity is true positives / number with disease
   
-![plot of chunk unnamed-chunk-13](assets/fig/unnamed-chunk-13-1.png)
+![plot of chunk unnamed-chunk-15](assets/fig/unnamed-chunk-15-1.png)
 
 --- &vcenter
 ## Specificity is true negatives / number w/o disease
   
-![plot of chunk unnamed-chunk-14](assets/fig/unnamed-chunk-14-1.png)
+![plot of chunk unnamed-chunk-16](assets/fig/unnamed-chunk-16-1.png)
 
 --- &twocolumn
 ## PPV and NPV vary based on pre-test probability
   
 ***=left
-![plot of chunk unnamed-chunk-15](assets/fig/unnamed-chunk-15-1.png)
+![plot of chunk unnamed-chunk-17](assets/fig/unnamed-chunk-17-1.png)
 
 ***=right
 > - Positive Predictive Value
@@ -418,7 +427,7 @@ Assume a steady-state population that is not changing in anyway. Which of the fo
 5. Decrease in NPV
 
 ***=image
-![plot of chunk unnamed-chunk-16](assets/fig/unnamed-chunk-16-1.png)
+![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)
 
 ***.hint
 Question prefaces a positive test result
@@ -495,7 +504,7 @@ What gives a narrower confidence interval?
 
 --- &vcenter
 ## Attributable risk is a relative incidence difference
-![plot of chunk unnamed-chunk-17](assets/fig/unnamed-chunk-17-1.png)
+![plot of chunk unnamed-chunk-19](assets/fig/unnamed-chunk-19-1.png)
 
 --- &twocolumn
 ## Absolute risk reduction is a risk difference
@@ -515,7 +524,7 @@ What gives a narrower confidence interval?
   - FYI: \(NNH = 1 / AR\)
 
 ***=right
-![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)
+![plot of chunk unnamed-chunk-20](assets/fig/unnamed-chunk-20-1.png)
 
 --- .segue
 ## Types of Biases

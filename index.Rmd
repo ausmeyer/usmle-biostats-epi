@@ -46,7 +46,7 @@ img {
   - Types of Prevention and Outbreaks - 4 minutes
   - Measures of Morbidity and Mortality - 5 minutes
   - Validity and Reliability of Clinical Tests - 6 minutes
-  - Measures of Risk - 10
+  - Measures of Risk - 10 minutes
   - Epidemiological Biases - 5 minutes
   - Types of Studies - 10 minutes
 
@@ -516,12 +516,13 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
   
 > - Primary - __Prevention__
   - An action taken to prevent development of disease in a person who is well
-  <br><br>
+  <br>
 > - Secondary - __Screening__
   - Identifying people in whom disease has begun but who do not have signs or symptoms
-  <br><br>
+  <br>
 > - Tertiary - __Treatment__
   - Preventing complications in those who have developed signs and symptoms and have been diagnosed
+  <br>
 > - Quaternary - __Quit overtesting and overtreating__
   - Recent effort to minimize excessive healthcare interventions in disease process
 
@@ -777,16 +778,45 @@ ggplot(data=dat, aes(x=Groups, y=Risk)) +
 ```
 
 --- .segue
-## Types of Biases
+## Types of Biases - My groupings
 
---- 
-## Place holder
+--- &vcenter
+## Biases of design or unseen variables
+> - Selection bias
+  - Non-random partitioning of individuals into groups
+> - Observer-expectancy
+  - Observer is unblinded and expects a particular outcome
+> - Hawthorne effect
+  - Subjects improve health behaviors because someone is watching
+> - Effect modification bias
+  - Magnitude of effect varies by third variable
+  - __Can__ be eliminated by stratification
+> - Confounding
+  - Unseen third variable is an underlying cause for correlation of two other variables
+  - __Cannot__ be eliminated by stratification
 
---- 
-## Place holder
+--- &vcenter
+## Biases of information (measurement)
+> - Recall bias
+  - Subjects with disease can recall exposures better than healthy subjects
+> - Procedure bias
+  - Experimenters vary systematically in the way they do work
+  - e.g. Experimenters don't follow the specified procedure
+> - Instrument bias
+  - Instrument is broken
+  - Instruments can also be things like surveys or __clerkship evaluations__
+  - Just means instrument is not reliable
 
---- 
-## Place holder
+--- &vcenter
+## Biases of time and completion
+> - Lead-time bias
+  - New test detects disease earlier
+  - Survival appears improved with new test
+> - Attrition bias
+  - Subjects systematically withdraw
+  - Could be things like side effects or lack of improvement
+> - Loss-to-follow up
+  - Subjects randomly do not report for scheduled followup
 
 --- .segue
 ## Types of studies
@@ -845,10 +875,10 @@ __Closer to the top means better evidence__
  > - Can use relative risk because investigator knows prevalence of exposure and disease
  > - Subjects vary by exposure status
  <br><br>
- > - Biggest bias is selection
+ > - __Selection bias__ is the biggest problem
    - Investigator has infinite control over inclusion
  > - Other biases
-   - Attrition, loss-to-followup, confounding, Hawthorne
+   - Attrition, loss-to-follow up, confounding, Hawthorne
  <br><br>
  > - Retrospective
    - Information bias
@@ -858,3 +888,7 @@ __Closer to the top means better evidence__
 
 --- &vcenter
 ## Cross-sectional trials measure exposure and disease simultaneously
+
+--- &vcenter
+<div class="centered"><font size="7">The End</font size></div>
+

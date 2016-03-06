@@ -83,10 +83,10 @@ img {
 ## Statistical distributions have invariant properties
 
 ***=left
-![plot of chunk unnamed-chunk-1](figure/unnamed-chunk-1-1.png)
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png)
 
 ***=right
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
 
 ---  &radio
 ## Question #1
@@ -115,21 +115,21 @@ The important invariant properties (for you) of normal distributions are the fol
 ## Real distributions can have one or multiple peaks
 
 ***=left
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
+![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3-1.png)
 
 
 ***=right
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4-1.png)
 
 --- &twocolumn
 ## Skew describes the direction of the tail
 
 ***=left
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-5](assets/fig/unnamed-chunk-5-1.png)
 
 
 ***=right
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6-1.png)
 
 --- &radio2
 ## Question #2
@@ -144,7 +144,7 @@ Which of the following corresponds to the measures of central tendency on the gr
 
  
 ***=image
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](assets/fig/unnamed-chunk-7-1.png)
 
 ***.hint
 Mode is most common, median is middle, mean is average value.
@@ -171,7 +171,7 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
 ## T-test compares means of one or two groups
 
 ***=left
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png)
+![plot of chunk unnamed-chunk-8](assets/fig/unnamed-chunk-8-1.png)
 
 ***=right 
 <br><br>
@@ -198,7 +198,7 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
   ```
   
   ```
-  ## [1] 3.780512e-92
+  ## [1] 1.505077e-95
   ```
   > - Have we rejected the null hypothesis?
   <br>
@@ -255,7 +255,7 @@ Table 3: A 7x5 contingency table
 ## Pearson correlation compares two variables
 The correlation can be positive or negative
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png)
+![plot of chunk unnamed-chunk-10](assets/fig/unnamed-chunk-10-1.png)
 
 --- &twocolumn
 ## For correlation, r is the critical statistic
@@ -272,16 +272,16 @@ The correlation can be positive or negative
  - For Step 1, most likely significant at \(p < 0.05\)
 
 ***=right
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png)
+![plot of chunk unnamed-chunk-11](assets/fig/unnamed-chunk-11-1.png)
 
 --- &twocolumn
 ## A wider spread in \(y\) means a lower \(r^2\)
 
 ***=left
-![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-12](assets/fig/unnamed-chunk-12-1.png)
 
 ***=right
-![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png)
+![plot of chunk unnamed-chunk-13](assets/fig/unnamed-chunk-13-1.png)
 
 --- &radio2
 ## Question #3
@@ -387,23 +387,23 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 --- &vcenter
 ## Tests are usually cutoffs on a continuous variable
   
-![plot of chunk unnamed-chunk-14](figure/unnamed-chunk-14-1.png)
+![plot of chunk unnamed-chunk-14](assets/fig/unnamed-chunk-14-1.png)
 
 --- &vcenter
 ## Sensitivity is true positives / number with disease
   
-![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15-1.png)
+![plot of chunk unnamed-chunk-15](assets/fig/unnamed-chunk-15-1.png)
 
 --- &vcenter
 ## Specificity is true negatives / number w/o disease
   
-![plot of chunk unnamed-chunk-16](figure/unnamed-chunk-16-1.png)
+![plot of chunk unnamed-chunk-16](assets/fig/unnamed-chunk-16-1.png)
 
 --- &twocolumn
 ## PPV and NPV vary based on pre-test probability
   
 ***=left
-![plot of chunk unnamed-chunk-17](figure/unnamed-chunk-17-1.png)
+![plot of chunk unnamed-chunk-17](assets/fig/unnamed-chunk-17-1.png)
 
 ***=right
 > - Positive Predictive Value
@@ -428,7 +428,7 @@ Assume a steady-state population that is not changing in anyway. Which of the fo
 5. Decrease in NPV
 
 ***=image
-![plot of chunk unnamed-chunk-18](figure/unnamed-chunk-18-1.png)
+![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)
 
 ***.hint
 Question prefaces a positive test result
@@ -505,7 +505,7 @@ What gives a narrower confidence interval?
 
 --- &vcenter
 ## Attributable risk is a relative incidence difference
-![plot of chunk unnamed-chunk-19](figure/unnamed-chunk-19-1.png)
+![plot of chunk unnamed-chunk-19](assets/fig/unnamed-chunk-19-1.png)
 
 --- &twocolumn
 ## Absolute risk reduction is a risk difference
@@ -525,7 +525,7 @@ What gives a narrower confidence interval?
   - FYI: \(NNH = 1 / AR\)
 
 ***=right
-![plot of chunk unnamed-chunk-20](figure/unnamed-chunk-20-1.png)
+![plot of chunk unnamed-chunk-20](assets/fig/unnamed-chunk-20-1.png)
 
 --- .segue
 ## Types of Biases - My groupings

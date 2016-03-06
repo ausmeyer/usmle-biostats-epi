@@ -401,8 +401,8 @@ pos <- ggplot(mtcars, aes(x=wt, y=hp)) +
   labs(x="Weight", y="Horse Power") +
   xlim(1.5, 5.5) +
   ylim(00, 310) +
-  annotate("text", x = 1.6, y = 300, label = paste("r = ", round(cor(mtcars$wt, mtcars$hp), digits = 3), sep = ''), size=5, hjust = 0) +
-  annotate("text", x = 1.6, y = 280, label = paste("r^2 = ", round(cor(mtcars$wt, mtcars$hp)^2, digits = 3), sep = ''), size=5, hjust = 0)
+  annotate("text", x = 1.6, y = 300, label = paste("r == ", round(cor(mtcars$wt, mtcars$hp), digits = 3), sep = ''), size=5, hjust = 0, parse = TRUE) +
+  annotate("text", x = 1.6, y = 280, label = paste("r^2 == ", round(cor(mtcars$wt, mtcars$hp)^2, digits = 3), sep = ''), size=5, hjust = 0, parse = TRUE)
 show(pos)
 ```
 
@@ -420,8 +420,8 @@ pos <- ggplot(mtcars, aes(x=wt, y=hp)) +
   labs(x="Weight", y="Horse Power") +
   xlim(1.5, 5.5) +
   ylim(0, 310) +
-  annotate("text", x = 1.6, y = 300, label = paste("r = ", round(cor(mtcars$wt, mtcars$hp), digits = 3), sep = ''), size=5, hjust = 0) +
-  annotate("text", x = 1.6, y = 280, label = paste("r^2 = ", round(cor(mtcars$wt, mtcars$hp)^2, digits = 3), sep = ''), size=5, hjust = 0)
+  annotate("text", x = 1.6, y = 300, label = paste("r == ", round(cor(mtcars$wt, mtcars$hp), digits = 3), sep = ''), size=5, hjust = 0, parse = TRUE) +
+  annotate("text", x = 1.6, y = 280, label = paste("r^2 == ", round(cor(mtcars$wt, mtcars$hp)^2, digits = 3), sep = ''), size=5, hjust = 0, parse = TRUE)
 show(pos)
 ```
 
@@ -442,8 +442,8 @@ pos <- ggplot(newdata, aes(x=wt, y=hp)) +
   labs(x="Weight", y="Horse Power") +
   xlim(1.5, 5.5) +
   ylim(0, 310) +
-  annotate("text", x = 1.6, y = 300, label = paste("r = ", round(cor(newdata$wt, newdata$hp), digits = 3), sep = ''), size=5, hjust = 0) +
-  annotate("text", x = 1.6, y = 280, label = paste("r^2 = ", round(cor(newdata$wt, newdata$hp)^2, digits = 3), sep = ''), size=5, hjust = 0)
+  annotate("text", x = 1.6, y = 300, label = paste("r == ", round(cor(newdata$wt, newdata$hp), digits = 3), sep = ''), size=5, hjust = 0, parse = TRUE) +
+  annotate("text", x = 1.6, y = 280, label = paste("r^2 == ", round(cor(newdata$wt, newdata$hp)^2, digits = 3), sep = ''), size=5, hjust = 0, parse = TRUE)
 show(pos)
 ```
 

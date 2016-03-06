@@ -350,16 +350,16 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 --- &vcenter
 ## Types of prevention
   
-> - Primary - __Prevention__
+> - __P__rimary - __P__revention
   - An action taken to prevent development of disease in a person who is well
   <br>
-> - Secondary - __Screening__
+> - __S__econdary - __S__creening
   - Identifying people in whom disease has begun but who do not have signs or symptoms
   <br>
-> - Tertiary - __Treatment__
+> - __T__ertiary - __T__reatment
   - Preventing complications in those who have developed signs and symptoms and have been diagnosed
   <br>
-> - Quaternary - __Quit overtesting and overtreating__
+> - __Q__uaternary - __Q__uit overtesting and overtreating
   - Recent effort to minimize excessive healthcare interventions in disease process
 
 --- &vcenter

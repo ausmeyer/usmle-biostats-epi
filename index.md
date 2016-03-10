@@ -179,7 +179,7 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
 <br><br>
 > - One sample: \(H_0\) = There is no difference between group mean and zero
 <br><br>
-> - Two sample: \(H_0\) = There is no difference between the disease and control groups
+> - Two sample: \(H_0\) = There is no difference between the disease and no disease groups
 <br><br>
 > - Paired: \(H_0\) = The difference of a measured variable between two time points on the same individuals is zero
 
@@ -189,7 +189,7 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
 --- &vcenter
 ## T-test compares means of one or two groups
 
- - Two sample: \(H_0\) = There is no difference between the disease and control groups
+ - Two sample: \(H_0\) = There is no difference between the disease and no disease groups
  <br>
  - Run the t-test
   
@@ -204,7 +204,7 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
   ```
   > - Have we rejected the null hypothesis?
   <br>
-  > - Yes, we have accepted \(H_A\). There is a difference between control and disease.
+  > - Yes, we have accepted \(H_A\). There is a difference between disease and no disease groups.
 
 --- &vcenter
 ## Chi-squared test uses categorical (count) data
@@ -216,8 +216,8 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
  - \(H_0\): The number of cases occuring in a subgroup is consistent with expected
  - \(H_A\): The number of cases occuring in a subgroup is not consistent with expected
 > - Test of independence
- - \(H_0\): Categorical variable A and variable B are independent
- - \(H_A\): Categorical variable A and variable B are not independent
+ - \(H_0\): Categorical variable A and categorical variable B are independent
+ - \(H_A\): Categorical variable A and categorical variable B are not independent
 
 --- &vcenter
 ## Always expect a contingency table for chi-squared
@@ -370,10 +370,10 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 ![](assets/img/epidemic.jpg)
 
 --- &vcenter
-## Metric differences lie in setting and time frame
+## Statistic differences lie in setting and time frame
   
 > - Attack rate
-  - Typically used during epidemics
+  - Typically used __during epidemics/pandemics__
   - Number of people who get disease / Number of people who are exposed
 
 > - Incidence
@@ -614,7 +614,7 @@ __Closer to the top means better evidence__
 > - Answer: To control confounders
   - Confounders are not necessarily eliminated even with perfect technical execution
 <br><br>
-> - Can use relative risk because investigator knows prevalence of exposure and disease
+> - Can use relative risk because investigator knows prevalence of disease and prior exposures
 
 --- &vcenter
 ## Crossover trial means the two groups switch
@@ -659,7 +659,8 @@ __Closer to the top means better evidence__
 ## Case-control forms the next level down from cohorts
  > - Must use odds ratio because investigator does not know prevalence of disease
  > - Subjects grouped by cases and controls
- > - Measure __odds of exposure__ given disease
+ > - Measure __odds of exposure__ in case and control groups
+   - Use odds ratio as test statistic
  <br><br>
  > - __Recall bias__ is the biggest problem
    - Investigator has infinite control over inclusion
@@ -721,7 +722,7 @@ What does the timeline look like?
 2. Correct - A cross-sectional study is a "snap shot". It simultaneously determines both risk factors and disease. It can establish an association, but it cannot say much about causation because the timeline is unknown.
 3. Incorrect - Although patients are randomly selected, a random clinical trial requires a control group and requires some treatment under investigation.
 4. Incorrect - A prospective cohort starts in the present and follows a group into the future. There is no indication of time or following patients or recording expsoure.
-5. Incorrect - A case-control trial requires identifying cases with disease and control without disease, then identifying exposures, and calculating the risk of exposure in given disease. There is no indication of that here.
+5. Incorrect - A case-control trial requires identifying cases with disease and controls without disease, then identifying exposures, and calculating the risk of exposure in given disease. There is no indication of that here.
 
 --- &radio
 ## Question #10

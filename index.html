@@ -363,7 +363,7 @@ img {
 <ul class = "build incremental">
 <li>One sample: \(H_0\) = There is no difference between group mean and zero
 <br><br></li>
-<li>Two sample: \(H_0\) = There is no difference between the disease and control groups
+<li>Two sample: \(H_0\) = There is no difference between the disease and no disease groups
 <br><br></li>
 <li>Paired: \(H_0\) = The difference of a measured variable between two time points on the same individuals is zero</li>
 </ul>
@@ -389,7 +389,7 @@ img {
 </hgroup>
 <article class = 'flexbox vcenter'>
 <ul>
-<li>Two sample: \(H_0\) = There is no difference between the disease and control groups
+<li>Two sample: \(H_0\) = There is no difference between the disease and no disease groups
 <br></li>
 <li><p>Run the t-test</p>
 
@@ -404,7 +404,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <ul class = "build incremental">
 <li>Have we rejected the null hypothesis?
 <br></li>
-<li>Yes, we have accepted \(H_A\). There is a difference between control and disease.</li>
+<li>Yes, we have accepted \(H_A\). There is a difference between disease and no disease groups.</li>
 </ul></li>
 </ul>
 
@@ -432,8 +432,8 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <li>Test of independence
 
 <ul>
-<li>\(H_0\): Categorical variable A and variable B are independent</li>
-<li>\(H_A\): Categorical variable A and variable B are not independent</li>
+<li>\(H_0\): Categorical variable A and categorical variable B are independent</li>
+<li>\(H_A\): Categorical variable A and categorical variable B are not independent</li>
 </ul></li>
 </ul>
 
@@ -884,14 +884,14 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </slide>
 <slide class="" id="slide-28">
 <hgroup>
-  <h2>Metric differences lie in setting and time frame</h2>
+  <h2>Statistic differences lie in setting and time frame</h2>
 </hgroup>
 <article class = 'flexbox vcenter'>
 <ul class = "build incremental">
 <li><p>Attack rate</p>
 
 <ul>
-<li>Typically used during epidemics</li>
+<li>Typically used <strong>during epidemics/pandemics</strong></li>
 <li>Number of people who get disease / Number of people who are exposed</li>
 </ul></li>
 <li><p>Incidence</p>
@@ -1398,7 +1398,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <li>Confounders are not necessarily eliminated even with perfect technical execution
 <br><br></li>
 </ul></li>
-<li>Can use relative risk because investigator knows prevalence of exposure and disease</li>
+<li>Can use relative risk because investigator knows prevalence of disease and prior exposures</li>
 </ul>
 
 </article>
@@ -1500,8 +1500,12 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <ul class = "build incremental">
 <li>Must use odds ratio because investigator does not know prevalence of disease</li>
 <li>Subjects grouped by cases and controls</li>
-<li>Measure <strong>odds of exposure</strong> given disease
+<li>Measure <strong>odds of exposure</strong> in case and control groups
+
+<ul>
+<li>Use odds ratio as test statistic
 <br><br></li>
+</ul></li>
 <li><strong>Recall bias</strong> is the biggest problem
 
 <ul>
@@ -1624,7 +1628,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <li>Correct - A cross-sectional study is a &quot;snap shot&quot;. It simultaneously determines both risk factors and disease. It can establish an association, but it cannot say much about causation because the timeline is unknown.</li>
 <li>Incorrect - Although patients are randomly selected, a random clinical trial requires a control group and requires some treatment under investigation.</li>
 <li>Incorrect - A prospective cohort starts in the present and follows a group into the future. There is no indication of time or following patients or recording expsoure.</li>
-<li>Incorrect - A case-control trial requires identifying cases with disease and control without disease, then identifying exposures, and calculating the risk of exposure in given disease. There is no indication of that here.</li>
+<li>Incorrect - A case-control trial requires identifying cases with disease and controls without disease, then identifying exposures, and calculating the risk of exposure in given disease. There is no indication of that here.</li>
 </ol>
 
 </div>
@@ -1848,7 +1852,7 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=28 title='Metric differences lie in setting and time frame'>
+        data-slide=28 title='Statistic differences lie in setting and time frame'>
          28
       </a>
     </li>

@@ -802,18 +802,6 @@ What gives a narrower confidence interval?
 4. Incorrect - There is no reason to believe B is biased
 5. Correct - Per slide 23/38 bigger sample leads to improved ability to reject a false null hypothesis
 
---- &vcenter
-## Attributable risk is a relative incidence difference
-```{r, message=FALSE, warning=FALSE, echo=FALSE}
-
-dat <- data.frame(Groups = c('Exposure', 'No Exposure'), Incidence = c(.6, .2))
-ggplot(data=dat, aes(x=Groups, y=Incidence)) +
-  geom_bar(colour="black", stat="identity") +
-  ylab('Relative Incidence') +
-  annotate("segment", x = 2, xend = 2, y = .2, yend = .6, colour = "red", size = 1.5) +
-  annotate("text", x = 1.95, y = .4, colour = "red", size = 6, label = "Attributable Risk", angle = 90)
-```
-
 --- &twocolumn
 ## Absolute risk reduction is a risk difference
 

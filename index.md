@@ -522,10 +522,6 @@ What gives a narrower confidence interval?
 4. Incorrect - There is no reason to believe B is biased
 5. Correct - Per slide 23/38 bigger sample leads to improved ability to reject a false null hypothesis
 
---- &vcenter
-## Attributable risk is a relative incidence difference
-![plot of chunk unnamed-chunk-22](assets/fig/unnamed-chunk-22-1.png)
-
 --- &twocolumn
 ## Absolute risk reduction is a risk difference
 
@@ -544,7 +540,7 @@ What gives a narrower confidence interval?
   - FYI: \(NNH = 1 / AR\)
 
 ***=right
-![plot of chunk unnamed-chunk-23](assets/fig/unnamed-chunk-23-1.png)
+![plot of chunk unnamed-chunk-22](assets/fig/unnamed-chunk-22-1.png)
 
 --- .segue
 ## Types of Biases - My groupings

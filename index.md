@@ -417,9 +417,21 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 > - __Both depend on how prevalent the disease is in the population__
 
 --- &vcenter
+<div class="centered"><font size="7">PPV depends on sensitivity or specificity?</font size></div>
+
+--- &twocolumn
+## PPV ~ Specificity and NPV ~ Sensitivity
+
+***=left
+![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)
+
+***=right
+![plot of chunk unnamed-chunk-19](assets/fig/unnamed-chunk-19-1.png)
+
+--- &vcenter
 ## This is what real diseases look like in the population
   
-![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)
+![plot of chunk unnamed-chunk-20](assets/fig/unnamed-chunk-20-1.png)
 
  This is the real prevalence of HIV... Where would you put the cutoff?
 
@@ -435,7 +447,7 @@ Assume a steady-state population that is not changing in anyway. Which of the fo
 5. Decrease in NPV
 
 ***=image
-![plot of chunk unnamed-chunk-19](assets/fig/unnamed-chunk-19-1.png)
+![plot of chunk unnamed-chunk-21](assets/fig/unnamed-chunk-21-1.png)
 
 ***.hint
 Question prefaces a positive test result
@@ -512,7 +524,7 @@ What gives a narrower confidence interval?
 
 --- &vcenter
 ## Attributable risk is a relative incidence difference
-![plot of chunk unnamed-chunk-20](assets/fig/unnamed-chunk-20-1.png)
+![plot of chunk unnamed-chunk-22](assets/fig/unnamed-chunk-22-1.png)
 
 --- &twocolumn
 ## Absolute risk reduction is a risk difference
@@ -532,7 +544,7 @@ What gives a narrower confidence interval?
   - FYI: \(NNH = 1 / AR\)
 
 ***=right
-![plot of chunk unnamed-chunk-21](assets/fig/unnamed-chunk-21-1.png)
+![plot of chunk unnamed-chunk-23](assets/fig/unnamed-chunk-23-1.png)
 
 --- .segue
 ## Types of Biases - My groupings

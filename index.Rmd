@@ -640,6 +640,54 @@ ggplot(data, aes(x = x, y = y)) +
 > - __Both depend on how prevalent the disease is in the population__
 
 --- &vcenter
+<div class="centered"><font size="7">PPV depends on sensitivity or specificity?</font size></div>
+
+--- &twocolumn
+## PPV ~ Specificity and NPV ~ Sensitivity
+
+***=left
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+n = 1000
+prevalence <- seq(0, 1, by = 0.001)
+sensitivity <- 0.5
+specificity <- 0.9
+TP <- n * prevalence
+TN <- n - TP
+FP <- n * (1 - specificity)
+FN <- n * prevalence * (1 - sensitivity)
+PPV <- TP / (TP + FP)
+data <- data.frame(x = prevalence, y = PPV)
+ggplot(data, aes(x = x, y = y)) + 
+  geom_line() +
+  ylim(0, 1) + 
+  labs(x="Prevalence", y="Positive Predictive Value") +
+  annotate('text', x = 0.5, y = 0.5, label = "50% Sensitive and 90% Specific", size = 5)
+```
+
+***=right
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+n = 1000
+prevalence <- seq(0, 1, by = 0.001)
+sensitivity <- 0.9
+specificity <- 0.5
+TP <- n * prevalence
+TN <- n - TP
+FP <- n * (1 - specificity)
+FN <- n * prevalence * (1 - sensitivity)
+PPV <- TP / (TP + FP)
+data <- data.frame(x = prevalence, y = PPV)
+ggplot(data, aes(x = x, y = y)) + 
+  geom_line() +
+  ylim(0, 1) + 
+  labs(x="Prevalence", y="Positive Predictive Value") +
+  annotate('text', x = 0.5, y = 0.7, label = "90% Sensitive and 50% Specific", size = 5)
+```
+
+--- &vcenter
 ## This is what real diseases look like in the population
   
 ```{r, fig.width = 12, fig.height = 7, message=FALSE, warning=FALSE, echo=FALSE}

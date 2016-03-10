@@ -383,8 +383,7 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 > - Prevalence
   - __No time frame__
   - Number of people with disease/Number of people who are exposed
-  - For steady-state, simple diseases (e.g. SIR infections)
-    - Prevalence = Incidence x Average Disease Duration
+  - Simple diseases (e.g. SIR infections): Prevalence = Incidence x Average Disease Duration
 
 --- &vcenter
 ## Tests are usually cutoffs on a continuous variable

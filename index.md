@@ -674,7 +674,7 @@ __Closer to the top means better evidence__
 ![](assets/img/cross_sectional.png)
 
 --- &vcenter
-## Cross-sectional study forms the next level
+## Cross-sectional study form next level evidence
  > - __Quick, cheap, and easy__
    - Typically this is a starting point
  > - Can establish prevalence of disease

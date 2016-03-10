@@ -537,7 +537,7 @@ What gives a narrower confidence interval?
 > - Number needed to treat
   - Number of patients treated for __ONE__ patient benefited
   - \(NNT = 1 / ARR\)
-  - FYI: \(NNH = 1 / AR\)
+  - \(NNH = 1 / AR\)
 
 ***=right
 ![plot of chunk unnamed-chunk-22](assets/fig/unnamed-chunk-22-1.png)

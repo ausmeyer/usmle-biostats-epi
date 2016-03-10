@@ -373,7 +373,7 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 ## Statistic differences lie in setting and time frame
   
 > - Attack rate
-  - Typically used __during epidemics/pandemics__
+  - Typically used __during epidemics or pandemics__
   - Number of people who get disease / Number of people who are exposed
 
 > - Incidence

@@ -73,7 +73,7 @@ img {
 }
 </style>
 
-<h2>Roadmap</h2>
+<h2>Roadmap - This is just a guess</h2>
 
 <ul>
 <li>Biostatistics - 20 minutes
@@ -329,14 +329,19 @@ img {
 <li>Assume:
 
 <ul>
-<li>There are two or more groups being compared, or one group being compared to zero
-<br><br><br></li>
+<li>There are two or more groups being compared, or </li>
+<li>One group being compared to zero, or</li>
+<li>One group is being compared to expectation.
+<br><br></li>
 </ul></li>
-<li>\(H_0\): There is no difference in the means of the groups.
-<br><br><br></li>
 <li>For Step 1, probably safe to assume null is always rejected with \(p < 0.05\).
-<br><br><br></li>
-<li>\(H_A\): The difference between the means of the groups is real.</li>
+
+<ul>
+<li>For ratios (e.g. Relative Risk, Odds Ratio), a 95% CI <strong>not</strong> overlapping 1 is significant.</li>
+<li>For two sample tests, it is less straightforward how the CI relates to the p-value
+<br><br></li>
+</ul></li>
+<li>Once \(H_0\) is rejected, we accept the alternative hypothesis \(H_A\).</li>
 </ul>
 
 </article>
@@ -415,20 +420,20 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <li>Two common tests
 
 <ul>
-<li>Test of independence</li>
 <li>Goodness-of-fit</li>
-</ul></li>
-<li>Test of independence
-
-<ul>
-<li>\(H_0\): There is no association between the variables under study</li>
-<li>\(H_A\): There is an association between the variables under study</li>
+<li>Test of independence</li>
 </ul></li>
 <li>Goodness-of-fit
 
 <ul>
-<li>\(H_0\): The number of cases occuring is equal to that expected by chance</li>
-<li>\(H_A\): The number of cases occuring is unequal to that expected by chance</li>
+<li>\(H_0\): The number of cases occuring in a subgroup is consistent with that occurring in the population</li>
+<li>\(H_A\): The number of cases occuring in a subgroup is not consistent with that occurring in the population</li>
+</ul></li>
+<li>Test of independence
+
+<ul>
+<li>\(H_0\): Categorical variable A and variable B are independent</li>
+<li>\(H_A\): Categorical variable A and variable B are not independent</li>
 </ul></li>
 </ul>
 

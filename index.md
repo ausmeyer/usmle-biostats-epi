@@ -35,7 +35,7 @@ img {
 }
 </style>
 
-## Roadmap
+## Roadmap - This is just a guess
 
  - Biostatistics - 20 minutes
   - Accuracy versus Precision - 2 minutes
@@ -159,13 +159,15 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
 ## The null hypothesis (\(H_0\)) is always the default
 
 > - Assume:
-  - There are two or more groups being compared, or one group being compared to zero
-<br><br><br>
-> - \(H_0\): There is no difference in the means of the groups.
-<br><br><br>
+  - There are two or more groups being compared, or 
+  - One group being compared to zero, or
+  - One group is being compared to expectation.
+<br><br>
 > - For Step 1, probably safe to assume null is always rejected with \(p < 0.05\).
-<br><br><br>
-> - \(H_A\): The difference between the means of the groups is real.
+  - For ratios (e.g. Relative Risk, Odds Ratio), a 95% CI __not__ overlapping 1 is significant.
+  - For two sample tests, it is less straightforward how the CI relates to the p-value
+<br><br>
+> - Once \(H_0\) is rejected, we accept the alternative hypothesis \(H_A\).
 
 --- &twocolumn
 ## T-test compares means of one or two groups
@@ -208,14 +210,14 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
 ## Chi-squared test uses categorical (count) data
 
 > - Two common tests
- - Test of independence
  - Goodness-of-fit
-> - Test of independence
- - \(H_0\): There is no association between the variables under study
- - \(H_A\): There is an association between the variables under study
+ - Test of independence
 > - Goodness-of-fit
- - \(H_0\): The number of cases occuring is equal to that expected by chance
- - \(H_A\): The number of cases occuring is unequal to that expected by chance
+ - \(H_0\): The number of cases occuring in a subgroup is consistent with that occurring in the population
+ - \(H_A\): The number of cases occuring in a subgroup is not consistent with that occurring in the population
+> - Test of independence
+ - \(H_0\): Categorical variable A and variable B are independent
+ - \(H_A\): Categorical variable A and variable B are not independent
 
 --- &vcenter
 ## Always expect a contingency table for chi-squared

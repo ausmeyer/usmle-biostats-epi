@@ -671,7 +671,7 @@ __Closer to the top means better evidence__
 ![](assets/img/cross_sectional.png)
 
 --- &vcenter
-## Cross-sectional study forms the next level down from case-control
+## Cross-sectional study forms the next level
  > - __Quick, cheap, and easy__
    - Typically this is a starting point
  > - Can establish prevalence of disease
@@ -680,6 +680,64 @@ __Closer to the top means better evidence__
  <br><br>
  > - __Cannot establish causation__
  > - Cannot calculate risk metrics
+
+--- &radio
+## Question #8
+A study was conducted to evaluate the efficacy of a new antiviral drug for the treatment of the common cold in young children. The study population consisted of 100 children between the age of 2 to 8 years. These children were diagnosed with rhinovirus infection and subsequently given the particular antiviral drug. One week later, it was observed that 92 of the 100 patient were asymptomatic. Which of the following is the true conclusion of this study?
+
+1. The drug is highly effective as the effectiveness is 90%
+2. The drug is moderately effective as the efficacy is 90%
+3. _An exact conclusion cannot be drawn from the study_
+4. The drug is not effective as the sample size is very small
+5. No conclusion can be made, as compliance is generally very low in small children
+
+***.hint
+A treatment is tested without a control
+
+***.explanation
+1. Incorrect - We can't compare to a real-world control.
+2. Incorrect - We can't compare to an ideal control.
+3. Correct - Most people with recover from a cold in a week or so.
+4. Incorrect - The sample size may be adequate. There are no statistical tests to evaluate this statement.
+5. Incorrect - Compliance would not be an issue in this case.
+
+--- &radio
+## Question #9
+A group of researchers are studying the relationship between mutations in HMG-CoA reductase and coronary heart disease (CHD). The study population is selected at random. Tissue samples are obtained for genotyping and stress echocardiograms are performed to assess CHD. In the subsequent paper, the authors conclude that there is an association between particular mutations in HMG-CoA reductase and CHD. Which of the following study designs did the authors utilize?
+
+1. Retrospective cohort study
+2. _Cross-sectional study_
+3. Randomized clinical trial
+4. Prospective cohort study
+5. Case-control trial
+
+***.hint
+What does the timeline look like?
+
+***.explanation
+1. Incorrect - A retrospective cohort starts at some point in the past. There is no indication of a past time or chart review in this study.
+2. Correct - A cross-sectional study is a "snap shot". It simultaneously determines both risk factors and disease. It can establish an association, but it cannot say much about causation because the timeline is unknown.
+3. Incorrect - Although patients are randomly selected, a random clinical trial requires a control group and requires some treatment under investigation.
+4. Incorrect - A prospective cohort starts in the present and follows a group into the future. There is no indication of time or following patients or recording expsoure.
+5. Incorrect - A case-control trial requires identifying cases with disease and control without disease, then identifying exposures, and calculating the risk of exposure in given disease. There is no indication of that here.
+
+--- &radio
+## Question #10
+A study was conducted to evaluate the efficacy of a new antiviral drug for the treatment of the common cold in young children. The study population consisted of 100 children between the age of 2 to 8 years divided into control and treatment arms. These children were diagnosed with rhinovirus infection and subsequently given the particular antiviral drug. One week later, it was observed that 42 out of 50 treatment patients were asymptomatic and 30 of 50 control patients were asymptomatic. How many people need to be treated with this drug for one to reach the primary end point of this study?
+
+1. 25/12
+2. _50/12_
+3. 50/15
+4. 24/7
+5. 50/8
+
+***.hint
+\(ARR = Risk_{Control} - Risk_{Treatment}\)
+\(NNT = 1 / ARR\)
+
+***.explanation
+\(ARR = 42/50 - 30/50 = 12/50\)
+\(NNT = 1 / (12/50) = 50/12)
 
 --- &vcenter
 <div class="centered"><font size="7">The End</font size></div>

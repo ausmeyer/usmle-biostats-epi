@@ -213,8 +213,8 @@ Always remember that the y-axis on these plots are counts or frequency. Therefor
  - Goodness-of-fit
  - Test of independence
 > - Goodness-of-fit
- - \(H_0\): The number of cases occuring in a subgroup is consistent with that occurring in the population
- - \(H_A\): The number of cases occuring in a subgroup is not consistent with that occurring in the population
+ - \(H_0\): The number of cases occuring in a subgroup is consistent with expected
+ - \(H_A\): The number of cases occuring in a subgroup is not consistent with expected
 > - Test of independence
  - \(H_0\): Categorical variable A and variable B are independent
  - \(H_A\): Categorical variable A and variable B are not independent

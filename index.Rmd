@@ -564,7 +564,7 @@ ggplot(data.frame(data = c(norm1, norm2), Groups = c(rep('Control', length(norm1
   scale_fill_manual(values = c("Control" = "blue", "Disease" = "red")) +
   labs(x="Cancer Biomarker", y="Fraction of Patients") +
   annotate("text", x = 1.5, y = 0.02, label = "True\nNegative", size=5, hjust = 0) +
-  annotate("text", x = 4.7, y = 0.02, label = "False\nNegative", size=5, hjust = 0) +
+  annotate("text", x = 4.6, y = 0.02, label = "False\nNegative", size=5, hjust = 0) +
   annotate("text", x = 6.35, y = 0.02, label = "False\nPositive", size=5, hjust = 0) +
   annotate("text", x = 9.2, y = 0.02, label = "True\nPositive", size=5, hjust = 0)
 ```
@@ -583,7 +583,7 @@ ggplot(data.frame(data = c(norm1, norm2), Groups = c(rep('Control', length(norm1
   scale_fill_manual(values = c("Control" = "white", "Disease" = "red")) +
   labs(x="Cancer Biomarker", y="Fraction of Patients") +
   annotate("text", x = 1.5, y = 0.02, label = "True\nNegative", size=5, hjust = 0, color = '#dddddd') +
-  annotate("text", x = 4.7, y = 0.02, label = "False\nNegative", size=5, hjust = 0) +
+  annotate("text", x = 4.6, y = 0.02, label = "False\nNegative", size=5, hjust = 0) +
   annotate("text", x = 6.35, y = 0.02, label = "False\nPositive", size=5, hjust = 0, color = '#dddddd') +
   annotate("text", x = 9.2, y = 0.02, label = "True\nPositive", size=5, hjust = 0)
 ```
@@ -602,7 +602,7 @@ ggplot(data.frame(data = c(norm1, norm2), Groups = c(rep('Control', length(norm1
   scale_fill_manual(values = c("Control" = "blue", "Disease" = "white")) +
   labs(x="Cancer Biomarker", y="Fraction of Patients") +
   annotate("text", x = 1.5, y = 0.02, label = "True\nNegative", size=5, hjust = 0) +
-  annotate("text", x = 4.7, y = 0.02, label = "False\nNegative", size=5, hjust = 0, color = '#dddddd') +
+  annotate("text", x = 4.6, y = 0.02, label = "False\nNegative", size=5, hjust = 0, color = '#dddddd') +
   annotate("text", x = 6.35, y = 0.02, label = "False\nPositive", size=5, hjust = 0) +
   annotate("text", x = 9.2, y = 0.02, label = "True\nPositive", size=5, hjust = 0, color = '#dddddd')
 ```

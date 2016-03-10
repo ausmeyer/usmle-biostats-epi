@@ -607,7 +607,7 @@ ggplot(data.frame(data = c(norm1, norm2), Groups = c(rep('Control', length(norm1
 
 --- &twocolumn
 ## PPV and NPV vary based on pre-test probability
-  
+
 ***=left
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 library(ggplot2)
@@ -638,6 +638,23 @@ ggplot(data, aes(x = x, y = y)) +
   - \(NPV = TN / (TN + FN)\)
 <br>  
 > - __Both depend on how prevalent the disease is in the population__
+
+--- &vcenter
+## This is what real diseases look like in the population
+  
+```{r, fig.width = 12, fig.height = 7, message=FALSE, warning=FALSE, echo=FALSE}
+library(ggplot2)
+library(cowplot)
+norm1 <- rnorm(318900, mean = 5, sd = 1.5)
+norm2 <- rnorm(1200, mean = 10, sd = 1.5)
+ggplot(data.frame(data = c(norm1, norm2), Groups = c(rep('Control', length(norm1)), rep('Disease', length(norm2)))), aes(x=data, fill=Groups)) + 
+  geom_histogram(alpha = 0.2, position="identity", binwidth = 0.1) + 
+  geom_vline(xintercept = 9, linetype = 'solid', lwd = 1) +
+  scale_fill_manual(values = c("Control" = "blue", "Disease" = "red")) +
+  labs(x="HIV Test", y="Number of Patients")
+```
+
+ This is the real prevalence of HIV... Where would you put the cutoff?
 
 --- &radio2
 ## Question #5
@@ -874,6 +891,7 @@ __Closer to the top means better evidence__
 ## Cohorts form the next level of evidence
  > - Can use relative risk because investigator knows prevalence of exposure and disease
  > - Subjects vary by exposure status
+ > - Can calculate incidence
  <br><br>
  > - __Selection bias__ is the biggest problem
    - Investigator has infinite control over inclusion
@@ -885,9 +903,35 @@ __Closer to the top means better evidence__
 
 --- &vcenter
 ## Case-control trials measure chance of exposure given disease
+![](assets/img/case_control.png)
+
+--- &vcenter
+## Case-control forms the next level down from cohorts
+ > - Must use odds ratio because investigator does not know prevalence of disease
+ > - Subjects grouped by cases and controls
+ > - Measure __odds of exposure__ given disease
+ <br><br>
+ > - __Recall bias__ is the biggest problem
+   - Investigator has infinite control over inclusion
+ > - Also common
+   - Information biases
+ <br><br>
+ > - __Cannot calculate incidence or prevalence__
 
 --- &vcenter
 ## Cross-sectional trials measure exposure and disease simultaneously
+![](assets/img/cross_sectional.png)
+
+--- &vcenter
+## Cross-sectional study forms the next level down from case-control
+ > - __Quick, cheap, and easy__
+   - Typically this is a starting point
+ > - Can establish prevalence of disease
+ > - Must use chi-squared or correlation for statistical test
+ > - Subjects can be grouped by exposure and diease in to the 2x2 contingency
+ <br><br>
+ > - __Cannot establish causation__
+ > - Cannot calculate risk metrics
 
 --- &vcenter
 <div class="centered"><font size="7">The End</font size></div>

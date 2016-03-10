@@ -401,7 +401,7 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 
 --- &twocolumn
 ## PPV and NPV vary based on pre-test probability
-  
+
 ***=left
 ![plot of chunk unnamed-chunk-17](assets/fig/unnamed-chunk-17-1.png)
 
@@ -416,6 +416,13 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 <br>  
 > - __Both depend on how prevalent the disease is in the population__
 
+--- &vcenter
+## This is what real diseases look like in the population
+  
+![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)
+
+ This is the real prevalence of HIV... Where would you put the cutoff?
+
 --- &radio2
 ## Question #5
 
@@ -428,7 +435,7 @@ Assume a steady-state population that is not changing in anyway. Which of the fo
 5. Decrease in NPV
 
 ***=image
-![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)
+![plot of chunk unnamed-chunk-19](assets/fig/unnamed-chunk-19-1.png)
 
 ***.hint
 Question prefaces a positive test result
@@ -505,7 +512,7 @@ What gives a narrower confidence interval?
 
 --- &vcenter
 ## Attributable risk is a relative incidence difference
-![plot of chunk unnamed-chunk-19](assets/fig/unnamed-chunk-19-1.png)
+![plot of chunk unnamed-chunk-20](assets/fig/unnamed-chunk-20-1.png)
 
 --- &twocolumn
 ## Absolute risk reduction is a risk difference
@@ -525,7 +532,7 @@ What gives a narrower confidence interval?
   - FYI: \(NNH = 1 / AR\)
 
 ***=right
-![plot of chunk unnamed-chunk-20](assets/fig/unnamed-chunk-20-1.png)
+![plot of chunk unnamed-chunk-21](assets/fig/unnamed-chunk-21-1.png)
 
 --- .segue
 ## Types of Biases - My groupings
@@ -624,6 +631,7 @@ __Closer to the top means better evidence__
 ## Cohorts form the next level of evidence
  > - Can use relative risk because investigator knows prevalence of exposure and disease
  > - Subjects vary by exposure status
+ > - Can calculate incidence
  <br><br>
  > - __Selection bias__ is the biggest problem
    - Investigator has infinite control over inclusion
@@ -635,9 +643,35 @@ __Closer to the top means better evidence__
 
 --- &vcenter
 ## Case-control trials measure chance of exposure given disease
+![](assets/img/case_control.png)
+
+--- &vcenter
+## Case-control forms the next level down from cohorts
+ > - Must use odds ratio because investigator does not know prevalence of disease
+ > - Subjects grouped by cases and controls
+ > - Measure __odds of exposure__ given disease
+ <br><br>
+ > - __Recall bias__ is the biggest problem
+   - Investigator has infinite control over inclusion
+ > - Also common
+   - Information biases
+ <br><br>
+ > - __Cannot calculate incidence or prevalence__
 
 --- &vcenter
 ## Cross-sectional trials measure exposure and disease simultaneously
+![](assets/img/cross_sectional.png)
+
+--- &vcenter
+## Cross-sectional study forms the next level down from case-control
+ > - __Quick, cheap, and easy__
+   - Typically this is a starting point
+ > - Can establish prevalence of disease
+ > - Must use chi-squared or correlation for statistical test
+ > - Subjects can be grouped by exposure and diease in to the 2x2 contingency
+ <br><br>
+ > - __Cannot establish causation__
+ > - Cannot calculate risk metrics
 
 --- &vcenter
 <div class="centered"><font size="7">The End</font size></div>

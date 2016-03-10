@@ -1028,7 +1028,8 @@ A study was conducted to evaluate the efficacy of a new antiviral drug for the t
 
 ***.explanation
 \(ARR = 42/50 - 30/50 = 12/50\)
-\(NNT = 1 / (12/50) = 50/12)
+<br>
+\(NNT = 1 / (12/50) = 50/12\)
 
 --- &vcenter
 <div class="centered"><font size="7">The End</font size></div>

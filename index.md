@@ -495,7 +495,7 @@ Investigators are studying the association between mesothelioma and asbestos exp
 Think about the denominators for odds and risks.
 
 ***.explanation
-Give an explanation
+The odds ratio is (A / B) / (C / D) and the risk ratio is (A / (A + B)) / (C / (C + D)). In the case where the number of people with the disease is small, the numbers A and C become very small. In that case, B is a good approximation of A + B and D is a good aproximation of C + D. Thus, the RR ~ (A / B) / (C / D).
 
 --- &vcenter
 ## OR approximates RR in low prevalence diseases

@@ -646,8 +646,10 @@ ggplot(data, aes(x = x, y = y)) +
 --- &twocolumn
 ## PPV ~ Specificity and NPV ~ Sensitivity
 
+<center> [Interactive Link](https://ausmeyer.shinyapps.io/predictive_value_shiny/) </center>
+
 ***=left
-```{r, message=FALSE, warning=FALSE, echo=FALSE}
+```{r, fig.height = 6.5, message=FALSE, warning=FALSE, echo=FALSE}
 library(ggplot2)
 library(cowplot)
 n = 1000
@@ -668,7 +670,7 @@ ggplot(data, aes(x = x, y = y)) +
 ```
 
 ***=right
-```{r, message=FALSE, warning=FALSE, echo=FALSE}
+```{r,fig.height = 6.5, message=FALSE, warning=FALSE, echo=FALSE}
 library(ggplot2)
 library(cowplot)
 n = 1000

@@ -892,19 +892,19 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 
 <ul>
 <li>Typically used <strong>during epidemics or pandemics</strong></li>
-<li>Number of people who get disease / Number of people who are exposed</li>
+<li>Number of people who get disease / Number of people at risk</li>
 </ul></li>
 <li><p>Incidence</p>
 
 <ul>
 <li>Given a <strong>defined period of time</strong></li>
-<li>Number of people with disease / Number of people who are exposed</li>
+<li>Number of people who get disease / Number of people at risk</li>
 </ul></li>
 <li><p>Prevalence</p>
 
 <ul>
-<li><strong>No time frame</strong></li>
-<li>Number of people with disease/Number of people who are exposed</li>
+<li><strong>No time course</strong> (i.e. measured at a single point in time)</li>
+<li>Number of people with disease / Number of people at risk</li>
 <li>Simple diseases (e.g. SIR infections): Prevalence = Incidence x Average Disease Duration</li>
 </ul></li>
 </ul>
@@ -1147,6 +1147,8 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 </hgroup>
 <article class = 'flexbox vcenter'>
 <p><img src="assets/img/contingency_table.png" alt=""></p>
+
+<p><strong>If true infections are low, denominator \(A+B \approx B\) and \(C+D \approx D\)</strong></p>
 
 </article>
 <!-- Presenter Notes -->
@@ -1499,23 +1501,26 @@ norm2 &lt;- rnorm(5000, mean = 5.25, sd = 1.2)
 <article class = 'flexbox vcenter'>
 <ul class = "build incremental">
 <li>Must use odds ratio because investigator does not know prevalence of disease</li>
-<li>Subjects grouped by cases and controls</li>
-<li>Measure <strong>odds of exposure</strong> in case and control groups
+<li>Subjects grouped by cases and controls
 
 <ul>
-<li>Use odds ratio as test statistic
-<br><br></li>
+<li>Measure <strong>odds of exposure</strong> in case and control groups</li>
 </ul></li>
-<li><strong>Recall bias</strong> is the biggest problem
+<li>Significantly improved power and decreased resource requirements compared to cohorts 
 
 <ul>
-<li>Investigator has infinite control over inclusion</li>
+<li>Due to cases being selected at out set</li>
+</ul></li>
+<li><strong>Selection and Recall biases</strong> are the biggest problem
+
+<ul>
+<li>Selecting appropriate controls is <strong>highly</strong> non-trivial</li>
+<li>Sick people remember exposures (e.g. Melanoma patients stew about their sunburns)</li>
 </ul></li>
 <li>Also common
 
 <ul>
-<li>Information biases
-<br><br></li>
+<li>Information biases</li>
 </ul></li>
 <li><strong>Cannot calculate incidence or prevalence</strong></li>
 </ul>

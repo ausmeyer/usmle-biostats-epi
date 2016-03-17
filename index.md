@@ -374,15 +374,15 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
   
 > - Attack rate
   - Typically used __during epidemics or pandemics__
-  - Number of people who get disease / Number of people who are exposed
+  - Number of people who get disease / Number of people at risk
 
 > - Incidence
   - Given a __defined period of time__
-  - Number of people with disease / Number of people who are exposed
+  - Number of people who get disease / Number of people at risk
 
 > - Prevalence
-  - __No time frame__
-  - Number of people with disease/Number of people who are exposed
+  - __No time course__ (i.e. measured at a single point in time)
+  - Number of people with disease / Number of people at risk
   - Simple diseases (e.g. SIR infections): Prevalence = Incidence x Average Disease Duration
 
 --- &vcenter
@@ -503,6 +503,8 @@ The odds ratio is (A / B) / (C / D) and the risk ratio is (A / (A + B)) / (C / (
 ## OR approximates RR in low prevalence diseases
 
 ![](assets/img/contingency_table.png)
+
+__If true infections are low, denominator \(A+B \approx B\) and \(C+D \approx D\)__
 
 --- &radio
 ## Question #7
@@ -660,14 +662,14 @@ __Closer to the top means better evidence__
 ## Case-control forms the next level down from cohorts
  > - Must use odds ratio because investigator does not know prevalence of disease
  > - Subjects grouped by cases and controls
- > - Measure __odds of exposure__ in case and control groups
-   - Use odds ratio as test statistic
- <br><br>
- > - __Recall bias__ is the biggest problem
-   - Investigator has infinite control over inclusion
+   - Measure __odds of exposure__ in case and control groups
+ > - Significantly improved power and decreased resource requirements compared to cohorts 
+   - Due to cases being selected at out set
+ > - __Selection and Recall biases__ are the biggest problem
+   - Selecting appropriate controls is __highly__ non-trivial
+   - Sick people remember exposures (e.g. Melanoma patients stew about their sunburns)
  > - Also common
    - Information biases
- <br><br>
  > - __Cannot calculate incidence or prevalence__
 
 --- &vcenter

@@ -536,7 +536,7 @@ What gives a narrower confidence interval?
   - Exposed: \(Risk = A / (A + B)\)
   - Unexposed: \(Risk = C / (C + D)\)
 <br><br>
-> - \(AR = Risk_{Unexposed} - Risk_{Exposed}\)
+> - \(AR = Risk_{Exposed} - Risk_{Unexposed}\)
 > - \(ARR = Risk_{Control} - Risk_{Treatment}\)
 <br><br>
 > - Number needed to treat

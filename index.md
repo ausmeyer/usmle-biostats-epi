@@ -423,7 +423,7 @@ The two sample T-test is the appropriate test in this case. The two sample Mann-
 --- &twocolumn
 ## PPV ~ Specificity and NPV ~ Sensitivity
 
-<center> [Interactive Link](https://ausmeyer.shinyapps.io/predictive_value_shiny/) </center>
+<center> [Interactive Link](http://meyerapps.org/predictive_value_shiny/) </center>
 
 ***=left
 ![plot of chunk unnamed-chunk-18](assets/fig/unnamed-chunk-18-1.png)

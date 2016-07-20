@@ -649,7 +649,7 @@ ggplot(data, aes(x = x, y = y)) +
 --- &twocolumn
 ## PPV ~ Specificity and NPV ~ Sensitivity
 
-<center> [Interactive Link](https://ausmeyer.shinyapps.io/predictive_value_shiny/) </center>
+<center> [Interactive Link](http://meyerapps.org/predictive_value_shiny/) </center>
 
 ***=left
 ```{r, fig.height = 6.5, message=FALSE, warning=FALSE, echo=FALSE}
